@@ -7,7 +7,6 @@ export default function Home() {
     <>
       <Head>
       <title>Adam's Portfolio</title>
-      <a href="/api/auth/login" className="text-9xl font-bold">Login</a>
       </Head>
       <Header />
       <h1 className="text-sm md:text-7xl font-light">Hello world!</h1>
