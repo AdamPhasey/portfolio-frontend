@@ -1,8 +1,11 @@
+
+
+
 function AboutMe() {
   return (
-    <>
-      <h1 className="italic font-light">Adam P</h1>
-    </>
+    <div className="w-full h-full text-white">
+      <p>Software developer </p>
+    </div>
   );
 }
 
