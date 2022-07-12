@@ -6,7 +6,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'Chakra-Petch': ['"Chakra Petch"', 'sans-serif'] 
+      }
+    },
   },
   plugins: [],
 }

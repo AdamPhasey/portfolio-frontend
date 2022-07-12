@@ -11,12 +11,12 @@ export default function Home() {
         <title>Adam's Portfolio</title>
       </Head>
 
-      <div className="h-full flex flex-col bg-gradient-to-r from-transparent via-transparent to-green-900">
+      <div id="home" className="h-full flex flex-col">
         <Header />
         <AboutMe />
       </div>
 
-      <div className="h-full flex flex-col bg-green-300">
+      <div id="projects" className="h-full flex flex-col bg-[#9a8c98]">
         <Projects />
       </div>
 
