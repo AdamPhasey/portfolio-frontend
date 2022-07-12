@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Adam's Portfolio</title>
+        <title>Adams Portfolio</title>
       </Head>
 
       <div id="home" className="h-full flex flex-col">
