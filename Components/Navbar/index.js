@@ -1,12 +1,11 @@
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Box from "@mui/material/Box";
 import {useState} from 'react';
 
 
 
 export default function Navbar () {
-const [newValue, setNewValue] = useState();
+const [newValue, setNewValue] = useState(0);
 
 return (
 
