@@ -1,13 +1,10 @@
 import Image from "next/image";
+import Cards from "../Cards";
 
 function Projects() {
   return (
     <>
-      <Image
-        src="/myComputer.svg"
-        width={750}
-        height={750}
-      />
+     <Cards />
     </>
   );
 }
