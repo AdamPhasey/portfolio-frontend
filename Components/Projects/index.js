@@ -1,8 +1,10 @@
+import Image from "next/image"
+
 function Projects () {
 
     return(
-        <h1>Projects go here!</h1>
-    )
+        <Image src="/myComputer.svg" width={750} height={750}/>
+        )
 }
 
 export {Projects}

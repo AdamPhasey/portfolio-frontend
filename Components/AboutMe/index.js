@@ -1,11 +1,9 @@
-
+import Image from "next/image";
 
 
 function AboutMe() {
   return (
-    <div className="w-full h-full text-white">
-      <p>Software developer </p>
-    </div>
+      <Image src="/myComputer.svg" width={750} height={750}/>
   );
 }
 
