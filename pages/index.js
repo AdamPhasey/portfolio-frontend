@@ -16,7 +16,7 @@ export default function Home() {
         <AboutMe />
       </div>
 
-      <div id="projects" className="h-screen flex flex-col bg-[#9a8c98]">
+      <div id="projects" className="h-screen flex flex-col justify-center bg-[#9a8c98]">
         <Projects />
       </div>
 

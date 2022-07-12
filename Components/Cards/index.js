@@ -6,7 +6,7 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 
 export default function Cards() {
   return (
-    <div className="flex flex-row justify-evenly items-center">
+    <div className="flex flex-row justify-around items-center">
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
@@ -45,7 +45,7 @@ export default function Cards() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            SPACE COIN
+            BACKPACK
           </Typography>
           <Typography variant="body2" color="text.secondary">
             Lizards are a widespread group of squamate reptiles, with over 6,000

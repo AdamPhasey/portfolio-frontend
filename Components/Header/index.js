@@ -6,7 +6,7 @@ function Header() {
 
     <div className="flex flex-row w-full justify-center items-center bg-[#22223b]">
       <div className="flex flex-row w-3/4">
-      <Image src="/logo.svg" width={500} height={125} />
+      <Image src="/logo.svg" alt="my name set as a logo" width={500} height={125} />
       </div>
       <div className="flex flex-row">
       <Navbar />
