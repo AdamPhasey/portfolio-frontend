@@ -1,10 +1,12 @@
 import Image from "next/image";
 import { Container } from "postcss";
 
-function AboutMe() {
+function AboutMe({value}) {
   return (
-    <container className="flex flex-row justify-around items-center bg-[#4a4e69]">
-      <Image className="" alt="a digital creation of a computer" src="/myComputer.svg" width={750} height={750} />
+    <container className="flex flex-row justify-around items-center bg-[#4841cb] dark:bg-[#4a4e69]">
+   {value === 'dark' && <Image className="" alt="a digital creation of a computer" src="/myComputerDarkmode.svg" width={750} height={750} />}
+   {value === 'light' && <Image className="" alt="a digital creation of a computer" src="/myComputerLightmode.svg" width={750} height={750} />}
+
 
   <p className="text-white font-Chakra-Petch">
 
