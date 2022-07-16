@@ -7,13 +7,13 @@ function AboutMe({value}) {
    {value === 'dark' && <Image className="" alt="a digital creation of a computer" src="/myComputerDarkmode.svg" width={750} height={750} />}
    {value === 'light' && <Image className="" alt="a digital creation of a computer" src="/myComputerLightMode.svg" width={750} height={750} />}
 
+<div className="w-1/2">
+  <p className="text-white lg:text-5xl font-Chakra-Petch">
 
-  <p className="text-white font-Chakra-Petch">
-
-    Hello, I am Adam Phasey
-    <br/>
-
+    Hello, I am Adam Phasey I come from an entrepreneurial background
   </p>
+</div>
+  
     </container>
   );
 }
