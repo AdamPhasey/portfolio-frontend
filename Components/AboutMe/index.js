@@ -3,11 +3,11 @@ import { Container } from "postcss";
 
 function AboutMe({ value }) {
   return (
-    <container className="flex flex-row justify-around items-center bg-[#4841cb] dark:bg-[#4a4e69]">
-      <div className="w-1/2">
+    <container className="flex flex-row  items-center w-screen bg-[#4841cb] dark:bg-[#4a4e69]">
+      <div className="hidden md:flex justify-center md:w-1/2">
         {value === "dark" && (
           <Image
-            className="md:visible"
+            className="invisible md:visible"
             alt="a digital creation of a computer"
             src="/myComputerDarkmode.svg"
             width={750}
@@ -16,7 +16,7 @@ function AboutMe({ value }) {
         )}
         {value === "light" && (
           <Image
-            className="md:visible"
+            className="hidden md:flex justify-center md:w-1/2"
             alt="a digital creation of a computer"
             src="/myComputerLightMode.svg"
             width={750}
@@ -24,13 +24,13 @@ function AboutMe({ value }) {
           />
         )}
       </div>
-
-      <div className="w-1/2">
+      
+      <div className="p-10 md:w-1/2 md:relative md:py-0">
         <p className="text-white lg:text-5xl font-Chakra-Petch">
-          Hello, I am Adam Phasey I come from an entrepreneurial background
+          Hello, I am Adam Phasey I come from an entrepreneurial background background n entrepreneurial background background ban entrepreneurial background background ban entrepreneurial background background ban entrepreneurial background background ba background background background background background
         </p>
       </div>
-    </container>
+      </container>
   );
 }
 
