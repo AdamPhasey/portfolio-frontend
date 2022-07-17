@@ -21,7 +21,7 @@ export default function Home() {
   
 
   return (
-    <>
+    <container className="w-screen">
       <Head>
         <title>Adams Portfolio</title>
       </Head>
@@ -36,6 +36,6 @@ export default function Home() {
       </div>
 
 
-    </>
+    </container>
   );
 }
