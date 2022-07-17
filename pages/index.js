@@ -4,6 +4,7 @@ import { Header } from "../Components/Header";
 import { AboutMe } from "../Components/AboutMe";
 import {Projects} from '../Components/Projects/index'
 import {useState, useEffect, createContext} from 'react';
+import { Footer } from "../Components/Footer";
 
 export default function Home() {
 
@@ -34,8 +35,7 @@ export default function Home() {
       <div id="projects" className="h-screen flex flex-col justify-center bg-[#9a8c98]">
         <Projects />
       </div>
-
-
+      <Footer />
     </>
   );
 }
