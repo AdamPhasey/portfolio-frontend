@@ -91,7 +91,7 @@ function Header({ onChange, setTheme, theme }) {
         {/* <Image id="logo_layer2" src="/logowithstroke.svg" alt="my name set as a logo" width={500} height={125}   /> */}
         <svg
           id="logo_layer2"
-          width="500px"
+          width="50%"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 457.03 39.6"
@@ -160,9 +160,8 @@ function Header({ onChange, setTheme, theme }) {
       </div>
       <div className="flex flex-row">
         <Navbar />
-      </div>
 
-      <FormControlLabel
+         <FormControlLabel
         control={
           <MaterialUISwitch
             onChange={handleChange}
@@ -172,6 +171,9 @@ function Header({ onChange, setTheme, theme }) {
           />
         }
       />
+      </div>
+
+     
 </div>
   );
 }
