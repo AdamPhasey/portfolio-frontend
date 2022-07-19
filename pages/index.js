@@ -6,10 +6,11 @@ import {Projects} from '../Components/Projects/index'
 import {useState, useEffect, createContext} from 'react';
 import { Footer } from "../Components/Footer";
 
+
 export default function Home() {
 
 
-  const [theme, setTheme] = useState('dark')
+  const [theme, setTheme] = useState('light')
   console.log(theme)
   
   const colorTheme = theme === 'dark' ? 'light' : 'dark';
@@ -20,7 +21,8 @@ export default function Home() {
   localStorage.setItem('theme', theme);
   }, [theme, colorTheme]);
   
-
+ 
+  
   return (
     <>
       <Head>
@@ -28,7 +30,7 @@ export default function Home() {
       </Head>
 
       <div id="home" className="h-full w-fullflex flex-col">
-        <Header setTheme={setTheme}/>
+        <Header setTheme={setTheme} theme={theme}/>
         <AboutMe value={theme} />
       </div>
 

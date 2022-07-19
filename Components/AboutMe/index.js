@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Container } from "postcss";
 
+
 function AboutMe({ value }) {
   return (
     <container className="flex flex-row content-center items-center bg-[#4841cb] dark:bg-[#4a4e69]">
@@ -13,6 +14,7 @@ function AboutMe({ value }) {
             width={750}
             height={750}
           />
+          
         )}
         {value === "light" && (
           <Image
