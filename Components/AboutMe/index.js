@@ -10,8 +10,8 @@ function AboutMe({ value }) {
             className="invisible md:visible"
             alt="a digital creation of a computer"
             src="/myComputerDarkmode.svg"
-            width={750}
-            height={750}
+            width={500}
+            height={500}
           />
         )}
         {value === "light" && (
@@ -19,13 +19,13 @@ function AboutMe({ value }) {
             className="hidden md:flex justify-center md:w-1/2"
             alt="a digital creation of a computer"
             src="/myComputerLightMode.svg"
-            width={750}
-            height={750}
+            width={500}
+            height={500}
           />
         )}
       </div>
 
-      <div className="text-blue-400 text-[9vw] py-40 p-4 font-Montserrat-Alternates md:text-[4.5vw] md:w-1/2 md:relative md:p-0">
+      <div className="text-blue-400 text-[9vw] py-40 p-4 font-Montserrat-Alternates md:text-[3vw] md:w-1/2 md:relative md:p-0">
         <p className="text-green-400 text-[4vw] md:text-[2vw]">
           👋 Hi, I'm Adam!
         </p>

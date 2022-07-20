@@ -30,7 +30,7 @@ export default function Home() {
       </Head>
         <Header setTheme={setTheme} theme={theme}/>
 
-      <container id="home" className="h-full w-full flex flex-col">
+      <container id="home" className="flex md:h-screen md:w-screen">
         <AboutMe value={theme} />
       </container>
 
