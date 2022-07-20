@@ -25,7 +25,7 @@ function AboutMe({ value }) {
         )}
       </div>
 
-      <div className="text-blue-400 text-[8vw] p-10 font-Montserrat-Alternates md:text-[4.5vw] md:w-1/2 md:relative md:p-0">
+      <div className="text-blue-400 text-[9vw] py-40 p-4 font-Montserrat-Alternates md:text-[4.5vw] md:w-1/2 md:relative md:p-0">
         <p className="text-green-400 text-[4vw] md:text-[2vw]">
           👋 Hi, I'm Adam!
         </p>

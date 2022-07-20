@@ -30,9 +30,9 @@ export default function Home() {
       </Head>
         <Header setTheme={setTheme} theme={theme}/>
 
-      <div id="home" className="h-screen w-full flex flex-col">
+      <container id="home" className="h-full w-full flex flex-col">
         <AboutMe value={theme} />
-      </div>
+      </container>
 
       <div id="projects" className="h-screen flex flex-col justify-center bg-[#ccd5ae]">
         <Projects />
