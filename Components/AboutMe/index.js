@@ -3,7 +3,7 @@ import { Container } from "postcss";
 
 function AboutMe({ value }) {
   return (
-    <container className="flex w-screen flex-row content-center items-center bg-[#faedcd] dark:bg-[#4a4e69]">
+    <container className="flex h-full w-full flex-row content-center items-center bg-[#faedcd] dark:bg-[#4a4e69]">
       <div className="hidden p-10 md:flex justify-center md:w-1/2">
         {value === "dark" && (
           <Image
@@ -25,7 +25,7 @@ function AboutMe({ value }) {
         )}
       </div>
 
-      <div className="text-blue-400 text-[9vw] font-Montserrat-Alternates py-36 p-6 md:text-[4vw] md:w-1/2 md:relative md:py-0">
+      <div className="text-blue-400 text-[8vw] p-10 font-Montserrat-Alternates md:text-[4.5vw] md:w-1/2 md:relative md:p-0">
         <p className="text-green-400 text-[4vw] md:text-[2vw]">
           👋 Hi, I'm Adam!
         </p>

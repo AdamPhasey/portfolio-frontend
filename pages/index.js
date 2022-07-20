@@ -28,9 +28,9 @@ export default function Home() {
       <Head>
         <title>Adams Portfolio</title>
       </Head>
-
-      <div id="home" className="h-full w-full flex flex-col">
         <Header setTheme={setTheme} theme={theme}/>
+
+      <div id="home" className="h-screen w-full flex flex-col">
         <AboutMe value={theme} />
       </div>
 
