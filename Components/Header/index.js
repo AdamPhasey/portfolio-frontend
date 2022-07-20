@@ -91,7 +91,7 @@ function Header({ onChange, setTheme, theme }) {
         {/* <Image id="logo_layer2" src="/logowithstroke.svg" alt="my name set as a logo" width={500} height={125}   /> */}
      
               {/* .cls-1{"{fill:pink;stroke:#89CFF0;stroke-miterlimit:10;{"} */}
-    <svg className="w-3/4 p-4 md:w-1/2" id="logo_layer2" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 348.95 46.26">
+    <svg className="w-3/4 md:w-1/2 p-4" id="logo_layer2" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 348.95 46.26">
     <defs>
         <style>.cls-1{"{fill:#fff;stroke:#000;stroke-miterlimit:10;{"}</style>
     </defs>
