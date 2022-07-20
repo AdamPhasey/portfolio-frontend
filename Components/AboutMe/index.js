@@ -3,7 +3,7 @@ import { Container } from "postcss";
 
 function AboutMe({ value }) {
   return (
-    <container className="flex w-screen h-screen flex-row content-center items-center bg-[#faedcd] dark:bg-[#4a4e69]">
+    <container className="flex w-screen flex-row content-center items-center bg-[#faedcd] dark:bg-[#4a4e69]">
       <div className="hidden p-10 md:flex justify-center md:w-1/2">
         {value === "dark" && (
           <Image

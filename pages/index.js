@@ -29,7 +29,7 @@ export default function Home() {
         <title>Adams Portfolio</title>
       </Head>
 
-      <div id="home" className="h-full w-fullflex flex-col">
+      <div id="home" className="h-full w-full flex flex-col">
         <Header setTheme={setTheme} theme={theme}/>
         <AboutMe value={theme} />
       </div>
