@@ -1,10 +1,9 @@
 import Image from "next/image";
 import { Container } from "postcss";
 
-
 function AboutMe({ value }) {
   return (
-    <container className="flex flex-row content-center items-center bg-[#4841cb] dark:bg-[#4a4e69]">
+    <container className="flex flex-row content-center items-center bg-[#faedcd] dark:bg-[#4a4e69]">
       <div className="hidden p-10  md:flex justify-center md:w-1/2">
         {value === "dark" && (
           <Image
@@ -14,7 +13,6 @@ function AboutMe({ value }) {
             width={750}
             height={750}
           />
-          
         )}
         {value === "light" && (
           <Image
@@ -26,13 +24,17 @@ function AboutMe({ value }) {
           />
         )}
       </div>
-      
-      <div className="p-10 md:w-1/2 md:relative md:py-0">
-        <p className="text-white lg:text-5xl font-Chakra-Petch">
-          Hello, I am Adam Phasey I come from an entrepreneurial background background n entrepreneurial background background ban entrepreneurial background background ban entrepreneurial background background ban entrepreneurial background background ba background background background background background
+
+      <div className="text-blue-400 lg:text-6xl font-Montserrat-Alternates p-20 md:w-1/2 md:relative md:py-0">
+        <p className="text-green-400 lg:text-2xl relative">
+          👋 Hi, I'm Adam!
         </p>
+        <h1>
+          I like making fun <a className="text-green-400">apps</a> with code.
+          I have a background in law and business.
+        </h1>
       </div>
-      </container>
+    </container>
   );
 }
 

@@ -34,7 +34,7 @@ export default function Home() {
         <AboutMe value={theme} />
       </div>
 
-      <div id="projects" className="h-screen flex flex-col justify-center bg-[#9a8c98]">
+      <div id="projects" className="h-screen flex flex-col justify-center bg-[#ccd5ae]">
         <Projects />
       </div>
       <Footer />
