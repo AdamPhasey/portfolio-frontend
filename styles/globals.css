@@ -7,15 +7,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 
-@layer components{
- 
 
-
-
-
-
-} */
+/* @layer components{
+ } */
 
 * {
   box-sizing: border-box; 
