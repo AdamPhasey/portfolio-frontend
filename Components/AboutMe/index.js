@@ -4,10 +4,13 @@ import {useEffect} from 'react';
 import anime from 'animejs';
 
 function AboutMe({ value }) {
+
+  //use effect here if needed
 //   useEffect(() => {
 //   let comp = document.querySelector('#Comp1')
  
 // }, [])
+
 
   return (
     <container className="flex h-full w-full flex-row content-center items-center bg-[#f4f3ee] dark:bg-[#4a4e69]">
