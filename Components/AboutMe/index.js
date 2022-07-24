@@ -691,15 +691,15 @@ height={650}
         <circle className="cls-414" cx="273.85" cy="285.04" r="5.36" />
         <circle className="cls-8" cx="289.39" cy="285.04" r="5.36" />
         <circle className="cls-412" cx="304.39" cy="285.04" r="5.36" />
+    </g>
+    <g id="Stars" className="twinkle">
         <polygon className="cls-415" points="346.96 5 348.57 13.39 356.96 15 348.57 16.61 346.96 25 345.35 16.61 336.96 15 345.35 13.39 346.96 5" />
         <polygon className="cls-415" points="332.68 81 334.66 87.25 340.91 89.24 334.66 91.23 332.68 97.48 330.69 91.23 324.44 89.24 330.69 87.25 332.68 81" />
-    </g>
-    <g id="Stars">
-        <polygon className="cls-415" points="41.91 8.19 45.11 18.24 55.16 21.44 45.11 24.64 41.91 34.69 38.71 24.64 28.66 21.44 38.71 18.24 41.91 8.19" />
-        <polygon className="cls-415" points="31.91 324.69 36.73 334.86 46.91 339.69 36.73 344.52 31.91 354.69 27.08 344.52 16.91 339.69 27.08 334.86 31.91 324.69" />
-        <polygon className="cls-415" points="425.41 395.19 426.92 406.18 437.91 407.69 426.92 409.2 425.41 420.19 423.9 409.2 412.91 407.69 423.9 406.18 425.41 395.19" />
-        <polygon className="cls-415" points="110.41 396.19 113.59 409.5 126.91 412.69 113.59 415.88 110.41 429.19 107.22 415.88 93.91 412.69 107.22 409.5 110.41 396.19" />
-        <polygon className="cls-415" points="399.85 318.38 403.04 331.69 416.35 334.88 403.04 338.07 399.85 351.38 396.67 338.07 383.35 334.88 396.67 331.69 399.85 318.38" />
+        <polygon className=" cls-415" points="41.91 8.19 45.11 18.24 55.16 21.44 45.11 24.64 41.91 34.69 38.71 24.64 28.66 21.44 38.71 18.24 41.91 8.19" />
+        <polygon className=" cls-415" points="31.91 324.69 36.73 334.86 46.91 339.69 36.73 344.52 31.91 354.69 27.08 344.52 16.91 339.69 27.08 334.86 31.91 324.69" />
+        <polygon className=" cls-415" points="425.41 395.19 426.92 406.18 437.91 407.69 426.92 409.2 425.41 420.19 423.9 409.2 412.91 407.69 423.9 406.18 425.41 395.19" />
+        <polygon className=" cls-415" points="110.41 396.19 113.59 409.5 126.91 412.69 113.59 415.88 110.41 429.19 107.22 415.88 93.91 412.69 107.22 409.5 110.41 396.19" />
+        <polygon className=" cls-415" points="399.85 318.38 403.04 331.69 416.35 334.88 403.04 338.07 399.85 351.38 396.67 338.07 383.35 334.88 396.67 331.69 399.85 318.38" />
     </g>
     <path id="path">
 		<animate attributeName="d" from="m0,0 h0" to="m0,0 h1100" dur="15s" begin="0s" repeatCount="indefinite"/>
@@ -1381,16 +1381,21 @@ height={650}
         <text className="cls-415" transform="translate(299.64 246.62) scale(0.98 1)"><textPath xlinkHref="#path"> &gt;_</textPath></text>
     </g>
     <g id="Layer_4" data-name="Layer 4">
+    <g className="cloud1">
         <ellipse className="cls-416" cx="22.41" cy="41.15" rx="11.59" ry="8.83" />
         <ellipse className="cls-416" cx="135.51" cy="44.69" rx="11.59" ry="8.83" />
         <ellipse className="cls-416" cx="49.76" cy="39.39" rx="23.18" ry="17.67" />
         <ellipse className="cls-416" cx="114.65" cy="39.39" rx="23.18" ry="17.67" />
         <ellipse className="cls-416" cx="77.11" cy="35.5" rx="34.77" ry="26.5" />
+    </g>
+
+        <g className="cloud2">
         <ellipse className="cls-416" cx="221.24" cy="34.4" rx="9.36" ry="7.14" />
         <ellipse className="cls-416" cx="312.6" cy="37.25" rx="9.36" ry="7.14" />
         <ellipse className="cls-416" cx="243.33" cy="32.97" rx="18.72" ry="14.27" />
         <ellipse className="cls-416" cx="295.75" cy="32.97" rx="18.72" ry="14.27" />
         <ellipse className="cls-416" cx="265.42" cy="29.83" rx="28.08" ry="21.41" />
+        </g>
     </g>
     <g id="Layer_2" data-name="Layer 2">
         <path className="cls-417" d="M420.5,63.44a27,27,0,1,1,0-52.88,27,27,0,0,0,0,52.88Z" transform="translate(-17.04 -10)" />
