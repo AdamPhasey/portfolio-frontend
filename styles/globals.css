@@ -84,6 +84,22 @@
     50% { border-color: orange; }
   }
 
+  @keyframes beating {
+    0% { 
+        opacity: 0.5;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.5;
+    }
+
+}
+.heartbeat:hover {
+  animation: beating 1s infinite;
+}
+
 }
 * {
   box-sizing: border-box; 

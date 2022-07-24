@@ -1412,8 +1412,7 @@ height={650}
           👋 Hi, I am Adam!
         </p>
         <h1>
-          I like making fun <a className="text-green-400">apps</a> with code. My
-          background is in law and business.
+          I used to be in law and business. Now I <a className="text-red-400 heartbeat">love</a> making <a className="text-green-400">fun</a> and <a className="text-green-400">interactive</a> things with <a className="text-green-400">code</a>.
         </h1>
       </div>
     </container>
