@@ -40,7 +40,7 @@ function closeDragElement() {
       <div id="terminal" className="hidden z-50 cursor-move sm:p-10 lg:p-24 md:flex justify-center md:h-screen md:w-1/2">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" >
     <defs>
-        <style>.cls-1{"{fill:gray;}.cls-2{fill:#d90028;}.cls-3{fill:#ffc10b;}.cls-4{fill:#00cf00;}.cls-5{font-size:35px;fill:#f2f2f2;}.cls-5,.cls-6{font-family:Silom;}.cls-6{font-size:5vmin;fill:lime;{"}</style>
+        <style>.cls-1{"{fill:gray;}.cls-2{fill:#d90028;}.cls-3{fill:#ffc10b;}.cls-4{fill:#00cf00;}.cls-5{font-size:35px;fill:#f2f2f2;}.cls-5,.cls-6{font-family:Silom;}.cls-6{font-size:50px;fill:lime;{"}</style>
     </defs>
     <g id="Background">
         <rect width="1000" height="1000" />
