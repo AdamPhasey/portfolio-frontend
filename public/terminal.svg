@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+    <defs>
+        <style>.cls-1{fill:gray;}.cls-2{fill:#d90028;}.cls-3{fill:#ffc10b;}.cls-4{fill:#00cf00;}.cls-5{font-size:35px;fill:#f2f2f2;}.cls-5,.cls-6{font-family:Silom;}.cls-6{font-size:50px;fill:lime;}</style>
+    </defs>
+    <g id="Background">
+        <rect width="1000" height="1000" />
+    </g>
+    <g id="Nav">
+        <rect class="cls-1" width="1000" height="57" />
+        <circle class="cls-2" cx="39" cy="28" r="16" />
+        <circle class="cls-3" cx="87.41" cy="28" r="16" />
+        <circle class="cls-4" cx="135" cy="28" r="16" />
+        <circle cx="39.41" cy="28.41" r="4.92" />
+        <text class="cls-5" transform="translate(301.7 44.36)">Adam Phasey’s Stack</text>
+    </g>
+    <g id="Text">
+        <text class="cls-6" transform="translate(59.4 153.18)">JavaScript</text>
+        <text class="cls-6" transform="translate(59.49 227.87)">TypeScript</text>
+        <text class="cls-6" transform="translate(61.49 377.87)">HTML &amp; CSS</text>
+        <text class="cls-6" transform="translate(61.49 302.87)">Node.js</text>
+        <text class="cls-6" transform="translate(64 447.87)">Python</text>
+        <text class="cls-6" transform="translate(62.49 517.87)">Express</text>
+        <text class="cls-6" transform="translate(64.49 586.87)">React</text>
+        <text class="cls-6" transform="translate(64.49 651.87)">AWS</text>
+        <text class="cls-6" transform="translate(64.49 713.5)">Deployment</text>
+        <text class="cls-6" transform="translate(66.49 783.5)">PostgreSQL/MySQL</text>
+        <text class="cls-6" transform="translate(61.49 937.87)">&gt;_</text>
+    </g>
+</svg>
