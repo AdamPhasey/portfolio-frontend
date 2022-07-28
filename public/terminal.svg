@@ -1,29 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
     <defs>
-        <style>.cls-1{fill:gray;}.cls-2{fill:#d90028;}.cls-3{fill:#ffc10b;}.cls-4{fill:#00cf00;}.cls-5{font-size:35px;fill:#f2f2f2;}.cls-5,.cls-6{font-family:Silom;}.cls-6{font-size:50px;fill:lime;}</style>
+        <style>.cls-1{stroke:gray;stroke-miterlimit:10;stroke-width:5px;}.cls-2{fill:gray;}.cls-3{fill:#d90028;}.cls-4{fill:#ffc10b;}.cls-5{fill:#00cf00;}.cls-6{font-size:17.43px;fill:#f2f2f2;}.cls-6,.cls-7{font-family:Silom;}.cls-7{font-size:24.9px;fill:lime;}</style>
     </defs>
     <g id="Background">
-        <rect width="1000" height="1000" />
+        <rect class="cls-1" x="2.5" y="2.5" width="495" height="495" />
     </g>
     <g id="Nav">
-        <rect class="cls-1" width="1000" height="57" />
-        <circle class="cls-2" cx="39" cy="28" r="16" />
-        <circle class="cls-3" cx="87.41" cy="28" r="16" />
-        <circle class="cls-4" cx="135" cy="28" r="16" />
-        <circle cx="39.41" cy="28.41" r="4.92" />
-        <text class="cls-5" transform="translate(301.7 44.36)">Adam Phasey’s Stack</text>
+        <rect class="cls-2" x="2" y="1" width="498" height="28.39" />
+        <circle class="cls-3" cx="21.42" cy="14.94" r="7.97" />
+        <circle class="cls-4" cx="45.53" cy="14.94" r="7.97" />
+        <circle class="cls-5" cx="69.23" cy="14.94" r="7.97" />
+        <circle cx="21.63" cy="15.15" r="2.45" />
+        <text class="cls-6" transform="translate(152.25 23.09)">Adam Phasey’s Stack</text>
     </g>
+    <path id="path">
+        <animate attributeName="d" from="m0,0 h0" to="m0,0 h1100" dur="2s" begin="0s" repeatCount="0" fill="freeze"/>
+    </path>
     <g id="Text">
-        <text class="cls-6" transform="translate(59.4 153.18)">JavaScript</text>
-        <text class="cls-6" transform="translate(59.49 227.87)">TypeScript</text>
-        <text class="cls-6" transform="translate(61.49 377.87)">HTML &amp; CSS</text>
-        <text class="cls-6" transform="translate(61.49 302.87)">Node.js</text>
-        <text class="cls-6" transform="translate(64 447.87)">Python</text>
-        <text class="cls-6" transform="translate(62.49 517.87)">Express</text>
-        <text class="cls-6" transform="translate(64.49 586.87)">React</text>
-        <text class="cls-6" transform="translate(64.49 651.87)">AWS</text>
-        <text class="cls-6" transform="translate(64.49 713.5)">Deployment</text>
-        <text class="cls-6" transform="translate(66.49 783.5)">PostgreSQL/MySQL</text>
-        <text class="cls-6" transform="translate(61.49 937.87)">&gt;_</text>
+        <text class="cls-7" transform="translate(31.58 77.28)"><textPath xlinkHref="#path">JavaScript</textPath></text>
+        <text class="cls-7" transform="translate(31.63 114.48)"><textPath xlinkHref="#path">TypeScript</textPath></text>
+        <text class="cls-7" transform="translate(32.62 189.18)"><textPath xlinkHref="#path">HTML &amp; CSS</textPath></text>
+        <text class="cls-7" transform="translate(32.62 151.83)"><textPath xlinkHref="#path">Node.js</textPath></text>
+        <text class="cls-7" transform="translate(33.87 224.04)"><textPath xlinkHref="#path">Python</textPath></text>
+        <text class="cls-7" transform="translate(33.12 258.9)"><textPath xlinkHref="#path">Express</textPath></text>
+        <text class="cls-7" transform="translate(34.12 293.26)"><textPath xlinkHref="#path">React</textPath></text>
+        <text class="cls-7" transform="translate(34.12 325.63)"><textPath xlinkHref="#path">AWS</textPath></text>
+        <text class="cls-7" transform="translate(34.12 356.32)"><textPath xlinkHref="#path">Deployment</textPath></text>
+        <text class="cls-7" transform="translate(35.11 391.18)"><textPath xlinkHref="#path">PostgreSQL/MySQL</textPath></text>
+        <text class="cls-7" transform="translate(32.62 468.06)"><textPath xlinkHref="#path">&gt;_</textPath></text>
     </g>
 </svg>
+
