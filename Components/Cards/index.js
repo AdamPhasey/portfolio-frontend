@@ -62,7 +62,7 @@ let el = ref.current
         </CardActionArea>
         <CardActions className="text-white">
           <Button size="small">
-            <Link href={'https://github.com/AdamPhasey/space-coin-frontend'}>Github</Link>
+            <Link href={'https://github.com/AdamPhasey/space-coin-front'}>Github</Link>
           </Button>
           <Button size="small">
           <Link href={'https://spacecoin.vercel.app'}>Live</Link>
@@ -85,10 +85,10 @@ let el = ref.current
         </CardActionArea>
         <CardActions>
           <Button size="small" color="primary">
-            Github
+          <Link href={'https://github.com/AdamPhasey/Infinitesimal'}>Github</Link>
           </Button>
           <Button size="small" color="primary">
-            Live
+          <Link href={'https://www.npmjs.com/package/infinitesimal'}>Live</Link>
           </Button>
         </CardActions>
       </Card>
