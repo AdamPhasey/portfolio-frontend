@@ -2,8 +2,11 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions } from "@mui/material";
+import { Badge, Button, CardActionArea, CardActions, Stack } from "@mui/material";
 import {useEffect, useRef} from 'react'
+import Link from "next/link";
+import { SiTypescript, SiReact, SiNodedotjs, SiPostgresql, SiTailwindcss, SiExpress, SiMaterialui, SiAuth0 } from "react-icons/si";
+
 
 export default function Cards() {
 const ref = useRef(null);
@@ -34,25 +37,35 @@ let el = ref.current
 
   return (
     <>
-      <Card ref={ref} sx={{ maxWidth: 400, maxHeight: 400 }}>
+      <Card className="bg-[#4a4e69] text-white" ref={ref} sx={{ maxWidth: 400, maxHeight: 400 }}>
         <CardActionArea>
-        <CardMedia component="img" className="p-10" image="/npm.svg" alt="npm package" />
+        <CardMedia component="img" image="/spacecoinfront.png" alt="npm package" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               SPACE COIN
             </Typography>
-            <Typography className="text-sm" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+            <Stack spacing={2} direction='row'>
+            <Badge><SiTypescript/></Badge>
+            <Badge><SiReact/></Badge>
+            <Badge><SiNodedotjs/></Badge>
+            <Badge><SiPostgresql/></Badge>
+            <Badge><SiTailwindcss/></Badge>
+            <Badge><SiExpress/></Badge>
+            <Badge><SiMaterialui/></Badge>
+            <Badge><SiAuth0/></Badge>
+            </Stack>
+            <Typography className="text-sm">
+              I made a full stack application using auth0 and TypeScript. The app is designed to give
+              users a view of the health of their fictitious spacecoin currency.
             </Typography>
           </CardContent>
         </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            Github
+        <CardActions className="text-white">
+          <Button size="small">
+            <Link href={'https://github.com/AdamPhasey/space-coin-frontend'}>Github</Link>
           </Button>
-          <Button size="small" color="primary">
-            Live
+          <Button size="small">
+          <Link href={'https://spacecoin.vercel.app'}>Live</Link>
           </Button>
         </CardActions>
       </Card>
