@@ -13,19 +13,19 @@ export default function Navbar() {
     >
       <Tab
         onClick={() => setNewValue(0)}
-        className=" text-black dark:text-white font-Montserrat-Alternates"
+        className=" text-white dark:text-white font-Montserrat-Alternates"
         label="Home"
         href="#home"
       />
       <Tab
         onClick={() => setNewValue(1)}
-        className=" text-black dark:text-white font-Montserrat-Alternates"
+        className=" text-white dark:text-white font-Montserrat-Alternates"
         label="Projects"
         href="#projects"
       />
       <Tab
         onClick={() => setNewValue(2)}
-        className=" text-black dark:text-white font-Montserrat-Alternates"
+        className=" text-white dark:text-white font-Montserrat-Alternates"
         label="Contact"
         href="#contact"
       />
