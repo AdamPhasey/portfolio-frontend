@@ -1,10 +1,11 @@
 import Head from "next/head";
 // import Link from "next/link";
 import { Header } from "../Components/Header";
-import { AboutMe } from "../Components/AboutMe";
+import { Hero } from "../Components/Hero";
 import { Projects } from "../Components/Projects/index";
 import { useState, useEffect, createContext } from "react";
 import { Footer } from "../Components/Footer";
+import { AboutMe } from "../Components/AboutMe";
 
 export default function Home() {
   const [theme, setTheme] = useState("light");
@@ -26,10 +27,13 @@ export default function Home() {
       <Header setTheme={setTheme} theme={theme} />
       <main className="mb-auto">
         <div id="home" className="flex flex-grow">
-          <AboutMe value={theme} />
+          <Hero value={theme} />
         </div>
         <div id="projects" className="bg-[#ccd5ae] flex flex-col">
           <Projects />
+        </div>
+        <div id="about-me" className="bg-[#fff] flex flex-col">
+        <AboutMe />
         </div>
       </main>
       <Footer />
