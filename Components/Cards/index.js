@@ -95,7 +95,7 @@ let el = ref.current
 
       <Card ref={ref} sx={{ maxWidth: 400, maxHeight: 400 }}>
         <CardActionArea>
-        <CardMedia component="img" image="/chews.png" alt="npm package" />
+        <CardMedia component="img" image="/Chews.png" alt="npm package" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               CHEWS MEAL PLANNER
