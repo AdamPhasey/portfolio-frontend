@@ -1,18 +1,21 @@
 import HomeIcon from "@mui/icons-material/Home";
-import ArticleIcon from "@mui/icons-material/Article";
+import CodeIcon from '@mui/icons-material/Code';
+import Looks5Icon from '@mui/icons-material/Looks5';
 import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { useState } from "react";
 
+
+
 function Footer() {
   const [newValue, setNewValue] = useState(0);
   return (
     <footer
-      className="md:hidden w-screen h-12 bg-blue-500
+      className="md:hidden w-screen bg-[#9a8c98]
             fixed bottom-0
             flex justify-center items-center
-            text-white text-2xl"
+            text-white"
     >
       <Tabs
         value={newValue}
@@ -22,19 +25,29 @@ function Footer() {
         <Tab
           onClick={() => setNewValue(0)}
           className="text-white font-Montserrat-Alternates"
-          label={<HomeIcon sx={{fontSize: 40}}/>}
+          icon={<HomeIcon sx={{fontSize: 30}}/>}
+          label="Home"
           href="#home"
         />
-        <Tab
+          <Tab
           onClick={() => setNewValue(1)}
           className="text-white font-Montserrat-Alternates"
-          label={<ArticleIcon sx={{fontSize: 40}}/>}
-          href="#projects"
+          icon={<Looks5Icon sx={{fontSize: 30}}/>}
+          label="Me"
+          href="#about-me"
         />
         <Tab
           onClick={() => setNewValue(2)}
           className="text-white font-Montserrat-Alternates"
-          label={<ConnectWithoutContactIcon sx={{fontSize: 40}}/>}
+          icon={<CodeIcon sx={{fontSize: 30}}/>}
+          label="Projects"
+          href="#projects"
+        />
+        <Tab
+          onClick={() => setNewValue(3)}
+          className="text-white font-Montserrat-Alternates"
+          icon={<ConnectWithoutContactIcon sx={{fontSize: 30}}/>}
+          label="Contact"
           href="#contact"
         />
       </Tabs>
