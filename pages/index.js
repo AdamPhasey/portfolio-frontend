@@ -1,5 +1,4 @@
 import Head from "next/head";
-// import Link from "next/link";
 import { Header } from "../Components/Header";
 import { Hero } from "../Components/Hero";
 import { Projects } from "../Components/Projects/index";
@@ -7,6 +6,7 @@ import { useState, useEffect, createContext } from "react";
 import { Footer } from "../Components/Footer";
 import { AboutMe } from "../Components/AboutMe";
 import { ModalFunction } from "../Components/Modal";
+import { Divider } from "@mui/material";
 
 export default function Home() {
   const [theme, setTheme] = useState("light");
@@ -30,11 +30,15 @@ export default function Home() {
         <div id="home" className="flex flex-grow">
           <Hero value={theme} />
         </div>
-       
+        <div className="flex flex-col items-center">
+        <Divider width='50%' variant='middle' textAlign='center' color='#fff'/>
+        </div>
+
         <div
           id="about-me"
           className="flex h-screen flex-col bg-[#22223b] items-center justify-evenly"
         >
+
           <AboutMe />
             <ModalFunction
               title={"Technically-Minded"}
