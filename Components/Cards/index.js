@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import { Badge, Button, CardActionArea, CardActions, Stack } from "@mui/material";
 import {useEffect, useRef} from 'react'
 import Link from "next/link";
-import { SiTypescript, SiReact, SiNodedotjs, SiPostgresql, SiTailwindcss, SiExpress, SiMaterialui, SiAuth0 } from "react-icons/si";
+import { SiTypescript, SiJavascript, SiReact, SiNodedotjs, SiPostgresql, SiTailwindcss, SiExpress, SiMaterialui, SiAuth0, SiNextdotjs, SiChakraui, SiJava } from "react-icons/si";
 
 
 export default function Cards() {
@@ -37,7 +37,7 @@ let el = ref.current
 
   return (
     <>
-      <Card className="bg-[#4a4e69] text-white" ref={ref} sx={{ maxWidth: 400, maxHeight: 400 }}>
+      <Card className="bg-[#f2e9e4] text-black" ref={ref} sx={{ maxWidth: 400, maxHeight: 400 }}>
         <CardActionArea>
         <CardMedia component="img" image="/spacecoinfront.png" alt="npm package" />
           <CardContent>
@@ -46,7 +46,7 @@ let el = ref.current
             </Typography>
             <Stack spacing={2} direction='row'>
             <Badge><SiTypescript/></Badge>
-            <Badge><SiReact/></Badge>
+            <Badge><SiNextdotjs/></Badge>
             <Badge><SiNodedotjs/></Badge>
             <Badge><SiPostgresql/></Badge>
             <Badge><SiTailwindcss/></Badge>
@@ -70,7 +70,7 @@ let el = ref.current
         </CardActions>
       </Card>
 
-      <Card ref={ref} sx={{ maxWidth: 400, maxHeight: 400 }}>
+      <Card className="bg-[#f2e9e4] text-black" ref={ref} sx={{ maxWidth: 400, maxHeight: 400 }}>
         <CardActionArea>
           <CardMedia component="img" className="p-10" image="/npm.svg" alt="npm package" />
           <CardContent>
@@ -93,13 +93,23 @@ let el = ref.current
         </CardActions>
       </Card>
 
-      <Card ref={ref} sx={{ maxWidth: 400, maxHeight: 400 }}>
+      <Card className="bg-[#f2e9e4] text-black" ref={ref} sx={{ maxWidth: 400, maxHeight: 400 }}>
         <CardActionArea>
         <CardMedia component="img" image="/Chews.png" alt="npm package" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               CHEWS MEAL PLANNER
             </Typography>
+            <Stack spacing={2} direction='row'>
+            <Badge><SiJavascript/></Badge>
+            <Badge><SiNextdotjs/></Badge>
+            <Badge><SiNodedotjs/></Badge>
+            <Badge><SiPostgresql/></Badge>
+            <Badge><SiTailwindcss/></Badge>
+            <Badge><SiExpress/></Badge>
+            <Badge><SiChakraui/></Badge>
+            <Badge><SiAuth0/></Badge>
+            </Stack>
             <Typography className="text-sm" color="text.secondary">
             I made my first npmjs package which serves to help developers to remove blank spaces between strings.
               This is particularly useful with database submissions. In my first week of publication I had over 300 downloads!
@@ -116,7 +126,7 @@ let el = ref.current
         </CardActions>
       </Card>
 
-      <Card ref={ref} sx={{ maxWidth: 400, maxHeight: 400 }}>
+      <Card className="bg-[#f2e9e4] text-black" ref={ref} sx={{ maxWidth: 400, maxHeight: 400 }}>
         <CardActionArea>
         <CardMedia component="img" className="p-10" image="/npm.svg" alt="npm package" />
           <CardContent>

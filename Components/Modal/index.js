@@ -28,7 +28,7 @@ function ModalFunction({ title, modalTitle, modalContent, imgSrc }) {
       <Button
         onClick={() => setOpen1(true)}
         style={{ textTransform: "none" }}
-        className="text-black text-[4vmax] md:text-[3vmax]"
+        className="text-white text-[4vmax] md:text-[3vmax] hover:bg-[#22223b]"
       >
         {title}
       </Button>

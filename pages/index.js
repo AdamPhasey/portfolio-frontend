@@ -30,12 +30,10 @@ export default function Home() {
         <div id="home" className="flex flex-grow">
           <Hero value={theme} />
         </div>
-        <div id="projects" className="bg-[#ccd5ae] flex flex-col">
-          <Projects />
-        </div>
+       
         <div
           id="about-me"
-          className="flex h-screen flex-col bg-slate-500 items-center mb-12 sm:mb-12 md:mb-0"
+          className="flex h-screen flex-col bg-[#4a4e69] items-center mb-12 sm:mb-12 md:mb-0"
         >
           <AboutMe />
           <div className="text-[5vmax] md:text-[3vmax] flex flex-col items-center">
@@ -62,6 +60,11 @@ export default function Home() {
               onClose={() => setOpen(false)}
             />
           </div>
+        </div>
+
+
+        <div id="projects" className="bg-[#4a4e69] flex flex-col justify-center items-center">
+          <Projects />
         </div>
       </main>
       <Footer />
