@@ -33,7 +33,7 @@ export default function Home() {
        
         <div
           id="about-me"
-          className="flex h-screen flex-col bg-[#4a4e69] items-center mb-12 sm:mb-12 md:mb-0"
+          className="flex h-full flex-col bg-[#4a4e69] py-40 items-center justify-center"
         >
           <AboutMe />
           <div className="text-[5vmax] md:text-[3vmax] flex flex-col items-center">
@@ -48,7 +48,7 @@ export default function Home() {
               onClose={() => setOpen(false)}
             />
             <ModalFunction
-              title={"Fun"}
+              title={"Dedicated"}
               modalTitle={
                 "I am sure this is a hot opinion amongst my friends and family, but..."
               }
@@ -60,6 +60,38 @@ export default function Home() {
               onClose={() => setOpen(false)}
             />
           </div>
+          <ModalFunction
+              title={"Family-Oriented"}
+              modalTitle={"Being intellectually challenged is something I..."}
+              modalContent={
+                "find really important in my life, which is largely why I chose being a software developer"
+              }
+              imgSrc={"/npm.svg"}
+              onClick={() => setOpen(true)}
+              onClose={() => setOpen(false)}
+            />
+            <ModalFunction
+              title={"Dad Jokes"}
+              modalTitle={"Being intellectually challenged is something I..."}
+              modalContent={
+                "find really important in my life, which is largely why I chose being a software developer"
+              }
+              imgSrc={"/npm.svg"}
+              onClick={() => setOpen(true)}
+              onClose={() => setOpen(false)}
+            />
+            <ModalFunction
+              title={"Carpentry"}
+              modalTitle={"Being intellectually challenged is something I..."}
+              modalContent={
+                "find really important in my life, which is largely why I chose being a software developer"
+              }
+              imgSrc={"/npm.svg"}
+              onClick={() => setOpen(true)}
+              onClose={() => setOpen(false)}
+            />
+            
+          
         </div>
 
 

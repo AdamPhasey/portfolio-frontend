@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import Image from "next/image";
 import { LogoDev, Style } from "@mui/icons-material";
-
+import { FaHandPointLeft, FaHandPointRight } from "react-icons/fa";
 const style = {
   position: "absolute",
   top: "50%",
@@ -26,9 +26,10 @@ function ModalFunction({ title, modalTitle, modalContent, imgSrc }) {
   return (
     <>
       <Button
+        // startIcon={<FaHandPointRight style={{fontSize: '2vmax', color: 'lavender'}}/>}
         onClick={() => setOpen1(true)}
         style={{ textTransform: "none" }}
-        className="text-white text-[4vmax] md:text-[3vmax] hover:bg-[#22223b]"
+        className="text-white text-[3vmax] md:text-[2vmax] hover:bg-[#22223b] font-Montserrat-Alternates"
       >
         {title}
       </Button>
