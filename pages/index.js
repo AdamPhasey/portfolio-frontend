@@ -33,7 +33,7 @@ export default function Home() {
        
         <div
           id="about-me"
-          className="flex h-full flex-col bg-[#4a4e69] py-40 items-center justify-center"
+          className="flex h-full flex-col bg-[#4a4e69] pb-32 items-center justify-center"
         >
           <AboutMe />
           <div className="text-[5vmax] md:text-[3vmax] flex flex-col items-center">
