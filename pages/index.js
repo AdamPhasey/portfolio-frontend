@@ -33,13 +33,13 @@ export default function Home() {
        
         <div
           id="about-me"
-          className="flex h-full flex-col bg-[#4a4e69] pb-32 items-center justify-center"
+          className="flex h-screen flex-col bg-[#4a4e69] items-center justify-center"
         >
           <AboutMe />
           <div className="text-[5vmax] md:text-[3vmax] flex flex-col items-center">
             <ModalFunction
               title={"Technically-Minded"}
-              modalTitle={"Being intellectually challenged is something I..."}
+              modalTitle={"Being challenged is something I..."}
               modalContent={
                 "find really important in my life, which is largely why I chose being a software developer"
               }
@@ -62,7 +62,7 @@ export default function Home() {
           </div>
           <ModalFunction
               title={"Family-Oriented"}
-              modalTitle={"Being intellectually challenged is something I..."}
+              modalTitle={"Being challenged is something I..."}
               modalContent={
                 "find really important in my life, which is largely why I chose being a software developer"
               }
@@ -72,7 +72,7 @@ export default function Home() {
             />
             <ModalFunction
               title={"Dad Jokes"}
-              modalTitle={"Being intellectually challenged is something I..."}
+              modalTitle={"Being challenged is something I..."}
               modalContent={
                 "find really important in my life, which is largely why I chose being a software developer"
               }
@@ -82,7 +82,7 @@ export default function Home() {
             />
             <ModalFunction
               title={"Carpentry"}
-              modalTitle={"Being intellectually challenged is something I..."}
+              modalTitle={"Being challenged is something I..."}
               modalContent={
                 "find really important in my life, which is largely why I chose being a software developer"
               }
