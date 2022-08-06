@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import { Badge, Button, CardActionArea, CardActions, Stack } from "@mui/material";
 import {useEffect, useRef} from 'react'
 import Link from "next/link";
-import { SiTypescript, SiJavascript, SiReact, SiNodedotjs, SiPostgresql, SiTailwindcss, SiExpress, SiMaterialui, SiAuth0, SiNextdotjs, SiChakraui, SiJava } from "react-icons/si";
+import { SiTypescript, SiJavascript, SiReact, SiNodedotjs, SiPostgresql, SiTailwindcss, SiExpress, SiMaterialui, SiAuth0, SiNextdotjs, SiChakraui, SiJava, SiNpm } from "react-icons/si";
 
 
 export default function Cards() {
@@ -77,6 +77,11 @@ let el = ref.current
             <Typography gutterBottom variant="h5" component="div">
               INFINITESIMAL
             </Typography>
+            <Stack spacing={2} direction='row'>
+            <Badge><SiNpm/></Badge>
+            <Badge><SiNodedotjs/></Badge>
+
+            </Stack>
             <Typography className="text-sm" color="text.secondary">
               I made my first npmjs package which serves to help developers to remove blank spaces between strings.
               This is particularly useful with database submissions. In my first week of publication I had over 300 downloads!
