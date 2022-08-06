@@ -1,14 +1,23 @@
+
 function AboutMe() {
-return (
-    <div className="flex flex-col justify-center items-center mb-12 sm:mb-12 md:mb-0">
-    <div className="flex flex-col items-center">
-    <h1 className="text-[3vmax] font-Montserrat-Alternates">10 words that describe me</h1>
-    <p>Click each word for more details</p>
-    </div>
+//   const handleOpen = event => {
+//     event.preventDefault()
+//     const { target: { dataset: { modal }}} = event
+//     if (modal) setOpen(modal)
+//   }
 
+//   const handleClose = () => {
+//     setOpen('')
+//   }
 
-    </div>
-)
+  return (
+      <div className="flex flex-col items-center">
+        <h1 className="text-[5vmax] md:text-[4vmax] font-Montserrat-Alternates">
+          5 things about me
+        </h1>
+        <p className="text-white text-[1.5vmax] md:text-[1vmax]">Click each word for more</p>
+      </div>
+  );
 }
 
-export { AboutMe }
+export { AboutMe };

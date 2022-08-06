@@ -40,7 +40,7 @@ function closeDragElement() {
       <div ref={ref} className="hidden z-50 cursor-move md:flex md:justify-center md:h-full md:w-1/2 md:pt-4 lg:flex lg:justify-center lg:h-screen lg:w-1/2 lg:p-20 ">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 542.61 740">
     <defs>
-        <style>.cls-1{"{stroke:gray;stroke-miterlimit:10;stroke-width:5px;}.cls-2{fill:gray;}.cls-3{fill:#d90028;}.cls-4{fill:#ffc10b;}.cls-5{fill:#00cf00;}.cls-6{font-size:18.92px;fill:#f2f2f2;}.cls-6,.cls-7{font-family:Silom;}.cls-7{font-size:27.03px;fill:lime;{"}</style>
+        <style>.cls-1{"{stroke:gray;stroke-miterlimit:10;stroke-width:5px;}.cls-2{fill:gray;}.cls-3{fill:#d90028;}.cls-4{fill:#ffc10b;}.cls-5{fill:#00cf00;}.cls-6{font-size:18.92px;fill:#f2f2f2;}.cls-6,.cls-7{font-size:27.03px;fill:lime;{"}</style>
     </defs>
     <g id="Layer_1" data-name="Layer 1">
         <rect className="cls-1" x="2.5" y="200.11" width="537.39" height="537.39" />
@@ -55,7 +55,7 @@ function closeDragElement() {
     <path id="path">
         <animate attributeName="d" from="m0,0 h0" to="m0,0 h1100" dur="2s" begin="0.5s" repeatCount="0" fill="freeze"/>
     </path>
-    <g id="Text">
+    <g id="Text" className="font-Orbitron">
         <text className="cls-7" transform="translate(34.07 281.3)"><textPath xlinkHref="#path">JavaScript</textPath></text>
         <text className="cls-7" transform="translate(34.12 321.68)"><textPath xlinkHref="#path">TypeScript</textPath></text>
         <text className="cls-7" transform="translate(35.2 402.78)"><textPath xlinkHref="#path">HTML &amp; CSS</textPath></text>

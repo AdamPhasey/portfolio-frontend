@@ -95,14 +95,14 @@ let el = ref.current
 
       <Card ref={ref} sx={{ maxWidth: 400, maxHeight: 400 }}>
         <CardActionArea>
-        <CardMedia component="img" className="p-10" image="/npm.svg" alt="npm package" />
+        <CardMedia component="img" image="/chews.png" alt="npm package" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              BACKPACK
+              CHEWS MEAL PLANNER
             </Typography>
             <Typography className="text-sm" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+            I made my first npmjs package which serves to help developers to remove blank spaces between strings.
+              This is particularly useful with database submissions. In my first week of publication I had over 300 downloads!
             </Typography>
           </CardContent>
         </CardActionArea>
