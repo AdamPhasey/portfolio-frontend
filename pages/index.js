@@ -33,15 +33,14 @@ export default function Home() {
        
         <div
           id="about-me"
-          className="flex h-screen flex-col bg-[#4a4e69] items-center justify-center"
+          className="flex h-screen flex-col bg-[#22223b] items-center justify-evenly"
         >
           <AboutMe />
-          <div className="text-[5vmax] md:text-[3vmax] flex flex-col items-center">
             <ModalFunction
               title={"Technically-Minded"}
-              modalTitle={"Being challenged is something I..."}
+              modalTitle={"I thrive in environments that are challenging!"}
               modalContent={
-                "find really important in my life, which is largely why I chose being a software developer"
+                "I find really important in my life, which is largely why I chose being a software developer"
               }
               imgSrc={"/npm.svg"}
               onClick={() => setOpen(true)}
@@ -59,7 +58,7 @@ export default function Home() {
               onClick={() => setOpen(true)}
               onClose={() => setOpen(false)}
             />
-          </div>
+        
           <ModalFunction
               title={"Family-Oriented"}
               modalTitle={"Being challenged is something I..."}
@@ -90,9 +89,8 @@ export default function Home() {
               onClick={() => setOpen(true)}
               onClose={() => setOpen(false)}
             />
-            
+            </div>
           
-        </div>
 
 
         <div id="projects" className="bg-[#4a4e69] flex flex-col justify-center items-center">

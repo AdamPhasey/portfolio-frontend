@@ -37,7 +37,7 @@ let el = ref.current
 
   return (
     <>
-      <Card className="bg-[#f2e9e4] text-black" ref={ref} sx={{ maxWidth: 400, maxHeight: 400 }}>
+      <Card className="bg-[#f2e9e4] text-black" ref={ref} sx={{ maxWidth: 400, maxHeight: 450 }}>
         <CardActionArea>
         <CardMedia component="img" image="/spacecoinfront.png" alt="npm package" />
           <CardContent>
@@ -70,7 +70,7 @@ let el = ref.current
         </CardActions>
       </Card>
 
-      <Card className="bg-[#f2e9e4] text-black" ref={ref} sx={{ maxWidth: 400, maxHeight: 400 }}>
+      <Card className="bg-[#f2e9e4] text-black" ref={ref} sx={{ maxWidth: 400, maxHeight: 450 }}>
         <CardActionArea>
           <CardMedia component="img" className="p-10" image="/npm.svg" alt="npm package" />
           <CardContent>
@@ -93,7 +93,7 @@ let el = ref.current
         </CardActions>
       </Card>
 
-      <Card className="bg-[#f2e9e4] text-black" ref={ref} sx={{ maxWidth: 400, maxHeight: 400 }}>
+      <Card className="bg-[#f2e9e4] text-black" ref={ref} sx={{ maxWidth: 400, maxHeight: 450 }}>
         <CardActionArea>
         <CardMedia component="img" image="/Chews.png" alt="npm package" />
           <CardContent>
@@ -126,7 +126,7 @@ let el = ref.current
         </CardActions>
       </Card>
 
-      <Card className="bg-[#f2e9e4] text-black" ref={ref} sx={{ maxWidth: 400, maxHeight: 400 }}>
+      <Card className="bg-[#f2e9e4] text-black" ref={ref} sx={{ maxWidth: 400, maxHeight: 450 }}>
         <CardActionArea>
         <CardMedia component="img" className="p-10" image="/npm.svg" alt="npm package" />
           <CardContent>

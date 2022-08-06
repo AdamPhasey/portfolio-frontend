@@ -29,7 +29,7 @@ function ModalFunction({ title, modalTitle, modalContent, imgSrc }) {
         // startIcon={<FaHandPointRight style={{fontSize: '2vmax', color: 'lavender'}}/>}
         onClick={() => setOpen1(true)}
         style={{ textTransform: "none" }}
-        className="text-white text-[3vmax] md:text-[2vmax] hover:bg-[#22223b] font-Montserrat-Alternates"
+        className="text-white text-[3vmax] md:text-[2vmax] hover:bg-[#4a4e69] font-Montserrat-Alternates"
       >
         {title}
       </Button>
@@ -42,14 +42,14 @@ function ModalFunction({ title, modalTitle, modalContent, imgSrc }) {
         <Box sx={style} className="flex flex-col justify-center items-center">
           <Typography
             id="modal-modal-title"
-            className=" md:text-[1vmax]  font-Montserrat-Alternates"
+            className=" md:text-[1vmax] font-Montserrat-Alternates"
           >
             {modalTitle}
           </Typography>
           <br />
           <Image
             src={imgSrc || '/camping.png'}
-            width={200}
+            width={100}
             height={100}
             layout="fixed"
             alt="image of my work"
