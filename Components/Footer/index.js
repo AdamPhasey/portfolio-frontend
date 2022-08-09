@@ -15,7 +15,8 @@ function Footer() {
       className="md:hidden w-screen bg-[#9a8c98]
             fixed bottom-0
             flex justify-center items-center
-            text-white"
+            text-white
+            h-auto"
     >
       <Tabs
         value={newValue}
@@ -25,28 +26,32 @@ function Footer() {
         <Tab
           onClick={() => setNewValue(0)}
           className="text-white font-Montserrat-Alternates"
-          icon={<HomeIcon sx={{fontSize: 30}}/>}
+          icon={<HomeIcon sx={{fontSize: 20}}/>}
+          style={{fontSize: 10}}
           label="Home"
           href="#home"
         />
           <Tab
           onClick={() => setNewValue(1)}
           className="text-white font-Montserrat-Alternates"
-          icon={<Looks5Icon sx={{fontSize: 30}}/>}
+          icon={<Looks5Icon sx={{fontSize: 20}}/>}
+          style={{fontSize: 10}}
           label="Me"
           href="#about-me"
         />
         <Tab
           onClick={() => setNewValue(2)}
           className="text-white font-Montserrat-Alternates"
-          icon={<CodeIcon sx={{fontSize: 30}}/>}
+          icon={<CodeIcon sx={{fontSize: 20}}/>}
+          style={{fontSize: 10}}
           label="Projects"
           href="#projects"
         />
         <Tab
           onClick={() => setNewValue(3)}
           className="text-white font-Montserrat-Alternates"
-          icon={<ConnectWithoutContactIcon sx={{fontSize: 30}}/>}
+          icon={<ConnectWithoutContactIcon sx={{fontSize: 20}}/>}
+          style={{fontSize: 10}}
           label="Contact"
           href="#contact"
         />

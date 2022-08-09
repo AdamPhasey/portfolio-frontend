@@ -7,6 +7,7 @@ import { Footer } from "../Components/Footer";
 import { AboutMe } from "../Components/AboutMe";
 import { ModalFunction } from "../Components/Modal";
 import { Divider } from "@mui/material";
+import ContactUs from "../Components/Contact/ContactUs";
 
 export default function Home() {
   const [theme, setTheme] = useState("light");
@@ -26,7 +27,7 @@ export default function Home() {
         <title>Adams Portfolio</title>
       </Head>
       <Header setTheme={setTheme} theme={theme} />
-      <main className="mb-auto">
+      <main>
         <div id="home" className="flex flex-grow">
           <Hero value={theme} />
         </div>
@@ -94,11 +95,11 @@ export default function Home() {
               onClose={() => setOpen(false)}
             />
             </div>
-          
-
-
         <div id="projects" className="bg-[#4a4e69] flex flex-col justify-center items-center">
           <Projects />
+        </div>
+        <div id="contact" className="bg-[#22223b] pt-12 pb-28 md:pb-10 flex flex-col items-center">
+        <ContactUs />
         </div>
       </main>
       <Footer />
