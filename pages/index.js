@@ -54,10 +54,10 @@ export default function Home() {
             <ModalFunction
               title={"Dedicated"}
               modalTitle={
-                "I am sure this is a hot opinion amongst my friends and family, but..."
+                "placeholder"
               }
               modalContent={
-                "I do try to bring fun activities to group meet ups! I once got a few of my friends camping in a field in Oxford. Can't say they'll go again though!"
+                "placeholder"
               }
 
               onClick={() => setOpen(true)}
@@ -65,20 +65,20 @@ export default function Home() {
             />
         
           <ModalFunction
-              title={"Family-Oriented"}
-              modalTitle={"Being challenged is something I..."}
+              title={"placeholder"}
+              modalTitle={"placeholder"}
               modalContent={
-                "find really important in my life, which is largely why I chose being a software developer"
+                "placeholder"
               }
               imgSrc={"/npm.svg"}
               onClick={() => setOpen(true)}
               onClose={() => setOpen(false)}
             />
             <ModalFunction
-              title={"Dad Jokes"}
-              modalTitle={"Being challenged is something I..."}
+              title={"placeholder"}
+              modalTitle={"placeholder"}
               modalContent={
-                "find really important in my life, which is largely why I chose being a software developer"
+                "placeholder"
               }
               imgSrc={"/npm.svg"}
               onClick={() => setOpen(true)}
@@ -86,9 +86,9 @@ export default function Home() {
             />
             <ModalFunction
               title={"Carpentry"}
-              modalTitle={"Being challenged is something I..."}
+              modalTitle={"placeholder"}
               modalContent={
-                "find really important in my life, which is largely why I chose being a software developer"
+                "placeholder"
               }
               imgSrc={"/npm.svg"}
               onClick={() => setOpen(true)}
