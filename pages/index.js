@@ -42,10 +42,10 @@ export default function Home() {
 
           <AboutMe />
             <ModalFunction
-              title={"Technically-Minded"}
-              modalTitle={"I thrive in environments that are challenging!"}
+              title={"palceholder"}
+              modalTitle={"placeholder"}
               modalContent={
-                "I find really important in my life, which is largely why I chose being a software developer"
+                "placeholder"
               }
               imgSrc={"/npm.svg"}
               onClick={() => setOpen(true)}
@@ -85,7 +85,7 @@ export default function Home() {
               onClose={() => setOpen(false)}
             />
             <ModalFunction
-              title={"Carpentry"}
+              title={"placeholder"}
               modalTitle={"placeholder"}
               modalContent={
                 "placeholder"
