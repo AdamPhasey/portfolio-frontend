@@ -89,105 +89,105 @@ export default function ContactUs() {
     console.log(fullname, email, subject, message);
   };
   return (
-      <form
-        onSubmit={handleSubmit}
-        className="rounded-lg shadow-xl flex flex-col md:w-1/2 px-8 py-8 bg-white dark:bg-blue-500"
+    <form
+      onSubmit={handleSubmit}
+      className="rounded-lg shadow-xl flex flex-col md:w-1/2 px-8 py-8 bg-white dark:bg-blue-500"
+    >
+      <h1 className="text-2xl font-bold dark:text-gray-50">
+        Send me a message!
+      </h1>
+
+      <label
+        htmlFor="fullname"
+        className="text-gray-500 font-light mt-8 dark:text-gray-50"
       >
-        <h1 className="text-2xl font-bold dark:text-gray-50">Send me a message!</h1>
+        Full name<span className="text-red-500 dark:text-gray-50">*</span>
+      </label>
+      <input
+        type="text"
+        value={fullname}
+        onChange={(e) => {
+          setFullname(e.target.value);
+        }}
+        name="fullname"
+        className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+      />
+      {errors?.fullname && (
+        <p className="text-red-500">Fullname cannot be empty.</p>
+      )}
 
-        <label
-          htmlFor="fullname"
-          className="text-gray-500 font-light mt-8 dark:text-gray-50"
-        >
-          Full name<span className="text-red-500 dark:text-gray-50">*</span>
-        </label>
-        <input
-          type="text"
-          value={fullname}
-          onChange={(e) => {
-            setFullname(e.target.value);
-          }}
-          name="fullname"
-          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
-        />
-        {errors?.fullname && (
-          <p className="text-red-500">Fullname cannot be empty.</p>
-        )}
+      <label
+        htmlFor="email"
+        className="text-gray-500 font-light mt-4 dark:text-gray-50"
+      >
+        E-mail<span className="text-red-500">*</span>
+      </label>
+      <input
+        type="email"
+        name="email"
+        value={email}
+        onChange={(e) => {
+          setEmail(e.target.value);
+        }}
+        className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+      />
+      {errors?.email && <p className="text-red-500">Email cannot be empty.</p>}
 
-        <label
-          htmlFor="email"
-          className="text-gray-500 font-light mt-4 dark:text-gray-50"
+      <label
+        htmlFor="subject"
+        className="text-gray-500 font-light mt-4 dark:text-gray-50"
+      >
+        Subject<span className="text-red-500">*</span>
+      </label>
+      <input
+        type="text"
+        name="subject"
+        value={subject}
+        onChange={(e) => {
+          setSubject(e.target.value);
+        }}
+        className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+      />
+      {errors?.subject && (
+        <p className="text-red-500">Subject cannot be empty.</p>
+      )}
+      <label
+        htmlFor="message"
+        className="text-gray-500 font-light mt-4 dark:text-gray-50"
+      >
+        Message<span className="text-red-500">*</span>
+      </label>
+      <textarea
+        name="message"
+        value={message}
+        onChange={(e) => {
+          setMessage(e.target.value);
+        }}
+        className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+      ></textarea>
+      {errors?.message && (
+        <p className="text-red-500">Message body cannot be empty.</p>
+      )}
+      <div className="flex flex-row items-center justify-center">
+        <button
+          type="submit"
+          className="px-10 mt-8 py-2 bg-[#22223b] text-gray-50 font-light rounded-md text-lg flex flex-row items-center"
         >
-          E-mail<span className="text-red-500">*</span>
-        </label>
-        <input
-          type="email"
-          name="email"
-          value={email}
-          onChange={(e) => {
-            setEmail(e.target.value);
-          }}
-          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
-        />
-        {errors?.email && (
-          <p className="text-red-500">Email cannot be empty.</p>
+          {buttonText}
+        </button>
+      </div>
+      <div className="text-left">
+        {showSuccessMessage && (
+          <p className="text-green-500 font-semibold text-sm my-2">
+            Thank you! Your Message has been delivered.
+          </p>
         )}
-
-        <label
-          htmlFor="subject"
-          className="text-gray-500 font-light mt-4 dark:text-gray-50"
-        >
-          Subject<span className="text-red-500">*</span>
-        </label>
-        <input
-          type="text"
-          name="subject"
-          value={subject}
-          onChange={(e) => {
-            setSubject(e.target.value);
-          }}
-          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
-        />
-        {errors?.subject && (
-          <p className="text-red-500">Subject cannot be empty.</p>
+        {showFailureMessage && (
+          <p className="text-red-500">
+            Oops! Something went wrong, please try again.
+          </p>
         )}
-        <label
-          htmlFor="message"
-          className="text-gray-500 font-light mt-4 dark:text-gray-50"
-        >
-          Message<span className="text-red-500">*</span>
-        </label>
-        <textarea
-          name="message"
-          value={message}
-          onChange={(e) => {
-            setMessage(e.target.value);
-          }}
-          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
-        ></textarea>
-        {errors?.message && (
-          <p className="text-red-500">Message body cannot be empty.</p>
-        )}
-        <div className="flex flex-row items-center justify-center">
-          <button
-            type="submit"
-            className="px-10 mt-8 py-2 bg-[#22223b] text-gray-50 font-light rounded-md text-lg flex flex-row items-center"
-          >
-            {buttonText}
-          </button>
-        </div>
-        <div className="text-left">
-          {showSuccessMessage && (
-            <p className="text-green-500 font-semibold text-sm my-2">
-              Thank you! Your Message has been delivered.
-            </p>
-          )}
-          {showFailureMessage && (
-            <p className="text-red-500">
-              Oops! Something went wrong, please try again.
-            </p>
-          )}
-        </div>
-      </form>
+      </div>
+    </form>
   );
 }

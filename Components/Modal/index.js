@@ -20,7 +20,6 @@ const style = {
 };
 
 function ModalFunction({ title, modalTitle, modalContent, imgSrc }) {
-
   const [open1, setOpen1] = useState(false);
 
   return (
@@ -48,7 +47,7 @@ function ModalFunction({ title, modalTitle, modalContent, imgSrc }) {
           </Typography>
           <br />
           <Image
-            src={imgSrc || '/camping.png'}
+            src={imgSrc || "/camping.png"}
             width={100}
             height={100}
             layout="fixed"
