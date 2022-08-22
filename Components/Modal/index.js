@@ -6,6 +6,11 @@ import Modal from "@mui/material/Modal";
 import Image from "next/image";
 import { LogoDev, Style } from "@mui/icons-material";
 import { FaHandPointLeft, FaHandPointRight } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
+import { GrClose } from "react-icons/gr";
+import IconButton from '@mui/material/IconButton';
+
+
 const style = {
   position: "absolute",
   top: "50%",
@@ -19,7 +24,7 @@ const style = {
   p: 4,
 };
 
-function ModalFunction({ title, modalTitle, modalContent, ButtonState, imgSrc }) {
+function ModalFunction({ title, modalTitle, modalContent, width, height, ButtonState, imgSrc }) {
   const [open1, setOpen1] = useState(false);
 
   return (
@@ -37,8 +42,13 @@ function ModalFunction({ title, modalTitle, modalContent, ButtonState, imgSrc })
         onClose={() => setOpen1(false)}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        style={{ overflow: 'scroll' }}
+
       >
         <Box sx={style} className="flex flex-col justify-center items-center">
+        <IconButton aria-label="delete" size="large">
+        <GrClose onClick={() => setOpen1(false)}/>
+        </IconButton>
           <Typography
             id="modal-modal-title"
             className=" md:text-[1vmax] font-Montserrat-Alternates"
@@ -48,8 +58,8 @@ function ModalFunction({ title, modalTitle, modalContent, ButtonState, imgSrc })
           <br />
           <Image
             src={imgSrc || "/camping.png"}
-            width={100}
-            height={100}
+            width={width || 100}
+            height={height || 100}
             layout="fixed"
             alt="image of my work"
           />

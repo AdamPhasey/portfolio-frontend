@@ -32,82 +32,78 @@ export default function Home() {
           <Hero value={theme} />
         </div>
         <div className="flex flex-col items-center">
-        <Divider width='50%' variant='middle' textAlign='center' color='#fff'/>
+          <Divider
+            width="50%"
+            variant="middle"
+            textAlign="center"
+            color="#fff"
+          />
         </div>
 
         <div
           id="about-me"
           className="flex h-screen flex-col bg-[#22223b] items-center justify-evenly"
         >
-
           <AboutMe />
-            <ModalFunction
-              title={"1. I love innovating"}
-              modalTitle={"placeholder"}
-              modalContent={
-                "placeholder"
-              }
-              imgSrc={"/npm.svg"}
-              onClick={() => setOpen(true)}
-              onClose={() => setOpen(false)}
-              ButtonState={true}
-            />
-            <ModalFunction
-              title={"2. "}
-              modalTitle={
-                "placeholder"
-              }
-              modalContent={
-                "placeholder"
-              }
-
-              onClick={() => setOpen(true)}
-              onClose={() => setOpen(false)}
-              ButtonState={true}
-
-            />
-        
           <ModalFunction
-              title={"3. placeholder"}
-              modalTitle={"placeholder"}
-              modalContent={
-                "placeholder"
-              }
-              imgSrc={"/npm.svg"}
-              onClick={() => setOpen(true)}
-              onClose={() => setOpen(false)}
-              ButtonState={true}
+            title={"1. I love innovating"}
+            modalTitle={"Innovation is my passion"}
+            modalContent="I really enjoy getting innovative. Whether it's designing my own cabinets or finding solutions for data to meet a given schema, I find myself thriving. Coming from a business background has given me the experience to come up with solutions under pressure and seeing them through to completion"
+            imgSrc={"/cabinet.jpeg"}
+            width={200}
+            height={400}
+            onClick={() => setOpen(true)}
+            onClose={() => setOpen(false)}
+            ButtonState={true}
+          />
+          <ModalFunction
+            title={"2. "}
+            modalTitle={"placeholder"}
+            modalContent={"placeholder"}
+            onClick={() => setOpen(true)}
+            onClose={() => setOpen(false)}
+            ButtonState={true}
+          />
 
-            />
-            <ModalFunction
-              title={"4. placeholder"}
-              modalTitle={"placeholder"}
-              modalContent={
-                "placeholder"
-              }
-              imgSrc={"/npm.svg"}
-              onClick={() => setOpen(true)}
-              onClose={() => setOpen(false)}
-              ButtonState={true}
-
-            />
-            <ModalFunction
-              title={"5. placeholder"}
-              modalTitle={"placeholder"}
-              modalContent={
-                "placeholder"
-              }
-              imgSrc={"/npm.svg"}
-              onClick={() => setOpen(true)}
-              onClose={() => setOpen(false)}
-              ButtonState={true}
-            />
-            </div>
-        <div id="projects" className="bg-[#4a4e69] flex flex-col justify-center items-center">
+          <ModalFunction
+            title={"3. placeholder"}
+            modalTitle={"placeholder"}
+            modalContent={"placeholder"}
+            imgSrc={"/npm.svg"}
+            onClick={() => setOpen(true)}
+            onClose={() => setOpen(false)}
+            ButtonState={true}
+          />
+          <ModalFunction
+            title={"4. placeholder"}
+            modalTitle={"placeholder"}
+            modalContent={"placeholder"}
+            imgSrc={"/npm.svg"}
+            onClick={() => setOpen(true)}
+            onClose={() => setOpen(false)}
+            ButtonState={true}
+          />
+          <ModalFunction
+            title={"5. placeholder"}
+            modalTitle={"placeholder"}
+            modalContent={"placeholder"}
+            imgSrc={"/npm.svg"}
+            onClick={() => setOpen(true)}
+            onClose={() => setOpen(false)}
+            ButtonState={true}
+          />
+        </div>
+        <div
+          id="projects"
+          className="bg-[#4a4e69] flex flex-col justify-center items-center"
+        >
           <Projects />
         </div>
-        <div id="contact" className="bg-[#22223b] pt-12 pb-28 md:pb-10 flex flex-col items-center">
-        <ContactUs />
+        <div
+          id="contact"
+          className="bg-[#22223b] pt-12 pb-28 md:pb-10 flex flex-col items-center"
+        >
+          <ContactUs />
         </div>
       </main>
       <Footer />
