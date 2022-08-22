@@ -36,8 +36,9 @@ function closeDragElement() {
 
 
   return (
+    <div className="flex flex-col content-center items-center bg-[#4a4e69] dark:bg-[#000]">
     <container className="flex text-center h-full w-full flex-row md:flex-col lg:flex-row content-center items-center bg-[#4a4e69] dark:bg-[#000]">
-      <div ref={ref} className="hidden z-50 cursor-move md:flex md:justify-center md:h-full md:w-1/2 md:pt-4 lg:flex lg:justify-center lg:h-screen lg:w-1/2 lg:p-20 ">
+      <div ref={ref} className="hidden z-50 cursor-move md:flex md:justify-center md:h-full md:w-1/2 md:pt-4 lg:flex lg:justify-center lg:h-screen lg:w-1/2 lg:p-20">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 542.61 740">
     <defs>
         <style>.cls-1{"{stroke:gray;stroke-miterlimit:10;stroke-width:5px;}.cls-2{fill:gray;}.cls-3{fill:#d90028;}.cls-4{fill:#ffc10b;}.cls-5{fill:#00cf00;}.cls-6{font-size:18.92px;fill:#f2f2f2;}.cls-6,.cls-7{font-size:27.03px;fill:lime;{"}</style>
@@ -73,7 +74,6 @@ function closeDragElement() {
     </g>
 </svg>
 </div>
-
       <div className="text-white text-[9vmin] py-40 p-4 font-Montserrat-Alternates md:text-[3vmax] lg:mr-20 lg:w-1/2 md:relative">
         <p className="text-green-400 text-[4vmin] md:text-[2vmax]">
           👋 Hi, I am Adam!
@@ -83,6 +83,7 @@ function closeDragElement() {
         </h1>
       </div>
     </container>
+    </div>
   );
 }
 

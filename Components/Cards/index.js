@@ -9,7 +9,7 @@ import {
   CardActions,
   Stack,
 } from "@mui/material";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import Link from "next/link";
 import {
   SiTypescript,
@@ -28,36 +28,12 @@ import {
 } from "react-icons/si";
 
 export default function Cards() {
-  const ref = useRef(null);
-
-  useEffect(() => {
-    let el = ref.current;
-    console.log(el);
-    let xPos = 0;
-    let yPos = 0;
-    el.addEventListener("mousedown", dragMouseDown);
-    function dragMouseDown(event) {
-      event.preventDefault();
-      document.addEventListener("mouseup", closeDragElement);
-      document.addEventListener("mousemove", elementDrag);
-    }
-    function elementDrag(event) {
-      event.preventDefault();
-      xPos += event.movementX;
-      yPos += event.movementY;
-      el.style.transform = `translate(${xPos}px, ${yPos}px)`;
-    }
-    function closeDragElement() {
-      document.removeEventListener("mouseup", closeDragElement);
-      document.removeEventListener("mousemove", elementDrag);
-    }
-  }, []);
+  
 
   return (
     <>
       <Card
         className="bg-[#f2e9e4] text-black"
-        ref={ref}
         sx={{ maxWidth: 400, maxHeight: 450 }}
       >
         <CardActionArea>
@@ -117,7 +93,6 @@ export default function Cards() {
 
       <Card
         className="bg-[#f2e9e4] text-black"
-        ref={ref}
         sx={{ maxWidth: 400, maxHeight: 450 }}
       >
         <CardActionArea>
@@ -163,7 +138,6 @@ export default function Cards() {
 
       <Card
         className="bg-[#f2e9e4] text-black"
-        ref={ref}
         sx={{ maxWidth: 400, maxHeight: 450 }}
       >
         <CardActionArea>
@@ -218,7 +192,6 @@ export default function Cards() {
 
       <Card
         className="bg-[#f2e9e4] text-black"
-        ref={ref}
         sx={{ maxWidth: 400, maxHeight: 450 }}
       >
         <CardActionArea>

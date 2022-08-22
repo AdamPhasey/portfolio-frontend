@@ -42,7 +42,7 @@ export default function Home() {
 
           <AboutMe />
             <ModalFunction
-              title={"palceholder"}
+              title={"1. I love innovating"}
               modalTitle={"placeholder"}
               modalContent={
                 "placeholder"
@@ -50,9 +50,10 @@ export default function Home() {
               imgSrc={"/npm.svg"}
               onClick={() => setOpen(true)}
               onClose={() => setOpen(false)}
+              ButtonState={true}
             />
             <ModalFunction
-              title={"Dedicated"}
+              title={"2. "}
               modalTitle={
                 "placeholder"
               }
@@ -62,10 +63,12 @@ export default function Home() {
 
               onClick={() => setOpen(true)}
               onClose={() => setOpen(false)}
+              ButtonState={true}
+
             />
         
           <ModalFunction
-              title={"placeholder"}
+              title={"3. placeholder"}
               modalTitle={"placeholder"}
               modalContent={
                 "placeholder"
@@ -73,9 +76,11 @@ export default function Home() {
               imgSrc={"/npm.svg"}
               onClick={() => setOpen(true)}
               onClose={() => setOpen(false)}
+              ButtonState={true}
+
             />
             <ModalFunction
-              title={"placeholder"}
+              title={"4. placeholder"}
               modalTitle={"placeholder"}
               modalContent={
                 "placeholder"
@@ -83,9 +88,11 @@ export default function Home() {
               imgSrc={"/npm.svg"}
               onClick={() => setOpen(true)}
               onClose={() => setOpen(false)}
+              ButtonState={true}
+
             />
             <ModalFunction
-              title={"placeholder"}
+              title={"5. placeholder"}
               modalTitle={"placeholder"}
               modalContent={
                 "placeholder"
@@ -93,6 +100,7 @@ export default function Home() {
               imgSrc={"/npm.svg"}
               onClick={() => setOpen(true)}
               onClose={() => setOpen(false)}
+              ButtonState={true}
             />
             </div>
         <div id="projects" className="bg-[#4a4e69] flex flex-col justify-center items-center">

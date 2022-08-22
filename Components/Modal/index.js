@@ -19,7 +19,7 @@ const style = {
   p: 4,
 };
 
-function ModalFunction({ title, modalTitle, modalContent, imgSrc }) {
+function ModalFunction({ title, modalTitle, modalContent, ButtonState, imgSrc }) {
   const [open1, setOpen1] = useState(false);
 
   return (
