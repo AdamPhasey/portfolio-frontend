@@ -79,32 +79,26 @@ export default function Cards() {
           </CardContent>
         </CardActionArea>
         <CardActions className="text-white">
-          <Button size="small">
-            <Link
+          <Button size="small"
               href={"https://github.com/AdamPhasey/space-coin-front"}
               target="_blank"
               rel="noreferrer"
             >
               Github - Frontend
-            </Link>
           </Button>
-          <Button size="small">
-            <Link
+          <Button size="small"
               href={"https://github.com/AdamPhasey/space-coin-backend"}
               target="_blank"
               rel="noreferrer"
             >
               Github - Backend
-            </Link>
           </Button>
-          <Button size="small">
-            <Link
+          <Button size="small"
               href={"https://spacecoin.vercel.app"}
               target="_blank"
               rel="noreferrer"
             >
               Live
-            </Link>
           </Button>
         </CardActions>
       </Card>
@@ -141,23 +135,19 @@ export default function Cards() {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-            <Link
+          <Button size="small" color="primary"
               href={"https://github.com/AdamPhasey/Infinitesimal"}
               target="_blank"
               rel="noreferrer"
             >
               Github
-            </Link>
           </Button>
-          <Button size="small" color="primary">
-            <Link
+          <Button size="small" color="primary"
               href={"https://www.npmjs.com/package/infinitesimal"}
               target="_blank"
               rel="noreferrer"
             >
               Live
-            </Link>
           </Button>
         </CardActions>
       </Card>
@@ -246,7 +236,11 @@ export default function Cards() {
         sx={{ maxWidth: 400, maxHeight: 450 }}
       >
         <CardActionArea>
-          <CardMedia component="img" image="/Backpack.png" alt="Backpack app screenshot" />
+          <CardMedia
+            component="img"
+            image="/Backpack.png"
+            alt="Backpack app screenshot"
+          />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               BACKPACK
@@ -296,6 +290,8 @@ export default function Cards() {
           >
             Github - Backend
           </Button>
+
+
           <Button
             size="small"
             color="primary"
