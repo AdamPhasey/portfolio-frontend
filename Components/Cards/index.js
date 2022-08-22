@@ -25,11 +25,10 @@ import {
   SiChakraui,
   SiJava,
   SiNpm,
+  SiCss3,
 } from "react-icons/si";
 
 export default function Cards() {
-  
-
   return (
     <>
       <Card
@@ -81,12 +80,14 @@ export default function Cards() {
         </CardActionArea>
         <CardActions className="text-white">
           <Button size="small">
-            <Link href={"https://github.com/AdamPhasey/space-coin-front"}>
+            <Link href={"https://github.com/AdamPhasey/space-coin-front"} target="_blank"
+            rel="noreferrer">
               Github
             </Link>
           </Button>
           <Button size="small">
-            <Link href={"https://spacecoin.vercel.app"}>Live</Link>
+            <Link href={"https://spacecoin.vercel.app"} target="_blank"
+            rel="noreferrer">Live</Link>
           </Button>
         </CardActions>
       </Card>
@@ -124,12 +125,14 @@ export default function Cards() {
         </CardActionArea>
         <CardActions>
           <Button size="small" color="primary">
-            <Link href={"https://github.com/AdamPhasey/Infinitesimal"}>
+            <Link href={"https://github.com/AdamPhasey/Infinitesimal"} target="_blank"
+            rel="noreferrer">
               Github
             </Link>
           </Button>
           <Button size="small" color="primary">
-            <Link href={"https://www.npmjs.com/package/infinitesimal"}>
+            <Link href={"https://www.npmjs.com/package/infinitesimal"} target="_blank"
+            rel="noreferrer">
               Live
             </Link>
           </Button>
@@ -181,10 +184,16 @@ export default function Cards() {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-            Github
+          <Button size="small" color="primary" href={"https://github.com/simonpartridge86/baristacrats-frontend-final-project"} target="_blank"
+            rel="noreferrer">
+            Github - Frontend
           </Button>
-          <Button size="small" color="primary">
+          <Button size="small" color="primary" href={"https://github.com/AdamPhasey/baristacrats-backend-repo/tree/d2b628bdab8b4831c9311f701933afec084060ea"} target="_blank"
+            rel="noreferrer">
+            Github - Backend
+          </Button>
+          <Button size="small" color="primary" href={"https://chews-dev.vercel.app/"} target="_blank"
+            rel="noreferrer" >
             Live
           </Button>
         </CardActions>
@@ -195,16 +204,31 @@ export default function Cards() {
         sx={{ maxWidth: 400, maxHeight: 450 }}
       >
         <CardActionArea>
-          <CardMedia
-            component="img"
-            className="p-10"
-            image="/npm.svg"
-            alt="npm package"
-          />
+          <CardMedia component="img" image="/backpack.png" alt="npm package" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               BACKPACK
             </Typography>
+            <Stack spacing={2} direction="row">
+              <Badge>
+                <SiJavascript />
+              </Badge>
+              <Badge>
+                <SiReact />
+              </Badge>
+              <Badge>
+                <SiNodedotjs />
+              </Badge>
+              <Badge>
+                <SiPostgresql />
+              </Badge>
+              <Badge>
+                <SiCss3 />
+              </Badge>
+              <Badge>
+                <SiExpress />
+              </Badge>
+            </Stack>
             <Typography className="text-sm" color="text.secondary">
               Lizards are a widespread group of squamate reptiles, with over
               6,000 species, ranging across all continents except Antarctica
@@ -212,10 +236,31 @@ export default function Cards() {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-            Github
+          <Button
+            size="small"
+            color="primary"
+            href={"https://github.com/SchoolOfCode/w9_frontend-project-team-js"}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github - Frontend
           </Button>
-          <Button size="small" color="primary">
+          <Button
+            size="small"
+            color="primary"
+            href={"https://github.com/SchoolOfCode/w9_frontend-project-team-js"}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github - Backend
+          </Button>
+          <Button
+            size="small"
+            color="primary"
+            href={"https://backpack-frontend.vercel.app/"}
+            target="_blank"
+            rel="noreferrer"
+          >
             Live
           </Button>
         </CardActions>
