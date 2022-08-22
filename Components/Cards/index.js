@@ -82,7 +82,13 @@ export default function Cards() {
           <Button size="small">
             <Link href={"https://github.com/AdamPhasey/space-coin-front"} target="_blank"
             rel="noreferrer">
-              Github
+              Github - Frontend
+            </Link>
+          </Button>
+          <Button size="small">
+            <Link href={"https://github.com/AdamPhasey/space-coin-backend"} target="_blank"
+            rel="noreferrer">
+              Github - Backend
             </Link>
           </Button>
           <Button size="small">
