@@ -60,7 +60,7 @@ function Footer() {
                   "aria-labelledby": "basic-button",
                 }}
               >
-                <MenuItem onClick={() => {handleClose(); location.href="#home"}}>A bit about me</MenuItem>
+                <MenuItem onClick={() => {handleClose(); location.href="#about-me"}}>A bit about me</MenuItem>
                 <MenuItem
                   onClick={() => {
                     handleClose();
@@ -72,7 +72,7 @@ function Footer() {
                       .focus();
                   }}
                 >
-                  My CV{" "}
+                  My CV
                 </MenuItem>
               </Menu>
             </>
