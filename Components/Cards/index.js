@@ -80,20 +80,31 @@ export default function Cards() {
         </CardActionArea>
         <CardActions className="text-white">
           <Button size="small">
-            <Link href={"https://github.com/AdamPhasey/space-coin-front"} target="_blank"
-            rel="noreferrer">
+            <Link
+              href={"https://github.com/AdamPhasey/space-coin-front"}
+              target="_blank"
+              rel="noreferrer"
+            >
               Github - Frontend
             </Link>
           </Button>
           <Button size="small">
-            <Link href={"https://github.com/AdamPhasey/space-coin-backend"} target="_blank"
-            rel="noreferrer">
+            <Link
+              href={"https://github.com/AdamPhasey/space-coin-backend"}
+              target="_blank"
+              rel="noreferrer"
+            >
               Github - Backend
             </Link>
           </Button>
           <Button size="small">
-            <Link href={"https://spacecoin.vercel.app"} target="_blank"
-            rel="noreferrer">Live</Link>
+            <Link
+              href={"https://spacecoin.vercel.app"}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live
+            </Link>
           </Button>
         </CardActions>
       </Card>
@@ -131,14 +142,20 @@ export default function Cards() {
         </CardActionArea>
         <CardActions>
           <Button size="small" color="primary">
-            <Link href={"https://github.com/AdamPhasey/Infinitesimal"} target="_blank"
-            rel="noreferrer">
+            <Link
+              href={"https://github.com/AdamPhasey/Infinitesimal"}
+              target="_blank"
+              rel="noreferrer"
+            >
               Github
             </Link>
           </Button>
           <Button size="small" color="primary">
-            <Link href={"https://www.npmjs.com/package/infinitesimal"} target="_blank"
-            rel="noreferrer">
+            <Link
+              href={"https://www.npmjs.com/package/infinitesimal"}
+              target="_blank"
+              rel="noreferrer"
+            >
               Live
             </Link>
           </Button>
@@ -190,16 +207,35 @@ export default function Cards() {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary" href={"https://github.com/simonpartridge86/baristacrats-frontend-final-project"} target="_blank"
-            rel="noreferrer">
+          <Button
+            size="small"
+            color="primary"
+            href={
+              "https://github.com/simonpartridge86/baristacrats-frontend-final-project"
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
             Github - Frontend
           </Button>
-          <Button size="small" color="primary" href={"https://github.com/AdamPhasey/baristacrats-backend-repo/tree/d2b628bdab8b4831c9311f701933afec084060ea"} target="_blank"
-            rel="noreferrer">
+          <Button
+            size="small"
+            color="primary"
+            href={
+              "https://github.com/AdamPhasey/baristacrats-backend-repo/tree/d2b628bdab8b4831c9311f701933afec084060ea"
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
             Github - Backend
           </Button>
-          <Button size="small" color="primary" href={"https://chews-dev.vercel.app/"} target="_blank"
-            rel="noreferrer" >
+          <Button
+            size="small"
+            color="primary"
+            href={"https://chews-dev.vercel.app/"}
+            target="_blank"
+            rel="noreferrer"
+          >
             Live
           </Button>
         </CardActions>
@@ -210,7 +246,7 @@ export default function Cards() {
         sx={{ maxWidth: 400, maxHeight: 450 }}
       >
         <CardActionArea>
-          <CardMedia component="img" image="/backpack.png" alt="npm package" />
+          <CardMedia component="img" image="/Backpack.png" alt="Backpack app screenshot" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               BACKPACK
