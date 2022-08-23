@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import { useState } from "react";
 import Box from "@mui/material/Box";
 import { useTheme } from "@mui/material/styles";
 import MobileStepper from "@mui/material/MobileStepper";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import { IconButton } from '@mui/material';
+import { IconButton } from "@mui/material";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import Image from "next/image";
@@ -13,18 +13,17 @@ import Modal from "@mui/material/Modal";
 import { GrClose } from "react-icons/gr";
 
 const style = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    width: 1000,
-    bgcolor: "#fff",
-    border: "2px solid #000",
-    boxShadow: 24,
-    borderRadius: 6,
-    p: 4,
-  };
-
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 1000,
+  bgcolor: "#fff",
+  border: "2px solid #000",
+  boxShadow: 24,
+  borderRadius: 6,
+  p: 4,
+};
 
 export default function MuiCarousel({ images }) {
   const [open1, setOpen1] = useState(false);
@@ -50,15 +49,14 @@ export default function MuiCarousel({ images }) {
           alignItems: "center",
           justifyContent: "center",
           height: 50,
-          pl: 2,
           bgcolor: "background.default",
         }}
       >
         <h1 className="flex flex-row justify-center">
           {images[activeStep].label}
-        </h1>{" "}
+        </h1>
       </Paper>
-      <Box >
+      <Box sx={{ maxWidth: 800, maxHeight: 400, flexGrow: 1 }}>
         <Image
           onClick={() => setOpen1(true)}
           width={800}
@@ -66,41 +64,40 @@ export default function MuiCarousel({ images }) {
           alt={images[activeStep].label}
           src={images[activeStep].imgPath}
         />
-              <Modal
-        open={open1}
-        onClose={() => setOpen1(false)}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-        style={{ overflowY: "auto", overflowX: "hidden" }}
-      >
-        <Box sx={style} className="flex flex-col justify-center items-center">
-          <IconButton
-            aria-label="delete"
-            size="large"
-            className="mt-10 md:mt-0"
-            onClick={() => setOpen1(false)} 
-          >
-            <GrClose/>
-          </IconButton>
-          <Typography
-            id="modal-modal-title"
-            className=" md:text-[1vmax] font-Montserrat-Alternates"
-          >
-            {images[activeStep].label}
-          </Typography>
-          <br />
-          <div className="flex flex-row">
-            <Image
-              className="pl-1"
-              src={images[activeStep].imgPath || "/camping.png"}
-              width={1000}
-              height={600}
-              layout="fixed"
-              alt="image of my work"
-            />
-          </div>
-        </Box>
-      </Modal>
+        <Modal
+          open={open1}
+          onClose={() => setOpen1(false)}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+          style={{ overflowY: "auto", overflowX: "hidden" }}
+        >
+          <Box sx={style} className="flex flex-col justify-center items-center">
+            <IconButton
+              aria-label="delete"
+              size="large"
+              className="mt-10 md:mt-0"
+              onClick={() => setOpen1(false)}
+            >
+              <GrClose />
+            </IconButton>
+            <Typography
+              id="modal-modal-title"
+              className=" md:text-[1vmax] font-Montserrat-Alternates"
+            >
+              {images[activeStep].label}
+            </Typography>
+            <br />
+            <div className="flex flex-row">
+              <Image
+                src={images[activeStep].imgPath || "/camping.png"}
+                width={1000}
+                height={600}
+                layout="fixed"
+                alt="image of my work"
+              />
+            </div>
+          </Box>
+        </Modal>
       </Box>
       <MobileStepper
         variant="text"

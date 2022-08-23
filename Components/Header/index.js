@@ -87,9 +87,6 @@ function Header({ onChange, setTheme, theme }) {
   return (
     <div className="sticky top-0 z-[999] flex flex-row w-full justify-center items-center bg-[#4a4e69] dark:bg-[#000]">
       <div className="flex flex-row w-full">
-        {/* <Image id="logo_layer2" src="/logowithstroke.svg" alt="my name set as a logo" width={500} height={125}   /> */}
-
-        {/* .cls-1{"{fill:pink;stroke:#89CFF0;stroke-miterlimit:10;{"} */}
         <svg
           className="w-3/4 md:w-1/3 p-4"
           id="logo_layer2"

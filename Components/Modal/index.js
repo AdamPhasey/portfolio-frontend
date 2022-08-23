@@ -42,7 +42,6 @@ function ModalFunction({
   return (
     <>
       <Button
-        // startIcon={<FaHandPointRight style={{fontSize: '2vmax', color: 'lavender'}}/>}
         onClick={() => setOpen1(true)}
         variant="contained"
         style={{ textTransform: "none" }}
