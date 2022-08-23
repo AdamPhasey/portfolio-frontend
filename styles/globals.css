@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url("https://use.typekit.net/hij8huq.css");
+
 
 @tailwind base;
 @tailwind components;

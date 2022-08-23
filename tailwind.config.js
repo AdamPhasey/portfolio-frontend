@@ -11,7 +11,8 @@ module.exports = {
       fontFamily: {
         "Chakra-Petch": ['"Chakra Petch"', "sans-serif"],
         "Montserrat-Alternates": ["Montserrat Alternates", "sans-serif"],
-        "Orbitron": ["Orbitron", "sans-serif"]
+        "Orbitron": ["Orbitron", "sans-serif"],
+        "permanent-marker": ["permanent-marker", "sans-serif"],
       },
       // fontSize: {
       //   xs: "0.75rem",
