@@ -9,12 +9,12 @@ export default function Chews() {
   return (
     <>
       <NavbarForSubPages />
-      <div className="flex flex-row justify-center text-[3vmax] md:text-[5vmax] text-white w-full">
+      <div className="flex flex-row justify-center text-[3.5vmax] md:text-[4vmax] text-white w-full">
         <h1 className="font-permanent-marker text-red-600">
           Chews - Recipe Directory App
         </h1>
       </div>
-      <h1 className="flex flex-row justify-center text-white text-4xl mb-10">Our group presentation</h1>
+      <h1 className="flex flex-row justify-center text-white text-[3vmax] md:text-[2vmax] mb-10">Our group presentation</h1>
       <div className="flex flex-row justify-center mb-10">
         <iframe
         className="p-5 md:p-0"
