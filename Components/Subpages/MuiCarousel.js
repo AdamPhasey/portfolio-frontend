@@ -91,7 +91,7 @@ export default function MuiCarousel({ images }) {
             <div className="flex flex-row">
               <Image
                 src={images[activeStep].imgPath || "/camping.png"}
-                width={1000}
+                width={975}
                 height={600}
                 layout="fixed"
                 alt="image of my work"
