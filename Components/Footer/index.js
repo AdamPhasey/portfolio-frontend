@@ -6,12 +6,15 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { useState } from "react";
 import Button from "@mui/material/Button";
+import { IconButton } from "@mui/material";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 
 function Footer() {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
+
+  
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -42,7 +45,7 @@ function Footer() {
           className="text-white font-Montserrat-Alternates"
           icon={
             <>
-              <Button
+              <IconButton
                 id="fade-button"
                 aria-controls={open ? "fade-menu" : undefined}
                 aria-haspopup="true"
@@ -50,7 +53,7 @@ function Footer() {
                 onClick={handleClick}
               >
                 <Looks5Icon className="bg-white" sx={{ fontSize: 20 }} />
-              </Button>
+              </IconButton>
               <Menu
                 id="basic-menu"
                 anchorEl={anchorEl}
@@ -60,7 +63,14 @@ function Footer() {
                   "aria-labelledby": "basic-button",
                 }}
               >
-                <MenuItem onClick={() => {handleClose(); location.href="#about-me"}}>A bit about me</MenuItem>
+                <MenuItem
+                  onClick={() => {
+                    handleClose();
+                    location.href = "#about-me";
+                  }}
+                >
+                  A bit about me
+                </MenuItem>
                 <MenuItem
                   onClick={() => {
                     handleClose();
@@ -102,28 +112,3 @@ function Footer() {
 }
 
 export { Footer };
-
-/*
-<Button
-        id="basic-button"
-        aria-controls={open ? 'basic-menu' : undefined}
-        aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
-        onClick={handleClick}
-      >
-        Dashboard
-      </Button>
-      <Menu
-        id="basic-menu"
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-        MenuListProps={{
-          'aria-labelledby': 'basic-button',
-        }}
-      >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
-      </Menu>
-*/

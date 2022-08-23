@@ -276,14 +276,12 @@ export default function Cards() {
                 <SiExpress />
               </Badge>
             </Stack>
-            <div style={{overflow: 'scroll'}}>
             <Typography className="text-sm" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-              6,000 species, ranging across all continents except Antarctica
-              6,000 species, ranging across all continents except Antarctica
+              I made my first npmjs package which serves to help developers to
+              remove blank spaces between strings. This is particularly useful
+              with database submissions. In my first week of publication I had
+              over 300 downloads!
             </Typography>
-            </div>
           </CardContent>
         </CardActionArea>
         <CardActions>

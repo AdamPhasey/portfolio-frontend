@@ -29,7 +29,6 @@ function ModalFunction({
   modalContent,
   width,
   height,
-  ButtonState,
   imgSrc,
   secondImage,
   thirdImage,
@@ -63,8 +62,9 @@ function ModalFunction({
             aria-label="delete"
             size="large"
             className="mt-10 md:mt-0"
+            onClick={() => setOpen1(false)} 
           >
-            <GrClose onClick={() => setOpen1(false)} />
+            <GrClose/>
           </IconButton>
           <Typography
             id="modal-modal-title"

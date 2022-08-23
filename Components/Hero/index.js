@@ -37,7 +37,7 @@ function closeDragElement() {
 
   return (
     <div className="flex flex-col content-center items-center bg-[#4a4e69] dark:bg-[#000]">
-    <container className="flex text-center h-full w-full flex-row md:flex-col lg:flex-row content-center items-center bg-[#4a4e69] dark:bg-[#000]">
+    <div className="flex text-center h-full w-full flex-row md:flex-col lg:flex-row content-center items-center bg-[#4a4e69] dark:bg-[#000]">
       <div ref={ref} className="hidden z-50 cursor-move md:flex md:justify-center md:h-full md:w-1/2 md:pt-4 lg:flex lg:justify-center lg:h-screen lg:w-1/2 lg:p-20">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 542.61 740">
     <defs>
@@ -82,7 +82,7 @@ function closeDragElement() {
           I am a London based full stack developer. I enjoy making <a className="text-green-400">fun</a> and <a className="text-green-400">interactive</a> things with <a className="text-green-400">code</a>.
         </h1>
       </div>
-    </container>
+    </div>
     </div>
   );
 }
