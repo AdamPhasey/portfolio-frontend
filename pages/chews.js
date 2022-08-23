@@ -17,6 +17,7 @@ export default function Chews() {
       <h1 className="flex flex-row justify-center text-white text-4xl mb-10">Our group presentation</h1>
       <div className="flex flex-row justify-center mb-10">
         <iframe
+        className="p-5 md:p-0"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/aXnJCW1pesY"

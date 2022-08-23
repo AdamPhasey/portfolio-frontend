@@ -40,7 +40,7 @@ export default function MuiCarousel({ images }) {
   };
 
   return (
-    <Box sx={{ maxWidth: 800, flexGrow: 1 }}>
+    <Box className="p-4" sx={{ maxWidth: 800, flexGrow: 1 }}>
       <Paper
         square
         elevation={0}
@@ -56,11 +56,13 @@ export default function MuiCarousel({ images }) {
           {images[activeStep].label}
         </h1>
       </Paper>
-      <Box sx={{ maxWidth: 800, maxHeight: 400, flexGrow: 1 }}>
+      <Box className="max-h-full">
         <Image
+        className=""
           onClick={() => setOpen1(true)}
           width={800}
           height={400}
+          layout="responsive"
           alt={images[activeStep].label}
           src={images[activeStep].imgPath}
         />
@@ -86,7 +88,6 @@ export default function MuiCarousel({ images }) {
             >
               {images[activeStep].label}
             </Typography>
-            <br />
             <div className="flex flex-row">
               <Image
                 src={images[activeStep].imgPath || "/camping.png"}
