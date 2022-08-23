@@ -6,8 +6,8 @@ import anime from "animejs";
 function Hero({ value }) {
 
 const ref = useRef(null);
-//   use effect here if needed
-  useEffect(() => {
+
+useEffect(() => {
 let el = ref.current
 let xPos = 0;
 let yPos = 0;

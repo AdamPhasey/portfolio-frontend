@@ -48,10 +48,17 @@ export default function Home() {
           <ModalFunction
             title={"1. I love innovating"}
             modalTitle={"Innovation is my passion"}
-            modalContent="I really enjoy getting innovative. Whether it's designing my own cabinets or finding solutions for data to meet a given schema, I find myself thriving. Coming from a business background has given me the experience to come up with solutions under pressure and seeing them through to completion"
+            modalContent={`I really enjoy getting innovative. Whether it's designing my own cabinets or finding solutions for data to meet a given schema, I find myself thriving in such environments.
+            Coming from a business background has given me the experience to come up with solutions under pressure and seeing them through to completion`}
             imgSrc={"/cabinet.jpeg"}
+            secondImage={"/csscode.png"}
+            thirdImage={"/innovativecode.png"}
             width={200}
             height={400}
+            width2={200}
+            height2={200}
+            width3={200}
+            height3={200}
             onClick={() => setOpen(true)}
             onClose={() => setOpen(false)}
             ButtonState={true}

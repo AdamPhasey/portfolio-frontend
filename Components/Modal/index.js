@@ -8,8 +8,7 @@ import { LogoDev, Style } from "@mui/icons-material";
 import { FaHandPointLeft, FaHandPointRight } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import { GrClose } from "react-icons/gr";
-import IconButton from '@mui/material/IconButton';
-
+import IconButton from "@mui/material/IconButton";
 
 const style = {
   position: "absolute",
@@ -24,7 +23,21 @@ const style = {
   p: 4,
 };
 
-function ModalFunction({ title, modalTitle, modalContent, width, height, ButtonState, imgSrc }) {
+function ModalFunction({
+  title,
+  modalTitle,
+  modalContent,
+  width,
+  height,
+  ButtonState,
+  imgSrc,
+  secondImage,
+  thirdImage,
+  width2,
+  height2,
+  width3,
+  height3,
+}) {
   const [open1, setOpen1] = useState(false);
 
   return (
@@ -42,13 +55,16 @@ function ModalFunction({ title, modalTitle, modalContent, width, height, ButtonS
         onClose={() => setOpen1(false)}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
-        style={{ overflow: 'scroll' }}
-
+        style={{ overflow: "scroll" }}
       >
         <Box sx={style} className="flex flex-col justify-center items-center">
-        <IconButton aria-label="delete" size="large">
-        <GrClose onClick={() => setOpen1(false)}/>
-        </IconButton>
+          <IconButton
+            aria-label="delete"
+            size="large"
+            className="mt-10 md:mt-0"
+          >
+            <GrClose onClick={() => setOpen1(false)} />
+          </IconButton>
           <Typography
             id="modal-modal-title"
             className=" md:text-[1vmax] font-Montserrat-Alternates"
@@ -56,13 +72,35 @@ function ModalFunction({ title, modalTitle, modalContent, width, height, ButtonS
             {modalTitle}
           </Typography>
           <br />
-          <Image
-            src={imgSrc || "/camping.png"}
-            width={width || 100}
-            height={height || 100}
-            layout="fixed"
-            alt="image of my work"
-          />
+          <div className="flex flex-row">
+            <Image
+              src={imgSrc || "/camping.png"}
+              width={width || 100}
+              height={height || 100}
+              layout="fixed"
+              alt="image of my work"
+            />
+            {secondImage && (
+              <div className="flex flex-col">
+                <Image
+                  src={secondImage || "/camping.png"}
+                  width={width2 || 100}
+                  height={height2 || 100}
+                  layout="fixed"
+                  alt="image of my work"
+                />
+               {thirdImage && 
+                <Image
+                  src={thirdImage || "/camping.png"}
+                  width={width3 || 100}
+                  height={height3 || 100}
+                  layout="fixed"
+                  alt="image of my work"
+                />
+               } 
+              </div>
+            )}
+          </div>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             {modalContent}
           </Typography>
