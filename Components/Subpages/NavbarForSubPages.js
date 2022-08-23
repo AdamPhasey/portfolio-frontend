@@ -9,7 +9,7 @@ export default function NavbarForSubPages() {
   const router = useRouter()
 
   return (
-    <div className="sticky top-0 z-[999] flex flex-row w-full items-center bg-[#4a4e69] dark:bg-[#000]">
+    <div className="sticky top-0 p-5 md:p-10 z-[999] flex flex-row w-full items-center bg-[#4a4e69] dark:bg-[#000]">
       <Button variant="contained" className="bg-[#9a8c98]" onClick={() => router.push("/#projects")}>
         GO BACK
       </Button>
