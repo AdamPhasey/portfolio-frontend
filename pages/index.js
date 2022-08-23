@@ -52,7 +52,7 @@ export default function Home() {
             Coming from a business background has given me the experience to come up with solutions under pressure and seeing them through to completion`}
             imgSrc={"/cabinet.jpeg"}
             secondImage={"/csscode.png"}
-            thirdImage={"/innovativecode.png"}
+            thirdImage={"/svgcode.png"}
             width={200}
             height={400}
             width2={200}
