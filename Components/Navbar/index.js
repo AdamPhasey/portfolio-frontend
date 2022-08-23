@@ -18,7 +18,7 @@ export default function Navbar() {
         href="#home"
       />
       <Tab
-        onClick={() => setNewValue(0)}
+        onClick={() => setNewValue(1)}
         className=" text-white dark:text-white font-Montserrat-Alternates"
         label="My CV"
         href="https://drive.google.com/file/d/1hXqO6ooaTS8FRyfMeusjFzYVpH8YLLuj/view?usp=sharing"
@@ -26,19 +26,19 @@ export default function Navbar() {
         rel="noreferrer"
       />
       <Tab
-        onClick={() => setNewValue(0)}
+        onClick={() => setNewValue(2)}
         className=" text-white dark:text-white font-Montserrat-Alternates"
         label="About Me"
         href="#about-me"
       />
       <Tab
-        onClick={() => setNewValue(1)}
+        onClick={() => setNewValue(3)}
         className=" text-white dark:text-white font-Montserrat-Alternates"
         label="Projects"
         href="#projects"
       />
       <Tab
-        onClick={() => setNewValue(2)}
+        onClick={() => setNewValue(4)}
         className=" text-white dark:text-white font-Montserrat-Alternates mr-5"
         label="Contact"
         href="#contact"
