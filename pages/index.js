@@ -64,7 +64,7 @@ export default function Home() {
             ButtonState={true}
           />
           <ModalFunction
-            title={"2. "}
+            title={"2. Family oriented"}
             modalTitle={"placeholder"}
             modalContent={"placeholder"}
             onClick={() => setOpen(true)}
@@ -73,7 +73,7 @@ export default function Home() {
           />
 
           <ModalFunction
-            title={"3. placeholder"}
+            title={"3. I love all things planes"}
             modalTitle={"placeholder"}
             modalContent={"placeholder"}
             imgSrc={"/npm.svg"}

@@ -45,8 +45,9 @@ function ModalFunction({
       <Button
         // startIcon={<FaHandPointRight style={{fontSize: '2vmax', color: 'lavender'}}/>}
         onClick={() => setOpen1(true)}
+        variant="contained"
         style={{ textTransform: "none" }}
-        className="text-white text-[3vmax] md:text-[2vmax] hover:bg-[#4a4e69] font-Montserrat-Alternates"
+        className="text-white text-[3vmax] md:text-[2vmax] hover:bg-green-400 bg-[#4a4e69] font-Montserrat-Alternates"
       >
         {title}
       </Button>
