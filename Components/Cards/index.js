@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -29,13 +30,17 @@ import {
 } from "react-icons/si";
 
 export default function Cards() {
+
+  const router = useRouter()
+
   return (
     <>
       <Card
         className="bg-[#f2e9e4] text-black"
         sx={{ maxWidth: 400, maxHeight: 450 }}
       >
-        <CardActionArea>
+        <CardActionArea
+        onClick={() => router.push('/spacecoin')}        >
           <CardMedia
             component="img"
             image="/spacecoinfront.png"
@@ -265,10 +270,14 @@ export default function Cards() {
                 <SiExpress />
               </Badge>
             </Stack>
+            <div style={{overflow: 'scroll'}}>
             <Typography className="text-sm" color="text.secondary">
               Lizards are a widespread group of squamate reptiles, with over
               6,000 species, ranging across all continents except Antarctica
+              6,000 species, ranging across all continents except Antarctica
+              6,000 species, ranging across all continents except Antarctica
             </Typography>
+            </div>
           </CardContent>
         </CardActionArea>
         <CardActions>
