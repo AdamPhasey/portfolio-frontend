@@ -1,21 +1,19 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import { useTheme } from '@mui/material/styles';
-import MobileStepper from '@mui/material/MobileStepper';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-import Image from 'next/image';
+import { useState } from 'react';
+import Box from "@mui/material/Box";
+import { useTheme } from "@mui/material/styles";
+import MobileStepper from "@mui/material/MobileStepper";
+import Paper from "@mui/material/Paper";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
+import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
+import Image from "next/image";
+import Modal from "@mui/material/Modal";
 
 
-
-
-
-export default function MuiCarousel({images}) {
+export default function MuiCarousel({ images }) {
   const theme = useTheme();
-  const [activeStep, setActiveStep] = React.useState(0);
+  const [activeStep, setActiveStep] = useState(0);
   const maxSteps = images.length;
 
   const handleNext = () => {
@@ -27,25 +25,30 @@ export default function MuiCarousel({images}) {
   };
 
   return (
-
-    <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+    <Box sx={{ maxWidth: 800, flexGrow: 1 }}>
       <Paper
         square
         elevation={0}
         sx={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
           height: 50,
           pl: 2,
-          bgcolor: 'background.default',
+          bgcolor: "background.default",
         }}
       >
-<h1>
-    {images[activeStep].label}
-</h1>      </Paper>
-      <Box sx={{ height: 255, width: 400 }}>
-      <Image width={400} height={255} alt={images[activeStep].label} src={images[activeStep].imgPath}/>
+        <h1 className="flex flex-row justify-center">
+          {images[activeStep].label}
+        </h1>{" "}
+      </Paper>
+      <Box >
+        <Image
+          width={800}
+          height={400}
+          alt={images[activeStep].label}
+          src={images[activeStep].imgPath}
+        />
       </Box>
       <MobileStepper
         variant="text"
@@ -59,7 +62,7 @@ export default function MuiCarousel({images}) {
             disabled={activeStep === maxSteps - 1}
           >
             Next
-            {theme.direction === 'rtl' ? (
+            {theme.direction === "rtl" ? (
               <KeyboardArrowLeft />
             ) : (
               <KeyboardArrowRight />
@@ -68,7 +71,7 @@ export default function MuiCarousel({images}) {
         }
         backButton={
           <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-            {theme.direction === 'rtl' ? (
+            {theme.direction === "rtl" ? (
               <KeyboardArrowRight />
             ) : (
               <KeyboardArrowLeft />
