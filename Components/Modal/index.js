@@ -55,7 +55,7 @@ function ModalFunction({
         onClose={() => setOpen1(false)}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
-        style={{ overflow: "scroll" }}
+        style={{ overflowY: "auto", overflowX: "hidden" }}
       >
         <Box sx={style} className="flex flex-col justify-center items-center">
           <IconButton
@@ -74,6 +74,7 @@ function ModalFunction({
           <br />
           <div className="flex flex-row">
             <Image
+              className="pl-1"
               src={imgSrc || "/camping.png"}
               width={width || 100}
               height={height || 100}
@@ -83,21 +84,23 @@ function ModalFunction({
             {secondImage && (
               <div className="flex flex-col">
                 <Image
+                  className="p-1 pt-0"
                   src={secondImage || "/camping.png"}
                   width={width2 || 100}
                   height={height2 || 100}
                   layout="fixed"
                   alt="image of my work"
                 />
-               {thirdImage && 
-                <Image
-                  src={thirdImage || "/camping.png"}
-                  width={width3 || 100}
-                  height={height3 || 100}
-                  layout="fixed"
-                  alt="image of my work"
-                />
-               } 
+                {thirdImage && (
+                  <Image
+                    className="p-1 pb-0 pt-0"
+                    src={thirdImage || "/camping.png"}
+                    width={width3 || 100}
+                    height={height3 || 100}
+                    layout="fixed"
+                    alt="image of my work"
+                  />
+                )}
               </div>
             )}
           </div>
