@@ -112,7 +112,9 @@ export default function Cards() {
         className="bg-[#f2e9e4] text-black"
         sx={{ maxWidth: 400, maxHeight: 450 }}
       >
-        <CardActionArea>
+        <CardActionArea
+         onClick={() => router.push('/infinitesimal')} 
+        >
           <CardMedia
             component="img"
             className="p-10"
@@ -161,7 +163,9 @@ export default function Cards() {
         className="bg-[#f2e9e4] text-black"
         sx={{ maxWidth: 400, maxHeight: 450 }}
       >
-        <CardActionArea>
+        <CardActionArea
+         onClick={() => router.push('/chews')} 
+        >
           <CardMedia component="img" image="/Chews.png" alt="npm package" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
@@ -240,7 +244,9 @@ export default function Cards() {
         className="bg-[#f2e9e4] text-black"
         sx={{ maxWidth: 400, maxHeight: 450 }}
       >
-        <CardActionArea>
+        <CardActionArea
+         onClick={() => router.push('/backpack')} 
+        >
           <CardMedia
             component="img"
             image="/Backpack.png"
