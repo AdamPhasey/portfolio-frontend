@@ -76,10 +76,13 @@ export default function Cards() {
                 <SiAuth0 />
               </Badge>
             </Stack>
-            <Typography className="text-sm">
-              I made a full stack application using auth0 and TypeScript. The
+            <Typography className="text-sm mt-3">
+              I made a full-stack application using auth0 and TypeScript. The
               app is designed to give users a view of the health of their
               fictitious spacecoin currency.
+            </Typography>
+            <Typography className="text-blue-600 underline mt-3" gutterBottom variant="subtitle2" component="div">
+              CLICK FOR MORE
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -89,14 +92,14 @@ export default function Cards() {
               target="_blank"
               rel="noreferrer"
             >
-              Github - Frontend
+              Frontend
           </Button>
           <Button size="small"
               href={"https://github.com/AdamPhasey/space-coin-backend"}
               target="_blank"
               rel="noreferrer"
             >
-              Github - Backend
+              Backend
           </Button>
           <Button size="small"
               href={"https://spacecoin.vercel.app"}
@@ -138,6 +141,9 @@ export default function Cards() {
               remove blank spaces between strings. This is particularly useful
               with database submissions. In my first week of publication I had
               over 300 downloads!
+            </Typography>
+            <Typography className="text-blue-600 underline mt-3" gutterBottom variant="subtitle2" component="div">
+              CLICK FOR MORE
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -203,6 +209,9 @@ export default function Cards() {
               with database submissions. In my first week of publication I had
               over 300 downloads!
             </Typography>
+            <Typography className="text-blue-600 underline mt-3" gutterBottom variant="subtitle2" component="div">
+              CLICK FOR MORE
+            </Typography>
           </CardContent>
         </CardActionArea>
         <CardActions>
@@ -215,7 +224,7 @@ export default function Cards() {
             target="_blank"
             rel="noreferrer"
           >
-            Github - Frontend
+           Frontend
           </Button>
           <Button
             size="small"
@@ -226,7 +235,7 @@ export default function Cards() {
             target="_blank"
             rel="noreferrer"
           >
-            Github - Backend
+            Backend
           </Button>
           <Button
             size="small"
@@ -282,6 +291,9 @@ export default function Cards() {
               with database submissions. In my first week of publication I had
               over 300 downloads!
             </Typography>
+            <Typography className="text-blue-600 underline mt-3" gutterBottom variant="subtitle2" component="div">
+              CLICK FOR MORE
+            </Typography>
           </CardContent>
         </CardActionArea>
         <CardActions>
@@ -292,7 +304,7 @@ export default function Cards() {
             target="_blank"
             rel="noreferrer"
           >
-            Github - Frontend
+            Frontend
           </Button>
           <Button
             size="small"
@@ -301,7 +313,7 @@ export default function Cards() {
             target="_blank"
             rel="noreferrer"
           >
-            Github - Backend
+            Backend
           </Button>
 
 
