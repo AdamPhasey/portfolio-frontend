@@ -58,7 +58,7 @@ export default function MuiCarousel({ images }) {
       </Paper>
       <Box className="max-h-full">
         <Image
-        className=""
+          className=""
           onClick={() => setOpen1(true)}
           width={800}
           height={400}

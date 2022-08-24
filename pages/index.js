@@ -64,12 +64,15 @@ export default function Home() {
             ButtonState={true}
           />
           <ModalFunction
-            title={"2. Family oriented"}
-            modalTitle={"placeholder"}
-            modalContent={"placeholder"}
+            title={"2. Family-oriented"}
+            modalTitle={"They inspire me"}
+            modalContent={
+              "Being a father, son, husband and brother has really shaped me to be the person I am today. I feel that being a good role model to my daughter is important to me and as such it has made me determined to excel. Whether it's camping trips or demonstrating my devotion to a craft, I really care about this aspect of my life."
+            }
             onClick={() => setOpen(true)}
             onClose={() => setOpen(false)}
-            ButtonState={true}
+            width={300}
+            height={200}
           />
 
           <ModalFunction
