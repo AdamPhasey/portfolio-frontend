@@ -76,31 +76,28 @@ export default function Home() {
           />
 
           <ModalFunction
-            title={"3. I love all things planes"}
-            modalTitle={"placeholder"}
-            modalContent={"placeholder"}
+            title={"3. I love aviation and cars"}
+            modalTitle={"It has always fascinated me"}
+            modalContent={"Since the age of 5 I have been fascinated by big machines. That passion grew when I joined the Air Cadets and was fortunate enough to go flying many times. I was able to fly with many decorated pilots, including fast-jet pilots and a person who flew a Vulcan. I developed a love for aviation and cars over time and had built my own RC kit car from when I was 14."}
             imgSrc={"/npm.svg"}
             onClick={() => setOpen(true)}
             onClose={() => setOpen(false)}
-            ButtonState={true}
           />
           <ModalFunction
-            title={"4. placeholder"}
-            modalTitle={"placeholder"}
-            modalContent={"placeholder"}
+            title={"4. I am proactive"}
+            modalTitle={"I like to make things happen"}
+            modalContent={"A recurring theme in my life has been my ability to take initiative and implement goals or tasks. I enjoy being proactive and have demonstrated that passion throughout my life, whether it was signing up to the Air Cadets myself, or building a startup from scratch."}
             imgSrc={"/npm.svg"}
             onClick={() => setOpen(true)}
             onClose={() => setOpen(false)}
-            ButtonState={true}
           />
           <ModalFunction
-            title={"5. placeholder"}
-            modalTitle={"placeholder"}
-            modalContent={"placeholder"}
+            title={"5. I can adapt to change"}
+            modalTitle={"Change always happens"}
+            modalContent={"I can adapt to change quite comfortably given my background in business. Being dynamic is something I have had to practice regularly whilst being a business owner. Under high pressure and with short notice or time to respond, I have been able to effectively deliver decisions quickly and pragmatically."}
             imgSrc={"/npm.svg"}
             onClick={() => setOpen(true)}
             onClose={() => setOpen(false)}
-            ButtonState={true}
           />
         </div>
         <div
