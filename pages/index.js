@@ -89,9 +89,11 @@ export default function Home() {
             title={"4. I am proactive"}
             modalTitle={"I like to make things happen"}
             modalContent={"A recurring theme in my life has been my ability to take initiative and implement goals or tasks. I enjoy being proactive and have demonstrated that passion throughout my life, whether it was signing up to the Air Cadets myself, or building a startup from scratch."}
-            imgSrc={"/npm.svg"}
+            imgSrc={"/habveg.png"}
             onClick={() => setOpen(true)}
             onClose={() => setOpen(false)}
+            width={350}
+            height={300}
           />
           <ModalFunction
             title={"5. I can adapt to change"}
