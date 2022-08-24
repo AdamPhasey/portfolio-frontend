@@ -139,8 +139,7 @@ export default function Cards() {
             <Typography className="text-sm mt-3" color="text.secondary">
               I made my first npmjs package which serves to help developers to
               remove blank spaces between strings. This is particularly useful
-              with database submissions. In my first week of publication I had
-              over 300 downloads!
+              with database submissions.
             </Typography>
             <Typography className="text-blue-600 underline mt-3" gutterBottom variant="subtitle2" component="div">
               CLICK FOR MORE
@@ -206,8 +205,7 @@ export default function Cards() {
             <Typography className="text-sm mt-3" color="text.secondary">
               I made my first npmjs package which serves to help developers to
               remove blank spaces between strings. This is particularly useful
-              with database submissions. In my first week of publication I had
-              over 300 downloads!
+              with database submissions.
             </Typography>
             <Typography className="text-blue-600 underline mt-3" gutterBottom variant="subtitle2" component="div">
               CLICK FOR MORE
@@ -288,8 +286,7 @@ export default function Cards() {
             <Typography className="text-sm mt-3" color="text.secondary">
             I made my first npmjs package which serves to help developers to
               remove blank spaces between strings. This is particularly useful
-              with database submissions. In my first week of publication I had
-              over 300 downloads!
+              with database submissions.
             </Typography>
             <Typography className="text-blue-600 underline mt-3" gutterBottom variant="subtitle2" component="div">
               CLICK FOR MORE
