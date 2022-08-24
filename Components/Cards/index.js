@@ -277,7 +277,7 @@ export default function Cards() {
               </Badge>
             </Stack>
             <Typography className="text-sm" color="text.secondary">
-              I made my first npmjs package which serves to help developers to
+            I made my first npmjs package which serves to help developers to
               remove blank spaces between strings. This is particularly useful
               with database submissions. In my first week of publication I had
               over 300 downloads!
