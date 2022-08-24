@@ -136,7 +136,7 @@ export default function Cards() {
                 <SiNodedotjs />
               </Badge>
             </Stack>
-            <Typography className="text-sm" color="text.secondary">
+            <Typography className="text-sm mt-3" color="text.secondary">
               I made my first npmjs package which serves to help developers to
               remove blank spaces between strings. This is particularly useful
               with database submissions. In my first week of publication I had
@@ -203,7 +203,7 @@ export default function Cards() {
                 <SiAuth0 />
               </Badge>
             </Stack>
-            <Typography className="text-sm" color="text.secondary">
+            <Typography className="text-sm mt-3" color="text.secondary">
               I made my first npmjs package which serves to help developers to
               remove blank spaces between strings. This is particularly useful
               with database submissions. In my first week of publication I had
@@ -285,7 +285,7 @@ export default function Cards() {
                 <SiExpress />
               </Badge>
             </Stack>
-            <Typography className="text-sm" color="text.secondary">
+            <Typography className="text-sm mt-3" color="text.secondary">
             I made my first npmjs package which serves to help developers to
               remove blank spaces between strings. This is particularly useful
               with database submissions. In my first week of publication I had
