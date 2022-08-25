@@ -202,10 +202,9 @@ export default function Cards() {
                 <SiAuth0 />
               </Badge>
             </Stack>
-            <Typography className="text-sm mt-3" color="text.secondary">
-              I made my first npmjs package which serves to help developers to
-              remove blank spaces between strings. This is particularly useful
-              with database submissions.
+            <Typography className="text-sm mt-3 text-black" color="text.secondary">
+             Collaborated in an agile team of 6 to create a recipe directory app.
+             I worked on all aspects of the project, from backend data engineering to front end configuration. 
             </Typography>
             <Typography className="text-blue-600 underline mt-3" gutterBottom variant="subtitle2" component="div">
               CLICK FOR MORE
