@@ -181,7 +181,7 @@ export default function Chews() {
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-slate-700 ...">Auth0</td>
+                    <td className="border border-slate-700 ...">AUTH0</td>
                     <td className="border border-slate-700 ...">
                       In order to securely and safely store user data, we
                       implemented Auth0 to allow users to login and save filters
