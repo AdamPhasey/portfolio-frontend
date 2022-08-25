@@ -103,7 +103,7 @@ export default function Chews() {
               imgPath: "/disney-chews.png",
             },
             {
-              label: "Interface",
+              label: "User stories",
               imgPath: "/chews-user-story.png",
             },
             {

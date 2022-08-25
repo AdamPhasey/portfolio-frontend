@@ -305,7 +305,7 @@ export default function Cards() {
           <Button
             size="small"
             color="primary"
-            href={"https://github.com/SchoolOfCode/w9_frontend-project-team-js"}
+            href={"https://github.com/SchoolOfCode/w9_backend-project-team-js"}
             target="_blank"
             rel="noreferrer"
           >

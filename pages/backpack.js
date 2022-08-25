@@ -46,7 +46,7 @@ export default function Backpack() {
           variant="contained"
           size="small"
           color="primary"
-          href={"https://github.com/SchoolOfCode/w9_frontend-project-team-js"}
+          href={"https://github.com/SchoolOfCode/w9_backend-project-team-js"}
           target="_blank"
           rel="noreferrer"
         >
@@ -74,7 +74,7 @@ export default function Backpack() {
           images={[
             {
               label: "Our wireframes",
-              imgPath: "/chews-wireframes.png",
+              imgPath: "/backpack-wireframes.png",
             },
             {
               label: "Manifesto",
@@ -85,8 +85,8 @@ export default function Backpack() {
               imgPath: "/disney-chews.png",
             },
             {
-              label: "Interface",
-              imgPath: "/chews-user-story.png",
+              label: "Trello tickets",
+              imgPath: "/backpack-trello.png",
             },
             {
               label: "Questionnaire Responses",
