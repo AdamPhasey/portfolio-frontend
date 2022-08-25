@@ -14,10 +14,12 @@ export default function Chews() {
           Chews - Recipe Directory App
         </h1>
       </div>
-      <h1 className="flex flex-row justify-center text-white text-[3vmax] md:text-[2vmax] mb-10">Our group presentation</h1>
+      <h1 className="flex flex-row justify-center text-white text-[3vmax] md:text-[2vmax] mb-10">
+        Our group presentation
+      </h1>
       <div className="flex flex-row justify-center mb-10">
         <iframe
-        className="p-5 md:p-0"
+          className="p-5 md:p-0"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/aXnJCW1pesY"
@@ -27,6 +29,9 @@ export default function Chews() {
           allowFullScreen
         ></iframe>
       </div>
+      <h1 className="flex justify-center text-[3vmax] md:text-[2vmax] text-red-400 font-Montserrat-Alternates">
+        A bit about the project
+      </h1>
       <div className="flex flex-row justify-center">
         <MuiCarousel
           images={[
@@ -35,22 +40,90 @@ export default function Chews() {
               imgPath: "/chews-wireframes.png",
             },
             {
-              label: "Bird",
+              label: "Disney ideation",
               imgPath:
                 "https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60",
             },
             {
-              label: "Bali, Indonesia",
+              label: "Interface",
               imgPath:
                 "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250",
             },
-            {
-              label: "Goč, Serbia",
-              imgPath:
-                "https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60",
-            },
           ]}
         />
+      </div>
+      <div className="flex flex-row justify-center">
+        <div className="md:w-1/2 p-4 md:p-0 flex flex-col items-center justify-center text-white text-[2vmax] md:text-[1vmax]">
+          <h1 className="flex justify-center text-[3vmax] md:text-[2vmax] text-red-400 font-Montserrat-Alternates">
+            How we set up
+          </h1>
+
+          <p className="flex justify-center">
+            During my time at the School of Code, I was grouped with 5 other
+            students to create a final project. Our brief was simple: create an
+            app that solves a problem. We had in total 4 weeks to create our
+            full-stack application utilising everything we had learnt.
+          </p>
+          <br />
+          <p>
+            Before we decided on what to build or how to build our app, we came
+            together as a team and agreed on some main principles and values
+            that would ensure psychological safety and a clear guide on how to
+            act as a team. This was written up as our Manifesto. Our Manifesto
+            gave us something to lean on when needed. This allowed us to be
+            Agile.
+          </p>
+          <br />
+          <p>
+            We began the process of deciding what we would build by utilising
+            the Disney ideation process. Once we had voted on an idea we all
+            agreed on, we began to research our idea using tools such as User
+            Journeys, User Personas and questionnaires that we sent out to get
+            feedback on the strengths and weaknesses of our idea.
+          </p>
+          <br />
+          <p>
+            Initially, our idea proved to have areas in need of clarification
+            and improvement. Practicing Agile, our group decided to accept the
+            feedback and modify our idea to better serve the problem we were
+            solving. We finally had a robust version of our initial idea: a meal
+            directory that solves decision fatigue by offering a user a
+            selection of recipes either at random or by optional filters.
+          </p>
+          <br />
+          <p>
+            From the idea phase to our final presentation of our fully built
+            app, we continued to use our Manifesto to our advantage. We
+            regrouped for stand-ups and retros daily and addressed any concerns
+            that came our way.
+          </p>
+          <h1 className="flex justify-center text-[3vmax] md:text-[2vmax] text-red-400 font-Montserrat-Alternates">
+            The tech we used and why
+          </h1>
+          <p className="text-green-400">FRONTEND</p>
+          <table className="w-full border-separate border-spacing-2 border border-slate-500 ...">
+            <thead>
+              <tr>
+                <th className="border border-slate-600 text-blue-400">TECHNOLOGY</th>
+                <th className="border border-slate-600 text-blue-400">REASONING</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-slate-700 ...">NEXT.JS</td>
+                <td className="border border-slate-700 ...">We used Next.js to reduce latency and increase performance. Next.js allows server-side rendering which allowed us to store data ready for our components before tha app was rendered.</td>
+              </tr>
+              <tr>
+                <td className="border border-slate-700 ...">TailwindCSS</td>
+                <td className="border border-slate-700 ...">TailwindCSS has quickly become a popular choice amongst developers. We wanted to use a technology that allows us to reduce repetitive CSS declarations that can quickly become time-consuming. TailwindCSS took much of that difficulty away by allowing us to declare </td>
+              </tr>
+              <tr>
+                <td className="border border-slate-700 ...">Michigan</td>
+                <td className="border border-slate-700 ...">Detroit</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </>
   );
