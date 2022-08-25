@@ -218,44 +218,35 @@ export default function Chews() {
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-slate-700 ...">Express.js</td>
+                    <td className="border border-slate-700 ...">EXPRESS.JS</td>
                     <td className="border border-slate-700 ...">
-                      Express.js is a framework that is typically used
-                      with Node.js. As it is open-source and supports many other
+                      Express.js is a framework that is typically used with
+                      Node.js. As it is open-source and supports many other
                       libraries that we needed, it made sense to implement this.
+                      Furthermore, we had experience with Express.js in
+                      connecting to databases.
                     </td>
                   </tr>
                   <tr>
+                    <td className="border border-slate-700 ...">POSTGRESQL</td>
                     <td className="border border-slate-700 ...">
-                      CHAKRA UI LIBRARY
-                    </td>
-                    <td className="border border-slate-700 ...">
-                      Using a component library to implement our wire-frames
-                      gave our app a professional look. Working in a team of 6
-                      meant there was a lot of diversity in design thought, so
-                      relying on a library like Chakra meant we all agreed with
-                      the results of a professional library.
+                      For our use case, using a relational database made sense
+                      as we were considering having different tables that would
+                      require our data to be structured for our frontend schema
+                      we made. PostgreSQL allowed us to implement our schema and
+                      normalise our data by being capable, free and open-source.
                     </td>
                   </tr>
                   <tr>
+                    <td className="border border-slate-700 ...">NODE-FETCH</td>
                     <td className="border border-slate-700 ...">
-                      CHAKRA UI LIBRARY
-                    </td>
-                    <td className="border border-slate-700 ...">
-                      Using a component library to implement our wire-frames
-                      gave our app a professional look. Working in a team of 6
-                      meant there was a lot of diversity in design thought, so
-                      relying on a library like Chakra meant we all agreed with
-                      the results of a professional library.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-slate-700 ...">Auth0</td>
-                    <td className="border border-slate-700 ...">
-                      In order to securely and safely store user data, we
-                      implemented Auth0 to allow users to login and save filters
-                      or recipes to their account. Auth0 being a reputable
-                      choice gave us confidence in using their solution.
+                      We chose to use node-fetch as it allowed us to resolve
+                      several promises at once when necessary. As we were
+                      calling a third-party API, our fetch requests became more
+                      complex. The node-fetch module was something already
+                      introduced into our version of Node.js so we did not have
+                      to rely on other unfamiliar calling solutions. This saved
+                      us much important time.
                     </td>
                   </tr>
                 </tbody>
