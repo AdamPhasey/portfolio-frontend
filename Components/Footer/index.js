@@ -9,12 +9,12 @@ import Button from "@mui/material/Button";
 import { IconButton } from "@mui/material";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import Link from "next/link";
 
 function Footer() {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
 
-  
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -33,6 +33,7 @@ function Footer() {
     >
       <Tabs value={newValue} aria-label="nav tabs" className="flex">
         <Tab
+          value={0}
           onClick={() => setNewValue(0)}
           className="text-white font-Montserrat-Alternates"
           icon={<HomeIcon sx={{ fontSize: 20 }} />}
@@ -40,11 +41,50 @@ function Footer() {
           label="Home"
           href="#home"
         />
+
         <Tab
+                          value={1}
+
           onClick={() => setNewValue(1)}
           className="text-white font-Montserrat-Alternates"
+          icon={<Looks5Icon sx={{ fontSize: 20 }} />}
+          style={{ fontSize: 10 }}
+          label="About"
+          href="#about-me"
+        />
+
+        <Tab
+                  value={2}
+
+          onClick={() => setNewValue(2)}
+          className="text-white font-Montserrat-Alternates"
+          icon={<CodeIcon sx={{ fontSize: 20 }} />}
+          style={{ fontSize: 10 }}
+          label="Projects"
+          href="#projects"
+        />
+        <Tab
+                  value={3}
+
+          onClick={() => setNewValue(3)}
+          className="text-white font-Montserrat-Alternates"
+          icon={<ConnectWithoutContactIcon sx={{ fontSize: 20 }} />}
+          style={{ fontSize: 10 }}
+          label="Contact"
+          href="#contact"
+        />
+      </Tabs>
+    </footer>
+  );
+}
+
+export { Footer };
+
+/*
+ <Tab
+          className="text-white font-Montserrat-Alternates"
           icon={
-            <>
+            <div>
               <IconButton
                 id="fade-button"
                 aria-controls={open ? "fade-menu" : undefined}
@@ -63,52 +103,33 @@ function Footer() {
                   "aria-labelledby": "basic-button",
                 }}
               >
+              <Link href="#about-me">
                 <MenuItem
                   onClick={() => {
                     handleClose();
-                    location.href = "#about-me";
+                    setNewValue(1)
                   }}
                 >
                   A bit about me
                 </MenuItem>
-                <MenuItem
-                  onClick={() => {
-                    handleClose();
-                    window
-                      .open(
-                        "https://drive.google.com/file/d/1hXqO6ooaTS8FRyfMeusjFzYVpH8YLLuj/view?usp=sharing",
-                        "_blank"
-                      )
-                      .focus();
-                  }}
+              </Link>
+                <a
+                  href="https://drive.google.com/file/d/1hXqO6ooaTS8FRyfMeusjFzYVpH8YLLuj/view?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer noopener"
                 >
-                  My CV
-                </MenuItem>
+                  <MenuItem
+                    onClick={() => {
+                      handleClose();
+                    }}
+                  >
+                    My CV
+                  </MenuItem>
+                </a>
               </Menu>
-            </>
+            </div>
           }
           style={{ fontSize: 10 }}
           label="Me"
         />
-        <Tab
-          onClick={() => setNewValue(2)}
-          className="text-white font-Montserrat-Alternates"
-          icon={<CodeIcon sx={{ fontSize: 20 }} />}
-          style={{ fontSize: 10 }}
-          label="Projects"
-          href="#projects"
-        />
-        <Tab
-          onClick={() => setNewValue(3)}
-          className="text-white font-Montserrat-Alternates"
-          icon={<ConnectWithoutContactIcon sx={{ fontSize: 20 }} />}
-          style={{ fontSize: 10 }}
-          label="Contact"
-          href="#contact"
-        />
-      </Tabs>
-    </footer>
-  );
-}
-
-export { Footer };
+*/

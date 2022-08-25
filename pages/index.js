@@ -8,6 +8,7 @@ import { AboutMe } from "../Components/AboutMe";
 import { ModalFunction } from "../Components/Modal";
 import { Divider } from "@mui/material";
 import ContactUs from "../Components/Contact/ContactUs";
+import AccountMenu from "../Components/Footer/footer2";
 
 export default function Home() {
   const [theme, setTheme] = useState("light");
@@ -120,6 +121,7 @@ export default function Home() {
         </div>
       </main>
       <Footer />
+      {/* <AccountMenu /> */}
     </>
   );
 }

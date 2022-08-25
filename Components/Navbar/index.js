@@ -9,12 +9,14 @@ export default function Navbar() {
     <div className="hidden md:flex">
       <Tabs value={newValue} aria-label="nav tabs example">
         <Tab
+          value={0}
           onClick={() => setNewValue(0)}
           className=" text-white dark:text-white font-Montserrat-Alternates"
           label="Home"
           href="#home"
         />
         <Tab
+          value={1}
           onClick={() => setNewValue(1)}
           className=" text-white dark:text-white font-Montserrat-Alternates"
           label="My CV"
@@ -23,18 +25,21 @@ export default function Navbar() {
           rel="noreferrer"
         />
         <Tab
+          value={2}
           onClick={() => setNewValue(2)}
           className=" text-white dark:text-white font-Montserrat-Alternates"
           label="About Me"
           href="#about-me"
         />
         <Tab
+          value={3}
           onClick={() => setNewValue(3)}
           className=" text-white dark:text-white font-Montserrat-Alternates"
           label="Projects"
           href="#projects"
         />
         <Tab
+          value={4}
           onClick={() => setNewValue(4)}
           className=" text-white dark:text-white font-Montserrat-Alternates mr-5"
           label="Contact"
