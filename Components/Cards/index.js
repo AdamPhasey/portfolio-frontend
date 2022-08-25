@@ -76,7 +76,7 @@ export default function Cards() {
                 <SiAuth0 />
               </Badge>
             </Stack>
-            <Typography className="text-sm mt-3">
+            <Typography className="text-sm mt-3 text-black">
               I made a full-stack application using auth0 and TypeScript. The
               app is designed to give users a view of the health of their
               fictitious spacecoin currency.
@@ -136,7 +136,7 @@ export default function Cards() {
                 <SiNodedotjs />
               </Badge>
             </Stack>
-            <Typography className="text-sm mt-3" color="text.secondary">
+            <Typography className="text-sm mt-3 text-black" color="text.secondary">
               I made my first npmjs package which serves to help developers to
               remove blank spaces between strings. This is particularly useful
               with database submissions.
@@ -282,10 +282,9 @@ export default function Cards() {
                 <SiExpress />
               </Badge>
             </Stack>
-            <Typography className="text-sm mt-3" color="text.secondary">
-            I made my first npmjs package which serves to help developers to
-              remove blank spaces between strings. This is particularly useful
-              with database submissions.
+            <Typography className="text-sm mt-3 text-black" color="text.secondary">
+            Worked in an agile team of 4 to create an MVP in 1 week.
+            We designed our MVP to help students track skills and set goals for their learning journey.
             </Typography>
             <Typography className="text-blue-600 underline mt-3" gutterBottom variant="subtitle2" component="div">
               CLICK FOR MORE
