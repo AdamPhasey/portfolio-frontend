@@ -27,6 +27,7 @@ import {
   SiJava,
   SiNpm,
   SiCss3,
+  SiSvg,
 } from "react-icons/si";
 
 export default function Cards() {
@@ -352,6 +353,9 @@ export default function Cards() {
               </Badge>
               <Badge>
                 <SiMaterialui />
+              </Badge>
+              <Badge>
+                <SiSvg />
               </Badge>
             </Stack>
             <Typography className="text-sm mt-3 text-black" color="text.secondary">
