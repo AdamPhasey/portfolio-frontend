@@ -132,7 +132,7 @@ function Hero({ value }) {
         <div className="text-white text-[9vmin] py-40 p-4 font-Montserrat-Alternates md:text-[3vmax] lg:mr-20 lg:w-1/2 md:relative">
           <div className="text-white text-xl mb-10 md:hidden">
           <Button
-          className="bg-red-400"
+          className="bg-blue-400"
           variant="contained"
           >
             <a
