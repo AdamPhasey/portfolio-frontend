@@ -323,6 +323,81 @@ export default function Cards() {
           </Button>
         </CardActions>
       </Card>
+
+
+      <Card
+        className="bg-[#f2e9e4] text-black"
+        sx={{ maxWidth: 400, maxHeight: 450 }}
+      >
+        <CardActionArea
+         onClick={() => router.push('/portfolio')} 
+        >
+          <CardMedia component="img" image="/portfolio2.png" alt="portfolio card" />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              PORTFOLIO
+            </Typography>
+            <Stack spacing={2} direction="row">
+              <Badge>
+                <SiJavascript />
+              </Badge>
+              <Badge>
+                <SiReact />
+              </Badge>
+              <Badge>
+                <SiNextdotjs />
+              </Badge>
+              <Badge>
+                <SiTailwindcss />
+              </Badge>
+              <Badge>
+                <SiMaterialui />
+              </Badge>
+            </Stack>
+            <Typography className="text-sm mt-3 text-black" color="text.secondary">
+             Built my portfolio from scratch using MUI component library, my personal knowledge of SVG manipulation and Next.js to allow for reduced latency when routing.
+            </Typography>
+            <Typography className="text-blue-600 underline mt-3" gutterBottom variant="subtitle2" component="div">
+              CLICK FOR MORE
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button
+            size="small"
+            color="primary"
+            href={
+              "https://github.com/simonpartridge86/baristacrats-frontend-final-project"
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
+           Frontend
+          </Button>
+          <Button
+            size="small"
+            color="primary"
+            href={
+              "https://github.com/AdamPhasey/baristacrats-backend-repo/tree/d2b628bdab8b4831c9311f701933afec084060ea"
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
+            Backend
+          </Button>
+          <Button
+            size="small"
+            color="primary"
+            href={"https://chews-dev.vercel.app/"}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Live
+          </Button>
+        </CardActions>
+      </Card>
+
+      
     </>
   );
 }
