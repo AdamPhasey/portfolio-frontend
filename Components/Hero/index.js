@@ -2,8 +2,14 @@ import Image from "next/image";
 import { Container } from "postcss";
 import { useEffect, useRef } from "react";
 import { Button } from "@mui/material";
+import { useState } from 'react';
+
+
 
 function Hero({ value }) {
+  
+  const toggle = { showGoal: false, showSkills: true };
+
   const ref = useRef(null);
 
   useEffect(() => {
@@ -31,6 +37,17 @@ function Hero({ value }) {
     }
   }, []);
 
+  const [show, setShow] = useState(toggle);
+  function toggleClick() {
+    const copy = {
+      ...show,
+      showGoal: !show.showGoal,
+      showSkills: !show.showSkills,
+    };
+    setShow(copy);
+  }
+  
+
   return (
     <div className="flex flex-col content-center items-center bg-[#4a4e69] dark:bg-[#000]">
       <div className="flex text-center h-full w-full flex-row md:flex-col lg:flex-row content-center items-center bg-[#4a4e69] dark:bg-[#000]">
@@ -40,12 +57,7 @@ function Hero({ value }) {
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 542.61 740">
             <defs>
-              <style>
-                .cls-1
-                {
-                  "{stroke:gray;stroke-miterlimit:10;stroke-width:5px;}.cls-2{fill:gray;}.cls-3{fill:#d90028;}.cls-4{fill:#ffc10b;}.cls-5{fill:#00cf00;}.cls-6{font-size:18.92px;fill:#f2f2f2;}.cls-6,.cls-7{font-size:27.03px;fill:lime;{"
-                }
-              </style>
+            <style>.cls-1{"{stroke:gray;stroke-miterlimit:10;stroke-width:5px;}.cls-2{fill:gray;}.cls-3{fill:#d90028;}.cls-4{fill:#ffc10b;}.cls-5{fill:#00cf00;}.cls-6{font-size:18.92px;fill:#f2f2f2;}.cls-6,.cls-7,.cls-9{font-family:Silom;}.cls-7{font-size:27.03px;}.cls-7,.cls-8{fill:lime;}.cls-9{font-size:18.24px;{"}</style>
             </defs>
             <g id="Layer_1" data-name="Layer 1">
               <rect
@@ -71,6 +83,44 @@ function Hero({ value }) {
               </text>
             </g>
 
+            <g id="Text" className="font-Orbitron">
+            <g id="Btn" onClick={toggleClick} className="cursor-pointer">
+        <rect className="cls-8" x="193.26" y="243" width="155" height="34" />
+        <text className="cls-9" transform="translate(218.43 266.96) scale(1.07 1)">TOGGLE ME</text>
+    </g>
+              {show.showSkills ? (
+<>
+
+<path id="path">
+              <animate
+                attributeName="d"
+                from="m0,0 h0"
+                to="m0,0 h1100"
+                dur="2s"
+                begin="0.5s"
+                repeatCount="0"
+                fill="freeze"
+              />
+            </path>
+<g id="Text">
+        <text className="cls-7" transform="translate(34.07 321.3)"><textPath xlinkHref="#path">JavaScript</textPath></text>
+        <text className="cls-7" transform="translate(34.12 361.68)"><textPath xlinkHref="#path">TypeScript</textPath></text>
+        <text className="cls-7" transform="translate(35.2 442.78)"><textPath xlinkHref="#path">HTML &amp; CSS</textPath></text>
+        <text className="cls-7" transform="translate(35.2 402.23)"><textPath xlinkHref="#path">Node.js</textPath></text>
+        <text className="cls-7" transform="translate(36.56 480.62)"><textPath xlinkHref="#path">React.js & Next.js</textPath></text>
+        <text className="cls-7" transform="translate(35.74 518.47)"><textPath xlinkHref="#path">Express.js</textPath></text>
+        <text className="cls-7" transform="translate(36.82 555.77)"><textPath xlinkHref="#path">Jest & Cypress</textPath></text>
+        <text className="cls-7" transform="translate(36.82 590.91)"><textPath xlinkHref="#path">AWS</textPath></text>
+        <text className="cls-7" transform="translate(36.82 624.23)"><textPath xlinkHref="#path">CI/CD</textPath></text>
+        <text className="cls-7" transform="translate(37.9 662.08)"><textPath xlinkHref="#path"><textPath xlinkHref="#path">&gt;_</textPath></textPath></text>
+        <text className="cls-7" transform="translate(37.9 662.08)"><textPath xlinkHref="#path">PostgreSQL/MySQL</textPath></text>
+        <text className="cls-7" transform="translate(35.2 705.54)">&gt;_</text>
+    </g>
+              </>
+
+            ) : (
+              <>
+
             <path id="path">
               <animate
                 attributeName="d"
@@ -82,40 +132,28 @@ function Hero({ value }) {
                 fill="freeze"
               />
             </path>
-            <g id="Text" className="font-Orbitron">
-              <text className="cls-7" transform="translate(34.07 281.3)">
-                <textPath xlinkHref="#path">JavaScript</textPath>
-              </text>
-              <text className="cls-7" transform="translate(34.12 321.68)">
-                <textPath xlinkHref="#path">TypeScript</textPath>
-              </text>
-              <text className="cls-7" transform="translate(35.2 402.78)">
-                <textPath xlinkHref="#path">HTML &amp; CSS</textPath>
-              </text>
-              <text className="cls-7" transform="translate(35.2 362.23)">
-                <textPath xlinkHref="#path">Node.js</textPath>
-              </text>
-              <text className="cls-7" transform="translate(36.56 440.62)">
-                <textPath xlinkHref="#path">React.js & Next.js</textPath>
-              </text>
-              <text className="cls-7" transform="translate(35.74 478.47)">
-                <textPath xlinkHref="#path">Express.js</textPath>
-              </text>
-              <text className="cls-7" transform="translate(36.82 515.77)">
-                <textPath xlinkHref="#path">Jest & Cypress</textPath>
-              </text>
-              <text className="cls-7" transform="translate(36.82 550.91)">
-                <textPath xlinkHref="#path">AWS</textPath>
-              </text>
-              <text className="cls-7" transform="translate(36.82 584.23)">
-                <textPath xlinkHref="#path">CI/CD</textPath>
-              </text>
-              <text className="cls-7" transform="translate(37.9 622.08)">
-                <textPath xlinkHref="#path">PostgreSQL/MySQL</textPath>
-              </text>
-              <text className="cls-7" transform="translate(35.2 705.54)">
-                <textPath xlinkHref="#path">&gt;_</textPath>
-              </text>
+        <g id="Text">
+        <text className="cls-7" transform="translate(34.07 321.3)"><textPath xlinkHref="#path">Agile</textPath></text>
+        <text className="cls-7" transform="translate(34.12 361.68)">Scrum</text>
+        <text className="cls-7" transform="translate(35.2 442.78)">Analytical</text>
+        <text className="cls-7" transform="translate(35.2 402.23)">Team Player</text>
+        <text className="cls-7" transform="translate(36.56 480.62)">Innovative</text>
+        <text className="cls-7" transform="translate(35.74 518.47)">Disciplined</text>
+        <text className="cls-7" transform="translate(36.82 555.77)">Determined</text>
+        <text className="cls-7" transform="translate(36.82 590.91)">Friendly</text>
+        <text className="cls-7" transform="translate(36.82 624.23)">Precise</text>
+        <text className="cls-7" transform="translate(37.9 662.08)">Problem Solving</text>
+        <text className="cls-7" transform="translate(35.2 705.54)">&gt;_</text>
+    </g>
+</>
+
+              )}
+
+
+
+
+
+             
             </g>
             <g id="Layer_3" data-name="Layer 3">
               <image
