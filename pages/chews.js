@@ -2,13 +2,10 @@ import { useRouter } from "next/router";
 import Button from "@mui/material/Button";
 import NavbarForSubPages from "../Components/Subpages/NavbarForSubPages";
 import MuiCarousel from "../Components/Subpages/MuiCarousel";
-import { useState } from 'react'
+import { useState } from "react";
 
 export default function Chews() {
-
-
   const router = useRouter();
-
 
   const toggle = { showGoal: false, showSkills: true };
   const [show, setShow] = useState(toggle);
@@ -116,11 +113,15 @@ export default function Chews() {
             The tech we used and why
           </h1>
 
-
-
-          <Button variant="outlined" onClick={toggleClick} className="text-[1.5vmax] md:text-[1vmax] text-white bg-blue-400">
+          <br />
+          <Button
+            variant="outlined"
+            onClick={toggleClick}
+            className="text-[1.5vmax] md:text-[0.75vmax] text-white bg-blue-400"
+          >
             TOGGLE BETWEEN FRONTEND AND BACKEND
           </Button>
+          <br />
           {show.showSkills ? (
             <>
               <p className="text-green-400">FRONTEND</p>
@@ -207,22 +208,21 @@ export default function Chews() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="border border-slate-700">NEXT.JS</td>
+                    <td className="border border-slate-700">NODE.JS</td>
                     <td className="border border-slate-700 ...">
-                      We used Next.js to reduce latency and increase
-                      performance. Next.js allows server-side rendering which
-                      allowed us to store data ready for our components before
-                      tha app was rendered.
+                      Using Node.js was something we had a lot of practice on
+                      during the course. We felt comfortable using this and
+                      although there was discussion of using a new technology,
+                      we decided with our limited time-frame to use what we
+                      knew.
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-slate-700 ...">TailwindCSS</td>
+                    <td className="border border-slate-700 ...">Express.js</td>
                     <td className="border border-slate-700 ...">
-                      TailwindCSS has quickly become a popular choice amongst
-                      developers. We wanted to use a technology that allows us
-                      to reduce repetitive CSS declarations that can quickly
-                      become time-consuming. TailwindCSS took much of that
-                      difficulty away by allowing us to declare{" "}
+                      Express.js is a framework that is typically used
+                      with Node.js. As it is open-source and supports many other
+                      libraries that we needed, it made sense to implement this.
                     </td>
                   </tr>
                   <tr>
