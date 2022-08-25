@@ -3,6 +3,7 @@ import Button from "@mui/material/Button";
 import NavbarForSubPages from "../Components/Subpages/NavbarForSubPages";
 import MuiCarousel from "../Components/Subpages/MuiCarousel";
 import { useState } from "react";
+import { ButtonGroup } from "@mui/material";
 
 export default function Chews() {
   const router = useRouter();
@@ -21,11 +22,53 @@ export default function Chews() {
   return (
     <>
       <NavbarForSubPages />
+
       <div className="flex flex-row justify-center text-[3.5vmax] md:text-[4vmax] text-white w-full">
         <h1 className="font-permanent-marker text-red-600">
           Chews - Recipe Directory App
         </h1>
       </div>
+      <br/>
+        <ButtonGroup className="flex justify-center">
+          <Button
+            className="bg-red-400"
+            variant="contained"
+            size="small"
+            color="primary"
+            href={
+              "https://github.com/simonpartridge86/baristacrats-frontend-final-project"
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
+            Frontend
+          </Button>
+          <Button
+            className="bg-red-400"
+            variant="contained"
+            size="small"
+            color="primary"
+            href={
+              "https://github.com/AdamPhasey/baristacrats-backend-repo/tree/d2b628bdab8b4831c9311f701933afec084060ea"
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
+            Backend
+          </Button>
+          <Button
+            className="bg-red-400"
+            variant="contained"
+            size="small"
+            color="primary"
+            href={"https://chews-dev.vercel.app/"}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Live
+          </Button>
+        </ButtonGroup>
+        <br/>
       <h1 className="flex flex-row justify-center text-white text-[3vmax] md:text-[2vmax] mb-10">
         Our group presentation
       </h1>
@@ -53,30 +96,25 @@ export default function Chews() {
             },
             {
               label: "Manifesto",
-              imgPath:
-                "/manifesto.png",
+              imgPath: "/manifesto.png",
             },
             {
               label: "Disney ideation",
-              imgPath:
-                "/disney-chews.png",
+              imgPath: "/disney-chews.png",
             },
             {
               label: "Interface",
-              imgPath:
-                "/chews-user-story.png",
+              imgPath: "/chews-user-story.png",
             },
             {
               label: "Questionnaire Responses",
-              imgPath:
-                "/chews-research.png",
+              imgPath: "/chews-research.png",
             },
           ]}
         />
       </div>
       <div className="flex flex-row justify-center">
         <div className="md:w-1/2 p-4 md:p-0 flex flex-col items-center justify-center text-white text-[2vmax] md:text-[1vmax]">
-          
           <h1 className="flex justify-center text-[3vmax] md:text-[2vmax] text-red-400 font-Montserrat-Alternates">
             The tech we used and why
           </h1>
@@ -265,7 +303,6 @@ export default function Chews() {
             that came our way.
           </p>
         </div>
-        
       </div>
     </>
   );
