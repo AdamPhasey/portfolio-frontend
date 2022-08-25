@@ -110,7 +110,7 @@ export default function Chews() {
             </thead>
             <tbody>
               <tr>
-                <td className="border border-slate-700 ...">NEXT.JS</td>
+                <td className="border border-slate-700">NEXT.JS</td>
                 <td className="border border-slate-700 ...">We used Next.js to reduce latency and increase performance. Next.js allows server-side rendering which allowed us to store data ready for our components before tha app was rendered.</td>
               </tr>
               <tr>
@@ -118,8 +118,16 @@ export default function Chews() {
                 <td className="border border-slate-700 ...">TailwindCSS has quickly become a popular choice amongst developers. We wanted to use a technology that allows us to reduce repetitive CSS declarations that can quickly become time-consuming. TailwindCSS took much of that difficulty away by allowing us to declare </td>
               </tr>
               <tr>
-                <td className="border border-slate-700 ...">Michigan</td>
-                <td className="border border-slate-700 ...">Detroit</td>
+                <td className="border border-slate-700 ...">CHAKRA UI LIBRARY</td>
+                <td className="border border-slate-700 ...">Using a component library to implement our wire-frames gave our app a professional look. Working in a team of 6 meant there was a lot of diversity in design thought, so relying on a library like Chakra meant we all agreed with the results of a professional library.</td>
+              </tr>
+              <tr>
+                <td className="border border-slate-700 ...">CHAKRA UI LIBRARY</td>
+                <td className="border border-slate-700 ...">Using a component library to implement our wire-frames gave our app a professional look. Working in a team of 6 meant there was a lot of diversity in design thought, so relying on a library like Chakra meant we all agreed with the results of a professional library.</td>
+              </tr>
+              <tr>
+                <td className="border border-slate-700 ...">Auth0</td>
+                <td className="border border-slate-700 ...">In order to securely and safely store user data, we implemented Auth0 to allow users to login and save filters or recipes to their account. Auth0 being a reputable choice gave us confidence in using their solution.</td>
               </tr>
             </tbody>
           </table>
