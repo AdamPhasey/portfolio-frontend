@@ -77,20 +77,20 @@ export default function Backpack() {
               imgPath: "/backpack-wireframes.png",
             },
             {
-              label: "Manifesto",
-              imgPath: "/manifesto.png",
+              label: "Disney ideation",
+              imgPath: "/backpack-disney.png",
             },
             {
-              label: "Disney ideation",
-              imgPath: "/disney-chews.png",
+              label: "User profiles",
+              imgPath: "/backpack-user.png",
             },
             {
               label: "Trello tickets",
               imgPath: "/backpack-trello.png",
             },
             {
-              label: "Questionnaire Responses",
-              imgPath: "/chews-research.png",
+              label: "Team management",
+              imgPath: "/backpack-scrum.png",
             },
           ]}
         />
