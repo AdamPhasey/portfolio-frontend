@@ -147,7 +147,7 @@ export default function Chews() {
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-slate-700 ...">TailwindCSS</td>
+                    <td className="border border-slate-700 ...">TAILWINDCSS</td>
                     <td className="border border-slate-700 ...">
                       TailwindCSS has quickly become a popular choice amongst
                       developers. We wanted to use a technology that allows us
