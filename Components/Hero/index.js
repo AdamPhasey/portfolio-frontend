@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Container } from "postcss";
 import { useEffect, useRef } from "react";
-import anime from "animejs";
 import { Button } from "@mui/material";
 
 function Hero({ value }) {
@@ -97,19 +96,19 @@ function Hero({ value }) {
                 <textPath xlinkHref="#path">Node.js</textPath>
               </text>
               <text className="cls-7" transform="translate(36.56 440.62)">
-                <textPath xlinkHref="#path">Python</textPath>
+                <textPath xlinkHref="#path">React.js & Next.js</textPath>
               </text>
               <text className="cls-7" transform="translate(35.74 478.47)">
-                <textPath xlinkHref="#path">Express</textPath>
+                <textPath xlinkHref="#path">Express.js</textPath>
               </text>
               <text className="cls-7" transform="translate(36.82 515.77)">
-                <textPath xlinkHref="#path">React</textPath>
+                <textPath xlinkHref="#path">Jest & Cypress</textPath>
               </text>
               <text className="cls-7" transform="translate(36.82 550.91)">
                 <textPath xlinkHref="#path">AWS</textPath>
               </text>
               <text className="cls-7" transform="translate(36.82 584.23)">
-                <textPath xlinkHref="#path">Deployment</textPath>
+                <textPath xlinkHref="#path">CI/CD</textPath>
               </text>
               <text className="cls-7" transform="translate(37.9 622.08)">
                 <textPath xlinkHref="#path">PostgreSQL/MySQL</textPath>
@@ -131,18 +130,15 @@ function Hero({ value }) {
 
         <div className="text-white text-[9vmin] py-40 p-4 font-Montserrat-Alternates md:text-[3vmax] lg:mr-20 lg:w-1/2 md:relative">
           <div className="text-white text-xl mb-10 md:hidden">
-          <Button
-          className="bg-blue-400"
-          variant="contained"
-          >
-            <a
-              href="https://drive.google.com/file/d/1hXqO6ooaTS8FRyfMeusjFzYVpH8YLLuj/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-            >
-              MY CV
-            </a>
-          </Button>
+            <Button className="bg-blue-400" variant="contained">
+              <a
+                href="https://drive.google.com/file/d/1hXqO6ooaTS8FRyfMeusjFzYVpH8YLLuj/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                MY CV
+              </a>
+            </Button>
           </div>
           <p className="text-green-400 text-[4vmin] md:text-[2vmax]">
             👋 Hi, I am Adam!
