@@ -2,9 +2,24 @@ import { useRouter } from "next/router";
 import Button from "@mui/material/Button";
 import NavbarForSubPages from "../Components/Subpages/NavbarForSubPages";
 import MuiCarousel from "../Components/Subpages/MuiCarousel";
+import { useState } from 'react'
 
 export default function Chews() {
+
+
   const router = useRouter();
+
+
+  const toggle = { showGoal: false, showSkills: true };
+  const [show, setShow] = useState(toggle);
+  function toggleClick() {
+    const copy = {
+      ...show,
+      showGoal: !show.showGoal,
+      showSkills: !show.showSkills,
+    };
+    setShow(copy);
+  }
 
   return (
     <>
@@ -100,37 +115,153 @@ export default function Chews() {
           <h1 className="flex justify-center text-[3vmax] md:text-[2vmax] text-red-400 font-Montserrat-Alternates">
             The tech we used and why
           </h1>
-          <p className="text-green-400">FRONTEND</p>
-          <table className="w-full border-separate border-spacing-2 border border-slate-500 ...">
-            <thead>
-              <tr>
-                <th className="border border-slate-600 text-blue-400">TECHNOLOGY</th>
-                <th className="border border-slate-600 text-blue-400">REASONING</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="border border-slate-700">NEXT.JS</td>
-                <td className="border border-slate-700 ...">We used Next.js to reduce latency and increase performance. Next.js allows server-side rendering which allowed us to store data ready for our components before tha app was rendered.</td>
-              </tr>
-              <tr>
-                <td className="border border-slate-700 ...">TailwindCSS</td>
-                <td className="border border-slate-700 ...">TailwindCSS has quickly become a popular choice amongst developers. We wanted to use a technology that allows us to reduce repetitive CSS declarations that can quickly become time-consuming. TailwindCSS took much of that difficulty away by allowing us to declare </td>
-              </tr>
-              <tr>
-                <td className="border border-slate-700 ...">CHAKRA UI LIBRARY</td>
-                <td className="border border-slate-700 ...">Using a component library to implement our wire-frames gave our app a professional look. Working in a team of 6 meant there was a lot of diversity in design thought, so relying on a library like Chakra meant we all agreed with the results of a professional library.</td>
-              </tr>
-              <tr>
-                <td className="border border-slate-700 ...">CHAKRA UI LIBRARY</td>
-                <td className="border border-slate-700 ...">Using a component library to implement our wire-frames gave our app a professional look. Working in a team of 6 meant there was a lot of diversity in design thought, so relying on a library like Chakra meant we all agreed with the results of a professional library.</td>
-              </tr>
-              <tr>
-                <td className="border border-slate-700 ...">Auth0</td>
-                <td className="border border-slate-700 ...">In order to securely and safely store user data, we implemented Auth0 to allow users to login and save filters or recipes to their account. Auth0 being a reputable choice gave us confidence in using their solution.</td>
-              </tr>
-            </tbody>
-          </table>
+
+
+
+          <Button variant="outlined" onClick={toggleClick} className="text-[1.5vmax] md:text-[1vmax] text-white bg-blue-400">
+            TOGGLE BETWEEN FRONTEND AND BACKEND
+          </Button>
+          {show.showSkills ? (
+            <>
+              <p className="text-green-400">FRONTEND</p>
+              <table className="w-full border-separate border-spacing-2 border border-slate-500 ...">
+                <thead>
+                  <tr>
+                    <th className="border border-slate-600 text-blue-400">
+                      TECHNOLOGY
+                    </th>
+                    <th className="border border-slate-600 text-blue-400">
+                      REASONING
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-slate-700">NEXT.JS</td>
+                    <td className="border border-slate-700 ...">
+                      We used Next.js to reduce latency and increase
+                      performance. Next.js allows server-side rendering which
+                      allowed us to store data ready for our components before
+                      tha app was rendered.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-slate-700 ...">TailwindCSS</td>
+                    <td className="border border-slate-700 ...">
+                      TailwindCSS has quickly become a popular choice amongst
+                      developers. We wanted to use a technology that allows us
+                      to reduce repetitive CSS declarations that can quickly
+                      become time-consuming. TailwindCSS took much of that
+                      difficulty away by allowing us to declare{" "}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-slate-700 ...">
+                      CHAKRA UI LIBRARY
+                    </td>
+                    <td className="border border-slate-700 ...">
+                      Using a component library to implement our wire-frames
+                      gave our app a professional look. Working in a team of 6
+                      meant there was a lot of diversity in design thought, so
+                      relying on a library like Chakra meant we all agreed with
+                      the results of a professional library.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-slate-700 ...">
+                      CHAKRA UI LIBRARY
+                    </td>
+                    <td className="border border-slate-700 ...">
+                      Using a component library to implement our wire-frames
+                      gave our app a professional look. Working in a team of 6
+                      meant there was a lot of diversity in design thought, so
+                      relying on a library like Chakra meant we all agreed with
+                      the results of a professional library.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-slate-700 ...">Auth0</td>
+                    <td className="border border-slate-700 ...">
+                      In order to securely and safely store user data, we
+                      implemented Auth0 to allow users to login and save filters
+                      or recipes to their account. Auth0 being a reputable
+                      choice gave us confidence in using their solution.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </>
+          ) : (
+            <>
+              <p className="text-green-400">BACKEND</p>
+              <table className="w-full border-separate border-spacing-2 border border-slate-500 ...">
+                <thead>
+                  <tr>
+                    <th className="border border-slate-600 text-blue-400">
+                      TECHNOLOGY
+                    </th>
+                    <th className="border border-slate-600 text-blue-400">
+                      REASONING
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-slate-700">NEXT.JS</td>
+                    <td className="border border-slate-700 ...">
+                      We used Next.js to reduce latency and increase
+                      performance. Next.js allows server-side rendering which
+                      allowed us to store data ready for our components before
+                      tha app was rendered.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-slate-700 ...">TailwindCSS</td>
+                    <td className="border border-slate-700 ...">
+                      TailwindCSS has quickly become a popular choice amongst
+                      developers. We wanted to use a technology that allows us
+                      to reduce repetitive CSS declarations that can quickly
+                      become time-consuming. TailwindCSS took much of that
+                      difficulty away by allowing us to declare{" "}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-slate-700 ...">
+                      CHAKRA UI LIBRARY
+                    </td>
+                    <td className="border border-slate-700 ...">
+                      Using a component library to implement our wire-frames
+                      gave our app a professional look. Working in a team of 6
+                      meant there was a lot of diversity in design thought, so
+                      relying on a library like Chakra meant we all agreed with
+                      the results of a professional library.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-slate-700 ...">
+                      CHAKRA UI LIBRARY
+                    </td>
+                    <td className="border border-slate-700 ...">
+                      Using a component library to implement our wire-frames
+                      gave our app a professional look. Working in a team of 6
+                      meant there was a lot of diversity in design thought, so
+                      relying on a library like Chakra meant we all agreed with
+                      the results of a professional library.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-slate-700 ...">Auth0</td>
+                    <td className="border border-slate-700 ...">
+                      In order to securely and safely store user data, we
+                      implemented Auth0 to allow users to login and save filters
+                      or recipes to their account. Auth0 being a reputable
+                      choice gave us confidence in using their solution.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </>
+          )}
         </div>
       </div>
     </>
