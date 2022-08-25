@@ -110,6 +110,10 @@ export default function Chews() {
               label: "Questionnaire Responses",
               imgPath: "/chews-research.png",
             },
+            {
+              label: "Trello tickets",
+              imgPath: "/chews-trello.png",
+            },
           ]}
         />
       </div>
