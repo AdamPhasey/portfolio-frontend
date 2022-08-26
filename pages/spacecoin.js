@@ -25,7 +25,7 @@ export default function Spacecoin() {
 
       <div className="flex flex-row justify-center text-[3.5vmax] md:text-[4vmax] text-white w-full">
         <h1 className="font-Montserrat-Alternates text-red-600">
-          Spacecoin - cryptocurrency wallet app
+          Spacecoin - fintech app
         </h1>
       </div>
       <br />
