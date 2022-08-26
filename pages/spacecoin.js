@@ -81,14 +81,6 @@ export default function Spacecoin() {
               label: "My use of Recharts",
               imgPath: "/spacecoin-charts.png",
             },
-            {
-              label: "Trello tickets",
-              imgPath: "/backpack-trello.png",
-            },
-            {
-              label: "Team management",
-              imgPath: "/backpack-scrum.png",
-            },
           ]}
         />
       </div>
