@@ -235,21 +235,21 @@ export default function Spacecoin() {
           )}
           <br />
           <h1 className="flex justify-center text-[3vmax] md:text-[2vmax] text-red-400 font-Montserrat-Alternates">
-            How we set up
+            Some thoughts on Spacecoin
           </h1>
 
           <p className="flex justify-center">
-            During my time at the School of Code, I was grouped with 3 other
-            students to create an MVP in 1 week. Our brief was simple: create an
-            app that solves a problem.
+            I built Spacecoin to give me an insight into fintech. I practiced my
+            knowledge of TypeScript (TS) to ensure data was not mishandled and
+            stretched my knowledge of TS by using it with Next.js.
           </p>
           <br />
           <p>
-            We decided as a group on what we would include in our MVP and what
-            would be deemed as stretch goals. We knew from our brief that our
-            app had to be full-stack with a database. At this stage in our
-            learning we were not taught about authentication and so we excluded
-            this from our MVP due to learning and time available.
+            I enjoyed building data structures that the frontend would need by
+            drafting a schema. I found using TypeScript to be rewarding once I
+            discovered the correct way to use it. To ensure the data I handed in
+            would be valid, much like industry standard, I used useEffect to
+            refetch every set interval I applied to it. 
           </p>
         </div>
       </div>
