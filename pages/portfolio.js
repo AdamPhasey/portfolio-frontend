@@ -23,7 +23,7 @@ export default function Portfolio() {
             {
               label: "My SVG design",
               imgPath: "/portfolio-id.png",
-            }
+            },
           ]}
         />
       </div>
@@ -85,12 +85,21 @@ export default function Portfolio() {
                   </td>
                 </tr>
                 <tr>
-                  <td className="border border-slate-700 ...">SendGrid</td>
+                  <td className="border border-slate-700 ...">SENDGRID</td>
                   <td className="border border-slate-700 ...">
                     I built my contact form using SendGrid as it is commonly
                     used with Next.js. It was easy to establish, but I did have
                     difficulty in ensuring my email provider did not
                     automatically spam the emails being sent to me.
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-slate-700 ...">ANIME.JS</td>
+                  <td className="border border-slate-700 ...">
+                    I used Anime.js to animate my logo by creating an outline
+                    around my name. I found Anime.js to be user friendly and the
+                    styling I used was subtle enough to be clean and not
+                    overdone.
                   </td>
                 </tr>
               </tbody>
