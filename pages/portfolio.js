@@ -3,13 +3,12 @@ import NavbarForSubPages from "../Components/Subpages/NavbarForSubPages";
 import MuiCarousel from "../Components/Subpages/MuiCarousel";
 import Head from "next/head";
 
-
 export default function Portfolio() {
   const router = useRouter();
 
   return (
     <>
-          <Head>
+      <Head>
         <title>Portfolio</title>
       </Head>
       <NavbarForSubPages />

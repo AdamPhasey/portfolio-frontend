@@ -6,7 +6,6 @@ import { useState } from "react";
 import { ButtonGroup } from "@mui/material";
 import Head from "next/head";
 
-
 export default function Backpack() {
   const router = useRouter();
 
@@ -23,7 +22,7 @@ export default function Backpack() {
 
   return (
     <>
-          <Head>
+      <Head>
         <title>Backpack</title>
       </Head>
       <NavbarForSubPages />
@@ -212,7 +211,7 @@ export default function Backpack() {
               </table>
             </>
           )}
-          <br/>
+          <br />
           <h1 className="flex justify-center text-[3vmax] md:text-[2vmax] text-red-400 font-Montserrat-Alternates">
             How we set up
           </h1>
@@ -232,7 +231,7 @@ export default function Backpack() {
           </p>
         </div>
       </div>
-      <br/>
+      <br />
     </>
   );
 }

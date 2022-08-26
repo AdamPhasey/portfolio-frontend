@@ -6,7 +6,6 @@ import { useState } from "react";
 import { ButtonGroup } from "@mui/material";
 import Head from "next/head";
 
-
 export default function Spacecoin() {
   const router = useRouter();
 
@@ -24,7 +23,9 @@ export default function Spacecoin() {
   return (
     <>
       <NavbarForSubPages />
-
+      <Head>
+        <title>Spacecoin</title>
+      </Head>
       <div className="flex flex-row justify-center text-[3.5vmax] md:text-[4vmax] text-white w-full">
         <h1 className="font-Montserrat-Alternates text-red-600">
           Spacecoin - fintech app

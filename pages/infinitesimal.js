@@ -4,14 +4,13 @@ import MuiCarousel from "../Components/Subpages/MuiCarousel";
 import { Button, ButtonGroup } from "@mui/material";
 import Head from "next/head";
 
-
 export default function Infinitesimal() {
   const router = useRouter();
 
   return (
     <>
-          <Head>
-        <title>Spacecoin</title>
+      <Head>
+        <title>Infinitesimal</title>
       </Head>
       <NavbarForSubPages />
       <div className="flex flex-row justify-center text-[3.5vmax] md:text-[4vmax] text-white w-full">
@@ -97,7 +96,7 @@ export default function Infinitesimal() {
             found several online resources explaining how to create a npm
             package and decided to try it myself.
           </p>
-          <br/>
+          <br />
           <p className="flex justify-center">
             My package is designed to help developers sanitise string
             submissions should they contain blank spaces. I used CommonJS as it

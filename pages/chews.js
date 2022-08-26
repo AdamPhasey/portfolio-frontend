@@ -6,7 +6,6 @@ import { useState } from "react";
 import { ButtonGroup } from "@mui/material";
 import Head from "next/head";
 
-
 export default function Chews() {
   const router = useRouter();
 
@@ -23,7 +22,7 @@ export default function Chews() {
 
   return (
     <>
-          <Head>
+      <Head>
         <title>Chews</title>
       </Head>
       <NavbarForSubPages />
@@ -32,47 +31,47 @@ export default function Chews() {
           Chews - Recipe Directory App
         </h1>
       </div>
-      <br/>
-        <ButtonGroup className="flex justify-center">
-          <Button
-            className="bg-red-400"
-            variant="contained"
-            size="small"
-            color="primary"
-            href={
-              "https://github.com/simonpartridge86/baristacrats-frontend-final-project"
-            }
-            target="_blank"
-            rel="noreferrer"
-          >
-            Frontend
-          </Button>
-          <Button
-            className="bg-red-400"
-            variant="contained"
-            size="small"
-            color="primary"
-            href={
-              "https://github.com/AdamPhasey/baristacrats-backend-repo/tree/d2b628bdab8b4831c9311f701933afec084060ea"
-            }
-            target="_blank"
-            rel="noreferrer"
-          >
-            Backend
-          </Button>
-          <Button
-            className="bg-red-400"
-            variant="contained"
-            size="small"
-            color="primary"
-            href={"https://chews-dev.vercel.app/"}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Live
-          </Button>
-        </ButtonGroup>
-        <br/>
+      <br />
+      <ButtonGroup className="flex justify-center">
+        <Button
+          className="bg-red-400"
+          variant="contained"
+          size="small"
+          color="primary"
+          href={
+            "https://github.com/simonpartridge86/baristacrats-frontend-final-project"
+          }
+          target="_blank"
+          rel="noreferrer"
+        >
+          Frontend
+        </Button>
+        <Button
+          className="bg-red-400"
+          variant="contained"
+          size="small"
+          color="primary"
+          href={
+            "https://github.com/AdamPhasey/baristacrats-backend-repo/tree/d2b628bdab8b4831c9311f701933afec084060ea"
+          }
+          target="_blank"
+          rel="noreferrer"
+        >
+          Backend
+        </Button>
+        <Button
+          className="bg-red-400"
+          variant="contained"
+          size="small"
+          color="primary"
+          href={"https://chews-dev.vercel.app/"}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Live
+        </Button>
+      </ButtonGroup>
+      <br />
       <h1 className="flex flex-row justify-center text-white text-[3vmax] md:text-[2vmax] mb-10">
         Our group presentation
       </h1>
@@ -267,7 +266,7 @@ export default function Chews() {
               </table>
             </>
           )}
-          <br/>
+          <br />
           <h1 className="flex justify-center text-[3vmax] md:text-[2vmax] text-red-400 font-Montserrat-Alternates">
             How we set up
           </h1>
@@ -313,7 +312,7 @@ export default function Chews() {
           </p>
         </div>
       </div>
-      <br/>
+      <br />
     </>
   );
 }
