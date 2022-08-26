@@ -2,12 +2,17 @@ import { useRouter } from "next/router";
 import NavbarForSubPages from "../Components/Subpages/NavbarForSubPages";
 import MuiCarousel from "../Components/Subpages/MuiCarousel";
 import { Button, ButtonGroup } from "@mui/material";
+import Head from "next/head";
+
 
 export default function Infinitesimal() {
   const router = useRouter();
 
   return (
     <>
+          <Head>
+        <title>Spacecoin</title>
+      </Head>
       <NavbarForSubPages />
       <div className="flex flex-row justify-center text-[3.5vmax] md:text-[4vmax] text-white w-full">
         <h1 className="font-Montserrat-Alternates text-red-600">

@@ -4,6 +4,8 @@ import NavbarForSubPages from "../Components/Subpages/NavbarForSubPages";
 import MuiCarousel from "../Components/Subpages/MuiCarousel";
 import { useState } from "react";
 import { ButtonGroup } from "@mui/material";
+import Head from "next/head";
+
 
 export default function Spacecoin() {
   const router = useRouter();
