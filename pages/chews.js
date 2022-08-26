@@ -263,6 +263,7 @@ export default function Chews() {
               </table>
             </>
           )}
+          <br/>
           <h1 className="flex justify-center text-[3vmax] md:text-[2vmax] text-red-400 font-Montserrat-Alternates">
             How we set up
           </h1>

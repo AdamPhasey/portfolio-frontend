@@ -65,7 +65,7 @@ export default function Backpack() {
         </Button>
       </ButtonGroup>
       <br />
-      
+
       <h1 className="flex justify-center text-[3vmax] md:text-[2vmax] text-red-400 font-Montserrat-Alternates">
         A bit about the project
       </h1>
@@ -126,55 +126,33 @@ export default function Backpack() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="border border-slate-700">NEXT.JS</td>
+                    <td className="border border-slate-700">REACT.JS</td>
                     <td className="border border-slate-700 ...">
-                      We used Next.js to reduce latency and increase
-                      performance. Next.js allows server-side rendering which
-                      allowed us to store data ready for our components before
-                      tha app was rendered.
+                      We used Create React App (CRA) to initialise our React
+                      project. We were instructed to use CRA as it is a great
+                      way to learn REACT fundamentals and provides a fast way to
+                      render and manipulate data.
                     </td>
                   </tr>
                   <tr>
-                    <td className="border border-slate-700 ...">TAILWINDCSS</td>
+                    <td className="border border-slate-700 ...">CSS3</td>
                     <td className="border border-slate-700 ...">
-                      TailwindCSS has quickly become a popular choice amongst
-                      developers. We wanted to use a technology that allows us
-                      to reduce repetitive CSS declarations that can quickly
-                      become time-consuming. TailwindCSS took much of that
-                      difficulty away by allowing us to declare{" "}
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-slate-700 ...">
-                      CHAKRA UI LIBRARY
-                    </td>
-                    <td className="border border-slate-700 ...">
-                      Using a component library to implement our wire-frames
-                      gave our app a professional look. Working in a team of 6
-                      meant there was a lot of diversity in design thought, so
-                      relying on a library like Chakra meant we all agreed with
-                      the results of a professional library.
+                      We used CSS3 as a way to style our components. We did not
+                      call on component libraries or CSS frameworks. This was
+                      largely due to exercising a stronger grip on CSS
+                      fundamentals.
                     </td>
                   </tr>
                   <tr>
                     <td className="border border-slate-700 ...">
-                      CHAKRA UI LIBRARY
+                      NPMJS HAMBURGER MENU
                     </td>
                     <td className="border border-slate-700 ...">
-                      Using a component library to implement our wire-frames
-                      gave our app a professional look. Working in a team of 6
-                      meant there was a lot of diversity in design thought, so
-                      relying on a library like Chakra meant we all agreed with
-                      the results of a professional library.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-slate-700 ...">AUTH0</td>
-                    <td className="border border-slate-700 ...">
-                      In order to securely and safely store user data, we
-                      implemented Auth0 to allow users to login and save filters
-                      or recipes to their account. Auth0 being a reputable
-                      choice gave us confidence in using their solution.
+                      As a group, we decided to look for a hamburger menu
+                      available on NPMJS so as to reduce build time as we were
+                      given 1 week to build our MVP. We found the package to be
+                      challenging to modify to our needs so in hindsight we
+                      would have likely created this on our own.
                     </td>
                   </tr>
                 </tbody>
@@ -219,73 +197,38 @@ export default function Backpack() {
                     <td className="border border-slate-700 ...">POSTGRESQL</td>
                     <td className="border border-slate-700 ...">
                       For our use case, using a relational database made sense
-                      as we were considering having different tables that would
-                      require our data to be structured for our frontend schema
-                      we made. PostgreSQL allowed us to implement our schema and
-                      normalise our data by being capable, free and open-source.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-slate-700 ...">NODE-FETCH</td>
-                    <td className="border border-slate-700 ...">
-                      We chose to use node-fetch as it allowed us to resolve
-                      several promises at once when necessary. As we were
-                      calling a third-party API, our fetch requests became more
-                      complex. The node-fetch module was something already
-                      introduced into our version of Node.js so we did not have
-                      to rely on other unfamiliar calling solutions. This saved
-                      us much important time.
+                      as we were considering having different tables for users
+                      for their goals and skills that would require our data to
+                      be structured for our frontend schema we made. PostgreSQL
+                      allowed us to implement our schema and normalise our data
+                      by being capable, free and open-source.
                     </td>
                   </tr>
                 </tbody>
               </table>
             </>
           )}
+          <br/>
           <h1 className="flex justify-center text-[3vmax] md:text-[2vmax] text-red-400 font-Montserrat-Alternates">
             How we set up
           </h1>
 
           <p className="flex justify-center">
-            During my time at the School of Code, I was grouped with 5 other
-            students to create a final project. Our brief was simple: create an
-            app that solves a problem. We had in total 4 weeks to create our
-            full-stack application utilising everything we had learnt.
+            During my time at the School of Code, I was grouped with 3 other
+            students to create an MVP in 1 week. Our brief was simple: create an
+            app that solves a problem.
           </p>
           <br />
           <p>
-            Before we decided on what to build or how to build our app, we came
-            together as a team and agreed on some main principles and values
-            that would ensure psychological safety and a clear guide on how to
-            act as a team. This was written up as our Manifesto. Our Manifesto
-            gave us something to lean on when needed. This allowed us to be
-            Agile.
-          </p>
-          <br />
-          <p>
-            We began the process of deciding what we would build by utilising
-            the Disney ideation process. Once we had voted on an idea we all
-            agreed on, we began to research our idea using tools such as User
-            Journeys, User Personas and questionnaires that we sent out to get
-            feedback on the strengths and weaknesses of our idea.
-          </p>
-          <br />
-          <p>
-            Initially, our idea proved to have areas in need of clarification
-            and improvement. Practicing Agile, our group decided to accept the
-            feedback and modify our idea to better serve the problem we were
-            solving. We finally had a robust version of our initial idea: a meal
-            directory that solves decision fatigue by offering a user a
-            selection of recipes either at random or by optional filters.
-          </p>
-          <br />
-          <p>
-            From the idea phase to our final presentation of our fully built
-            app, we continued to use our Manifesto to our advantage. We
-            regrouped for stand-ups and retros daily and addressed any concerns
-            that came our way.
+            We decided as a group on what we would include in our MVP and what
+            would be deemed as stretch goals. We knew from our brief that our
+            app had to be full-stack with a database. At this stage in our
+            learning we were not taught about authentication and so we excluded
+            this from our MVP due to learning and time available.
           </p>
         </div>
       </div>
+      <br/>
     </>
   );
 }
