@@ -231,9 +231,11 @@ export default function Spacecoin() {
           </h1>
 
           <p className="flex justify-center">
-            I built Spacecoin to give me an insight into fintech. I practiced my
-            knowledge of TypeScript (TS) to ensure data was not mishandled and
-            stretched my knowledge of TS by using it with Next.js.
+            I built Spacecoin to give me an insight into fintech. The idea is to
+            replicate the experience a user would have when viewing the status
+            of their crypto wallet. I practiced my knowledge of TypeScript (TS)
+            to ensure data was not mishandled and stretched my knowledge of TS
+            by using it with Next.js.
           </p>
           <br />
           <p>
@@ -241,7 +243,7 @@ export default function Spacecoin() {
             drafting a schema. I found using TypeScript to be rewarding once I
             discovered the correct way to use it. To ensure the data I handed in
             would be valid, much like industry standard, I used useEffect to
-            refetch every set interval I applied to it. 
+            refetch every set interval I applied to it.
           </p>
         </div>
       </div>
