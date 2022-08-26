@@ -74,12 +74,12 @@ export default function Spacecoin() {
               imgPath: "/spacecoin-landing.png",
             },
             {
-              label: "Disney ideation",
-              imgPath: "/backpack-disney.png",
+              label: "Auth0",
+              imgPath: "/spacecoin-login.png",
             },
             {
-              label: "User profiles",
-              imgPath: "/backpack-user.png",
+              label: "My use of Recharts",
+              imgPath: "/spacecoin-charts.png",
             },
             {
               label: "Trello tickets",
@@ -135,10 +135,28 @@ export default function Spacecoin() {
                   <tr>
                     <td className="border border-slate-700">NEXT.JS</td>
                     <td className="border border-slate-700 ...">
-                      I used Next.js (React framework) to reduce latency and increase performance.
-                      Since fintech relies heavily on data transfer, I found the
-                      server-side rendering and dynamic routing features of
-                      Next.js to be vital to my application
+                      I used Next.js (React framework) to reduce latency and
+                      increase performance. Since fintech relies heavily on data
+                      transfer, I found the server-side rendering and dynamic
+                      routing features of Next.js to be vital to my application.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-slate-700 ...">AUTH0</td>
+                    <td className="border border-slate-700 ...">
+                      In order to securely and safely store the data, I
+                      implemented Auth0 to allow users to login and view live
+                      currency figures. Being able to scope results also
+                      conforms to the design I have for my project.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-slate-700">RECHARTS</td>
+                    <td className="border border-slate-700 ...">
+                      I used Recharts for my data visualisation. I wanted to
+                      capture the incoming data from the backend with precision
+                      led visuals. Recharts was useful in producing the result I
+                      wanted and was also a way of stretching my knowledge.
                     </td>
                   </tr>
                   <tr>
@@ -189,11 +207,10 @@ export default function Spacecoin() {
                   <tr>
                     <td className="border border-slate-700">NODE.JS</td>
                     <td className="border border-slate-700 ...">
-                      Using Node.js was something we had a lot of practice on
-                      during the course. We felt comfortable using this and
-                      although there was discussion of using a new technology,
-                      we decided with our limited time-frame to use what we
-                      knew.
+                      Using Node.js was something I have had a lot of practice
+                      on during my learning. Using Node.js combined with my TS
+                      frontend, I managed the data configuration more
+                      effectively.
                     </td>
                   </tr>
                   <tr>
@@ -201,20 +218,15 @@ export default function Spacecoin() {
                     <td className="border border-slate-700 ...">
                       Express.js is a framework that is typically used with
                       Node.js. As it is open-source and supports many other
-                      libraries that we needed, it made sense to implement this.
-                      Furthermore, we had experience with Express.js in
-                      connecting to databases.
+                      libraries that I needed, it made sense to implement this.
                     </td>
                   </tr>
                   <tr>
                     <td className="border border-slate-700 ...">POSTGRESQL</td>
                     <td className="border border-slate-700 ...">
-                      For our use case, using a relational database made sense
-                      as we were considering having different tables for users
-                      for their goals and skills that would require our data to
-                      be structured for our frontend schema we made. PostgreSQL
-                      allowed us to implement our schema and normalise our data
-                      by being capable, free and open-source.
+                      For my use case, using a relational database made sense as
+                      I the data I have been feeding the charts on the frontend
+                      have to be normalised to meet the schema I designed.
                     </td>
                   </tr>
                 </tbody>
