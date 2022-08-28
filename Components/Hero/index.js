@@ -57,7 +57,7 @@ function Hero({ value }) {
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 542.61 740">
             <defs>
-            <style>.cls-1{"{stroke:gray;stroke-miterlimit:10;stroke-width:5px;}.cls-2{fill:gray;}.cls-3{fill:#d90028;}.cls-4{fill:#ffc10b;}.cls-5{fill:#00cf00;}.cls-6{font-size:18.92px;fill:#f2f2f2;}.cls-6,.cls-7,.cls-9{font-family:Silom;}.cls-7{font-size:27.03px;}.cls-7,.cls-8{fill:lime;}.cls-9{font-size:18.24px;}.cls-10{fill:#fff;}.cls-11{fill:#f90;fill-rule:evenodd;}.cls-12{fill:#0277bd;}.cls-13{fill:#039be5;}.cls-14{fill:#eee;}.cls-15{fill:#f4511e;}.cls-16{fill:#e65100;}.cls-17{fill:#ff6d00;}.cls-18{fill:#ffd600;}.cls-19{fill:#000001;}.cls-20{fill:#8bb7f0;}.cls-21{fill:#4e7ab5;}.cls-22{fill:#1976d2;}.cls-23{fill:#c63d14;{"}</style>
+            <style>.cls-1{"{stroke:gray;stroke-miterlimit:10;stroke-width:5px;}.cls-2{fill:gray;}.cls-3{fill:#d90028;}.cls-4{fill:#ffc10b;}.cls-5{fill:#00cf00;}.cls-6{font-size:18.92px;fill:#f2f2f2;}.cls-6,.cls-7,.cls-9{font-family:Orbitron;}.cls-7{font-size:27.03px;}.cls-7,.cls-8{fill:lime;}.cls-9{font-size:18.24px;}.cls-10{fill:#fff;}.cls-11{fill:#f90;fill-rule:evenodd;}.cls-12{fill:#0277bd;}.cls-13{fill:#039be5;}.cls-14{fill:#eee;}.cls-15{fill:#f4511e;}.cls-16{fill:#e65100;}.cls-17{fill:#ff6d00;}.cls-18{fill:#ffd600;}.cls-19{fill:#000001;}.cls-20{fill:#8bb7f0;}.cls-21{fill:#4e7ab5;}.cls-22{fill:#1976d2;}.cls-23{fill:#c63d14;{"}</style>
             </defs>
             <g id="Layer_1" data-name="Layer 1">
               <rect
@@ -86,7 +86,7 @@ function Hero({ value }) {
             <g id="Text" className="font-Orbitron">
             <g id="Btn" onClick={toggleClick} className="cursor-pointer">
         <rect className="cls-8" x="193.26" y="243" width="155" height="34" />
-        <text className="cls-9" transform="translate(218.43 266.96) scale(1.07 1)">TOGGLE ME</text>
+        <text className="cls-9" transform="translate(204.43 266.96) scale(1.07 1)">TOGGLE ME</text>
     </g>
               {show.showSkills ? (
 <>
