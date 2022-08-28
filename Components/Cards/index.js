@@ -49,7 +49,7 @@ export default function Cards() {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              SPACE COIN
+              SPACE COIN (Still Building!)
             </Typography>
             <Stack spacing={2} direction="row">
               <Badge>
