@@ -200,7 +200,7 @@ function Hero({ value }) {
           <div className="text-white text-xl mb-10 md:hidden">
             <Button className="bg-blue-400" variant="contained">
               <a
-                href="https://drive.google.com/file/d/1hXqO6ooaTS8FRyfMeusjFzYVpH8YLLuj/view?usp=sharing"
+                href="https://drive.google.com/file/d/1yFzYFCcELCNPJuZ8wlebkEvb3Y_6F50l/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >

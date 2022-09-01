@@ -20,7 +20,7 @@ export default function Navbar() {
           onClick={() => setNewValue(1)}
           className=" text-white dark:text-white font-Montserrat-Alternates"
           label="My CV"
-          href="https://drive.google.com/file/d/1hXqO6ooaTS8FRyfMeusjFzYVpH8YLLuj/view?usp=sharing"
+          href="https://drive.google.com/file/d/1yFzYFCcELCNPJuZ8wlebkEvb3Y_6F50l/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         />
