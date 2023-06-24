@@ -202,8 +202,7 @@ export default function Spacecoin() {
                   <tr>
                     <td className="border border-slate-700">NODE.JS</td>
                     <td className="border border-slate-700 ...">
-                      Using Node.js was something I have had a lot of practice
-                      on during my learning. Using Node.js combined with my TS
+                      Using Node.js combined with my TS
                       frontend, I managed the data configuration more
                       effectively.
                     </td>

@@ -72,7 +72,7 @@ export default function Chews() {
         </Button>
       </ButtonGroup>
       <br />
-      <h1 className="flex flex-row justify-center text-white text-[3vmax] md:text-[2vmax] mb-10">
+      {/* <h1 className="flex flex-row justify-center text-white text-[3vmax] md:text-[2vmax] mb-10">
         Our group presentation
       </h1>
       <div className="flex flex-row justify-center mb-10">
@@ -86,7 +86,7 @@ export default function Chews() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
-      </div>
+      </div> */}
       <h1 className="flex justify-center text-[3vmax] md:text-[2vmax] text-red-400 font-Montserrat-Alternates">
         A bit about the project
       </h1>
@@ -272,10 +272,9 @@ export default function Chews() {
           </h1>
 
           <p className="flex justify-center">
-            During my time at the School of Code, I was grouped with 5 other
-            students to create a final project. Our brief was simple: create an
-            app that solves a problem. We had in total 4 weeks to create our
-            full-stack application utilising everything we had learnt.
+            Our brief was simple: create an
+            app that solves a problem. We had in total 4 weeks to create a
+            full-stack application.
           </p>
           <br />
           <p>
