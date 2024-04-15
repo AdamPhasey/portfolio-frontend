@@ -212,10 +212,10 @@ function Hero({ value }) {
             👋 Hi, I am Adam!
           </p>
           <h1>
-            I am a London based full-stack developer. I enjoy making{" "}
-            <a className="text-green-400">fun</a> and{" "}
-            <a className="text-green-400">interactive</a> things with{" "}
-            <a className="text-green-400">code</a>.
+            I am a London based Engineer and Lead. I enjoy building{" "}
+            <a className="text-green-400">technical</a> and challenging {" "}
+            <a className="text-green-400">solutions</a> for a{" "}
+            <a className="text-green-400">living</a>.
           </h1>
         </div>
       </div>

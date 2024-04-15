@@ -36,7 +36,7 @@ export default function Cards() {
 
   return (
     <>
-      <Card
+      {/* <Card
         className="bg-[#f2e9e4] text-black"
         sx={{ maxWidth: 400, maxHeight: 450 }}
       >
@@ -110,7 +110,7 @@ export default function Cards() {
               Live
           </Button>
         </CardActions>
-      </Card>
+      </Card> */}
 
       <Card
         className="bg-[#f2e9e4] text-black"
