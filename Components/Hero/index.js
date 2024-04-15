@@ -215,7 +215,7 @@ function Hero({ value }) {
             I am a London based Engineer and Lead. I enjoy building{" "}
             <a className="text-green-400">technical</a> and challenging {" "}
             <a className="text-green-400">solutions</a> for a{" "}
-            <a className="text-green-400">living</a>.
+            living.
           </h1>
         </div>
       </div>
