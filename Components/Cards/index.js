@@ -164,91 +164,6 @@ export default function Cards() {
           </Button>
         </CardActions>
       </Card>
-
-      <Card
-        className="bg-[#f2e9e4] text-black"
-        sx={{ maxWidth: 400, maxHeight: 450 }}
-      >
-        <CardActionArea
-         onClick={() => router.push('/chews')} 
-        >
-          <CardMedia component="img" image="/Chews.png" alt="npm package" />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              CHEWS MEAL PLANNER
-            </Typography>
-            <Stack spacing={2} direction="row">
-              <Badge>
-                <SiJavascript />
-              </Badge>
-              <Badge>
-                <SiNextdotjs />
-              </Badge>
-              <Badge>
-                <SiNodedotjs />
-              </Badge>
-              <Badge>
-                <SiPostgresql />
-              </Badge>
-              <Badge>
-                <SiTailwindcss />
-              </Badge>
-              <Badge>
-                <SiExpress />
-              </Badge>
-              <Badge>
-                <SiChakraui />
-              </Badge>
-              <Badge>
-                <SiAuth0 />
-              </Badge>
-            </Stack>
-            <Typography className="text-sm mt-3 text-black" color="text.secondary">
-             Collaborated in an agile team of 6 to create a recipe directory app.
-             I worked on all aspects of the project, from backend data engineering to front end configuration. 
-            </Typography>
-            <Typography className="text-blue-600 underline mt-3" gutterBottom variant="subtitle2" component="div">
-              CLICK FOR MORE
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button
-            size="small"
-            color="primary"
-            href={
-              "https://github.com/simonpartridge86/baristacrats-frontend-final-project"
-            }
-            target="_blank"
-            rel="noreferrer"
-          >
-           Frontend
-          </Button>
-          <Button
-            size="small"
-            color="primary"
-            href={
-              "https://github.com/AdamPhasey/baristacrats-backend-repo/tree/d2b628bdab8b4831c9311f701933afec084060ea"
-            }
-            target="_blank"
-            rel="noreferrer"
-          >
-            Backend
-          </Button>
-          <Button
-            size="small"
-            color="primary"
-            href={"https://chews-dev.vercel.app/"}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Live
-          </Button>
-        </CardActions>
-      </Card>
-
-      
-
       <Card
         className="bg-[#f2e9e4] text-black"
         sx={{ maxWidth: 400, maxHeight: 450 }}
@@ -289,39 +204,6 @@ export default function Cards() {
             </Typography>
           </CardContent>
         </CardActionArea>
-        <CardActions>
-          <Button
-            size="small"
-            color="primary"
-            href={
-              "https://github.com/simonpartridge86/baristacrats-frontend-final-project"
-            }
-            target="_blank"
-            rel="noreferrer"
-          >
-           Frontend
-          </Button>
-          <Button
-            size="small"
-            color="primary"
-            href={
-              "https://github.com/AdamPhasey/baristacrats-backend-repo/tree/d2b628bdab8b4831c9311f701933afec084060ea"
-            }
-            target="_blank"
-            rel="noreferrer"
-          >
-            Backend
-          </Button>
-          <Button
-            size="small"
-            color="primary"
-            href={"https://chews-dev.vercel.app/"}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Live
-          </Button>
-        </CardActions>
       </Card>
 
       

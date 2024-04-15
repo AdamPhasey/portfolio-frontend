@@ -99,7 +99,7 @@ export default function Home() {
             title={"5. I can adapt to change"}
             modalTitle={"Change always happens"}
             modalContent={"I can adapt to change quite comfortably given my background in business. Being dynamic is something I have had to practice regularly whilst being a business owner. Under high pressure and with short notice or time to respond, I have been able to effectively deliver decisions quickly and pragmatically."}
-            imgSrc={"/soclogo.png"}
+            imgSrc={"/spacecoin-charts.png"}
             onClick={() => setOpen(true)}
             onClose={() => setOpen(false)}
             width={200}
